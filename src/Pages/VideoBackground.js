@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../Pages/VideoBackground.css";
-import titleVideo from "../Pages/video.mp4"
+import titleVideo from "../assets/video.mp4"
 import LinkButton from "../components/LinkButton";
 
 

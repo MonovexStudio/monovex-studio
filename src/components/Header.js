@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "../css/Header.css";
 import {Container, Nav, Navbar} from 'react-bootstrap';
-import logo from "../mono.png"
+import logo from "../assets/mono.png"
 import {Link} from "react-scroll";
 
 export default class Header extends Component {
