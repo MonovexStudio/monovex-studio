@@ -1,0 +1,126 @@
+.nav-bar{
+    width: 100% !important;
+    background-color: #1b262c;
+    display: flex;
+    justify-content: space-between;
+    padding: 0!important;
+}
+
+.test{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+}
+
+.nav-bar-container{
+    padding: 0 0!important;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    width: 250px;
+    height: 100%;
+}
+
+.nav-collapse{
+    display: flex;
+    justify-content: flex-end!important;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto!important;
+}
+
+.header-nav-menu{
+    display: none;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    transition: 0.25s linear;
+    cursor: auto;
+    padding-bottom: 5px;
+}
+
+.header-nav-menu:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-nav-link{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    transition: 0.25s linear;
+    cursor: pointer;
+    margin: 0!important;
+}
+
+.header-nav-link:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3282b8;
+    transition: linear .2s;
+}
+
+.header-nav-link:hover{
+    color: #3282b8;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+.header-nav-link:hover:after {
+    width: 100%;
+    transition: linear .2s;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+    border-color: transparent !important;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .header-nav-link{
+        margin: auto 0 auto 25px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .nav-links{
+        margin: auto!important;
+        padding-bottom: 10px;
+        width: 35%;
+    }
+
+    .header-nav-menu{
+        display: block;
+    }
+
+    .header-nav-link{
+        padding: 5px 0;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 321px) {
+    .nav-logo{
+        width: 200px;
+    }
+}
+
