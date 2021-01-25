@@ -19,6 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    filter: brightness(50%);
 }
 .background-title{
     font-weight: 900;
@@ -43,7 +44,6 @@
     flex-direction: column;
     color: white;
     text-align: center;
-    top: 50px;
     height: 100vh;
     width: 100%;
     margin-top: 1%;
