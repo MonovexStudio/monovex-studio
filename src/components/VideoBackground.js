@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import "../Pages/VideoBackground.css";
+import "../css/VideoBackground.css";
 import titleVideo from "../assets/video.mp4"
-import LinkButton from "../components/LinkButton";
-import Test from "../components/Test";
+import LinkButton from "./LinkButton";
 
 
 export default class Home extends Component {

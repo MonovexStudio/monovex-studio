@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header";
-import VideoBackground from "./Pages/VideoBackground";
+import VideoBackground from "./components/VideoBackground";
 import {HashRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Test from "./components/Test";
+import Services from "./components/Services";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Header/>
         <VideoBackground/>
-        <Test/>
+        <Services/>
         <Switch>
         </Switch>
       </Router>
