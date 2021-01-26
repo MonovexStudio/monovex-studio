@@ -7,7 +7,7 @@ import {Link} from "react-scroll";
 export default class Header extends Component {
     render() {
         return (
-            <Navbar collapseOnSelect expand="md" variant="light" className="nav-bar">
+            <Navbar collapseOnSelect sticky="top" expand="md" variant="light" className="nav-bar">
                 <Container className="nav-bar-container">
                     <Navbar.Brand href="/">
                         <img
