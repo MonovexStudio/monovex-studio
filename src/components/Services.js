@@ -16,21 +16,27 @@ class Services extends Component {
             <div className="services">
                 <SectionTitle title={"Наші послуги"}/>
                 <div className="services-container">
-                    <Fade left>
+                    <div className="base-container">
+                    <Fade left className="react-reveala">
                         <ServiceCard image={website}
                                      title={"Сайт-візитка"}
                                      text={"Невеликий сайт, що зазвичай складається з однієї або декількох веб-сторінок та містить основну інформацію про організацію, приватну особу, компанію, товари чи послуги, прайс-листи, контактні дані."}/>
                     </Fade>
+                    </div>
+                    <div className="base-container">
                     <Fade bottom>
                         <ServiceCard image={landing}
                                      title={"Landing Page"}
                                      text={"Невеликий сайт, що зазвичай складається з однієї або декількох веб-сторінок та містить основну інформацію про організацію, приватну особу, компанію, товари чи послуги, прайс-листи, контактні дані."}/>
                     </Fade>
+                    </div>
+                    <div className="base-container">
                     <Fade right>
                         <ServiceCard image={eshop}
                                      title={"Інтернет-магазин"}
                                      text={"Невеликий сайт, що зазвичай складається з однієї або декількох веб-сторінок та містить основну інформацію про організацію, приватну особу, компанію, товари чи послуги, прайс-листи, контактні дані."}/>
                     </Fade>
+                    </div>
                 </div>
             </div>
         );

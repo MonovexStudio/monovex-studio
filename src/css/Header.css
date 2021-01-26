@@ -15,7 +15,7 @@
 
 .nav-bar-container{
     padding: 0 0!important;
-    width: 80% !important;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
