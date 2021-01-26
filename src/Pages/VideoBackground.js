@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "../Pages/VideoBackground.css";
 import titleVideo from "../assets/video.mp4"
 import LinkButton from "../components/LinkButton";
+import Test from "../components/Test";
 
 
 export default class Home extends Component {
@@ -14,12 +15,11 @@ export default class Home extends Component {
                         <source src = {titleVideo} type = 'video/mp4'/>
                         <source src = {titleVideo} type = 'video/ogg' codecs= 'theora, vorbis'/>
                     </video>
-            <div className="text-section">
+        <div className="text-section">
                 <h1 className="background-title"><nobr >ПРОФЕСІЙНЕ</nobr> СТВОРЕННЯ <br/>САЙТІВ</h1>
                 <div className="desc">Ми не просто створюємо сайти,<br/> ми створюємо емоції.</div>
                <LinkButton link={"container"} text={"Замовити"}/>
             </div>
-            
     </div>
         
 
