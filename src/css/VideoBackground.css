@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
     
 }
 .video-container{
@@ -36,6 +36,10 @@
 /* .background-title nobr{
     color: #bbe1fa;
 } */
+.react-reveal{
+    width: 100% !important;
+}
+
 .text-section{
     position: relative ;
     display: flex;

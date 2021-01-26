@@ -1,10 +1,15 @@
 .services{
     position: relative;
     background-image: url("../assets/white-background.jpg");
+    width: 100%;
+}
+
+.div-test{
+    width: 100%;
 }
 
 .services-container{
-    width: 80%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -12,15 +17,24 @@
     justify-content: space-between;
 }
 
+.react-reveal{
+    width: 30%!important;
+    animation-duration: 1500ms!important;
+}
+
 .services-card{
-    width: 30%;
+    width: 100%;
     border: 2px solid #bbe1fa;
     border-radius: 10px;
+    margin: 0!important;
+
 }
 
 .services-card-img{
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
+    display: flex;
+    margin: 20px auto 0 auto;
 
 }
 

@@ -5,6 +5,7 @@ import VideoBackground from "./components/VideoBackground";
 import {HashRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Services from "./components/Services";
+import Test from "./components/Test";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header/>
         <VideoBackground/>
         <Services/>
+        <Test/>
         <Switch>
         </Switch>
       </Router>

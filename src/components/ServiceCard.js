@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ServiceCardFooter from "./ServiceCardFooter";
-import logo from "../assets/computer.jpg"
 
 class ServiceCard extends Component {
     render() {
@@ -8,7 +7,7 @@ class ServiceCard extends Component {
             <div className="services-card">
                 <img
                 className="services-card-img"
-                src={logo}/>
+                src={this.props.image}/>
                 <ServiceCardFooter title={this.props.title} text={this.props.text}/>
             </div>
         );
