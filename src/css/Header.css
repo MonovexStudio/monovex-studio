@@ -1,6 +1,6 @@
 .nav-bar{
     width: 100% !important;
-    background-color: #1b262c;
+    background-color: rgba(0,0,0, 0.5);
     display: flex;
     justify-content: space-between;
     padding: 0!important;
@@ -74,7 +74,7 @@
 }
 
 .header-nav-link:hover{
-    color: #3282b8;
+    color: #fff;
     transition: 0.2s linear;
     text-decoration: none;
 }
