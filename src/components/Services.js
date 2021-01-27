@@ -5,8 +5,6 @@ import SectionTitle from "./SectionTitle";
 import website from "../assets/website.png"
 import landing from "../assets/landing.png"
 import eshop from "../assets/eshop.png"
-import LightSpeed from 'react-reveal/LightSpeed';
-import Zoom from 'react-reveal/Zoom';
 import Fade from "react-reveal/Fade";
 
 
