@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import "../css/VideoBackground.css";
 import titleVideo from "../assets/video.mp4"
-import LinkButton from "./LinkButton";
 import Fade from 'react-reveal/Fade';
 import {Link} from "react-scroll";
 

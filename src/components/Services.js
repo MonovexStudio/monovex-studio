@@ -15,7 +15,7 @@ class Services extends Component {
                 <SectionTitle title={"Наші послуги"}/>
                 <div className="services-container">
                     <div className="base-container">
-                    <Fade left className="react-reveala">
+                    <Fade left>
                         <ServiceCard image={website}
                                      title={"Сайт-візитка"}
                                      text={"Невеликий сайт, що зазвичай складається з однієї або декількох веб-сторінок та містить основну інформацію про організацію, приватну особу, компанію, товари чи послуги, прайс-листи, контактні дані."}/>
