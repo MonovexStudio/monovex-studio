@@ -7,6 +7,23 @@ import RadioBox from './RadioButton';
 import PriceSlider from './PriceSlider'
 
 export default class ContactForm extends Component {
+    state = {
+        price: {
+          label: "Грн",
+          min: 0,
+          max: 50000,
+          step: 1,
+          value: { min: 2200, max: 10000 }
+        }
+    }
+    onChange = data => {
+        this.setState({
+          [data.type]: {
+            ...this.state[data.type],
+            value: data.value
+          }
+        });
+      };
     render() {
        
         return (
@@ -48,12 +65,13 @@ export default class ContactForm extends Component {
                     <SectionSubtitle title = "Який бажаний термін запуску проекту?*"/>
                 </div>
                 <div className="checkbox-section">
-                    <div className="checkbox-block">
+                    <div className="price-slider-block">
                     <PriceSlider/>
-                    
                     </div>
                 </div>
+                
                 </div>
+                
                 {/* ----------------------------------------------- */}
             </div>
         )
