@@ -5,7 +5,7 @@ export default class CheckBox extends Component {
        
         return (
             
-        <label class="container">
+        <label class="checkbox-container">
             <p>{this.props.text}</p>
             <input type="checkbox"/>
             <span class="checkmark"></span>

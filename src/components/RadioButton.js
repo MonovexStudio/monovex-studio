@@ -6,7 +6,7 @@ export default class RadioBox extends Component {
         return (
             
         <label class="radio-container"><p>{this.props.text}</p>
-            <input type="radio" checked="checked" name="radio"/>
+            <input type="radio" value={this.props.value}  checked={this.props.checked} name={this.props.radioGroup}/>
             <span class="radio-checkmark"></span>
         </label>
             

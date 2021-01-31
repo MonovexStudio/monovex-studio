@@ -6,7 +6,7 @@ class SectionSubtitle extends Component {
     render() {
         return (
             <>
-                <p className="subtitle-in-section">{this.props.title}</p>
+                <h3 className="subtitle-in-section">{this.props.title}</h3>
             </>
         );
     }
