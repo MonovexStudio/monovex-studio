@@ -16,7 +16,7 @@
     
     flex-direction: row;
     width:80%;
-    margin-top:5%;
+    margin-top:3%;
     
 }
 .price-slider-block{
@@ -31,14 +31,17 @@
     width: 60%;
     
 }
-.checkbox-section{
+.box-section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 40%;
     
+    
 }
-
+.box-block{
+    width:100%;
+}
 .specific-amount{
     width: 100%;
     height: 50px;
