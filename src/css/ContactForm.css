@@ -19,6 +19,47 @@
     margin-top:3%;
     
 }
+.contact-form svg {
+  
+}
+.contact-form svg path {
+	
+}
+.svg-icon path {
+	
+animation: first_stroke 4s ease-in forwards;
+
+}
+.icon g g path {
+	
+    animation: second_stroke 4s linear forwards;
+    fill:none;
+    }
+    .picture{
+        width: 500px;
+        height: 500px;
+        background: no-repeat;
+        
+    }
+@keyframes second_stroke {
+    0% {
+    stroke-dashoffset: 100%;
+    stroke-dasharray: 0%;
+    }
+    100% {
+    stroke-dashoffset: 0%;
+    stroke-dasharray: 100%;
+    
+      }
+    } 
+    @keyframes first_stroke {
+        0% {
+        stroke-dashoffset: 450;
+        }
+        100% {
+        stroke-dashoffset: 0;
+          }
+        } 
 .price-slider-block{
     width: 100%;  
     display: flex;
