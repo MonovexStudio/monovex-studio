@@ -1,6 +1,6 @@
 .services{
     position: relative;
-    background-image: url("../assets/white-background.jpg");
+    background-image: url("D:\\Dima\\Programming\\FrontEnd\\React\\monovex-studio\\src\\assets\\white-background.jpg");
     width: 100%;
 }
 
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     margin: auto;
-    padding: 50px 0px;
+    padding: 0px 0px 50px 0;
     justify-content: space-between;
 }
 
@@ -45,14 +45,15 @@
     margin-bottom: 15px;
 }
 
-.services-card-title h4{
+.services-card-title h2{
+    font-size: 28px;
     font-weight: 800;
     margin: auto 0;
     text-transform: uppercase;
 }
 
 .blob-blue{
-    background-image: linear-gradient(to top    , #0f4c75 0%, #3282b8 50%, #0f4c75 100%);
+    background-image: linear-gradient(to right, #0f4c75 0%, #3282b8 50%, #0f4c75 100%);
     border-radius: 50%;
     height: 10px;
     width: 10px;
@@ -61,6 +62,22 @@
     box-shadow: 0 0 0 3px rgba(50, 130, 184, 0.5);
     transform: scale(1);
     animation: pulse-orange 4s infinite;
+}
+
+.services-card-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-card-price b{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.services-card-price span{
+    color: rgba(17, 109, 203, 0.9);
+    font-size: 25px;
+    text-shadow: 0 0 14px rgba(30,132,242,0.9);
 }
 
 @keyframes pulse-orange {

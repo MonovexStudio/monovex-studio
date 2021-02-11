@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import "../css/Services.css";
+import "./Services.css";
 import ServiceCard from "./ServiceCard";
-import SectionTitle from "./SectionTitle";
-import website from "../assets/website.png"
-import landing from "../assets/landing.png"
-import eshop from "../assets/eshop.png"
+import SectionTitle from "../SectionTitle/SectionTitle";
+import website from "../../assets/website.png"
+import landing from "../../assets/landing.png"
+import eshop from "../../assets/eshop.png"
 import Fade from "react-reveal/Fade";
 
 
@@ -36,6 +36,7 @@ class Services extends Component {
                     </Fade>
                     </div>
                 </div>
+
             </div>
         );
     }
