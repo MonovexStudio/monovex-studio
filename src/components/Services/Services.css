@@ -1,6 +1,6 @@
 .services{
     position: relative;
-    background-image: url("D:\\Dima\\Programming\\FrontEnd\\React\\monovex-studio\\src\\assets\\white-background.jpg");
+    background-image: url("../../../src/assets/white-background.jpg");
     width: 100%;
 }
 
