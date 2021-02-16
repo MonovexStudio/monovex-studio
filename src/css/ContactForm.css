@@ -70,15 +70,14 @@ animation: first_stroke 4s ease-in forwards;
 }
 .contact-section-subtitle{
     width: 60%;
-    
+    display: flex;
 }
 .box-section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 40%;
-    
-    
+     
 }
 .box-block{
     width:100%;
@@ -88,3 +87,52 @@ animation: first_stroke 4s ease-in forwards;
     height: 50px;
     border-radius: 5px;
 }
+
+/* Media request */
+
+@media only screen and (max-width: 992px){
+}
+@media only screen and (max-width: 768px){
+    
+    .contact-section-block{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width:100%;
+       
+       margin-top:3%;
+    }
+    .contact-section-subtitle{
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+    .box-block{
+        justify-content: center;
+        
+    }
+    .box-section{
+    
+        width: 60%;
+          
+    }
+}
+@media only screen and (max-width: 500px){
+    
+
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    
+}
+/* Ipad Pro portrait */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+    
+}
+/* Ipad Pro landscape */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
+    
+}
+
+

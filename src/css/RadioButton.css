@@ -119,16 +119,16 @@
 	pointer-events: none;
 }
 
-.svg-radio svg path {
-	stroke-width: 15px;
+.svg-radio svg circle {
+	/* stroke-width: 15px; */
 	fill: none;
 	transition: stroke-dashoffset 0.3s ease-in 0s;
 }
 
-.svg-radio svg path {
-	stroke-width: 9px;
+.svg-radio svg circle {
+	/* stroke-width: 9px; */
 }
 
-.svg-radio input[type="radio"]:checked ~ svg path {
+.svg-radio input[type="radio"]:checked ~ svg circle {
 	stroke-dashoffset: 0;
 }
