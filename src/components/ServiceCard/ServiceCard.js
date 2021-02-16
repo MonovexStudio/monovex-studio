@@ -2,8 +2,11 @@ import React from 'react';
 import './ServiceCard.css'
 import LinkButton from "../LinkButton/LinkButton";
 
-const ServiceCard1 = props => (
+const ServiceCard = props => (
     <div className="service-card1">
+        <div className="ribbon ribbon-top-right">
+            <span>{props.price}</span>
+        </div>
         <div className="services-card-container">
             <div className="service-card-title">
                 <span>{props.number}</span>
@@ -18,4 +21,4 @@ const ServiceCard1 = props => (
         </div>
     </div>
 )
-export default ServiceCard1;
+export default ServiceCard;

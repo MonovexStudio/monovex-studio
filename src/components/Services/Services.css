@@ -2,9 +2,9 @@
     position: relative;
    /* background-image: url("../../assets/white-abs1.png");
     background-size: cover;*/
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.9);
     width: 100%;
-    border-top-right-radius: 45%;
+    border-top-right-radius: 500px;
 }
 
 .services__inner{
@@ -138,8 +138,16 @@
         box-shadow: 0 0 0 0 rgba(255, 140, 0, 0);
     }
 }
+@media only screen and (max-width: 1000px) {
+    .services{
+        border-top-right-radius: 300px;
+    }
+}
 
 @media only screen and (max-width: 767px) {
+    .services{
+        border-top-right-radius: 200px;
+    }
     .services__inner{
         flex-direction: column;
     }
@@ -172,4 +180,10 @@
         margin: 10px 0;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .services{
+        border-top-right-radius: 100px;
+    }
 }
