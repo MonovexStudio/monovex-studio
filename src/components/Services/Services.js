@@ -14,8 +14,8 @@ class Services extends Component {
     render() {
         return (
             <div className="services">
-                <SectionTitle title={"Наші послуги"}/>
                 <div className="container">
+                    <SectionTitle title={"Наші послуги"}/>
                     <div className="services__inner">
                         <div className="services__inner-left">
                             <img

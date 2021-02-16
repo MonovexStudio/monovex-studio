@@ -3,6 +3,9 @@ import "./SectionTitle.css";
 
 
 const SectionTitle = props => (
-    <h2 className="section-title">{props.title}</h2>
+    <div className="title-container">
+        <div className="title-line"></div>
+        <h2 className="title">{props.title}</h2>
+    </div>
 )
 export default SectionTitle;
