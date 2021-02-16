@@ -89,3 +89,10 @@
 .ant-input-number-handler-wrap {
 display: none !important;
 }
+@media only screen and (max-width: 500px){
+  .slider-main-div{
+    width:250px!important;
+    
+  }
+
+}

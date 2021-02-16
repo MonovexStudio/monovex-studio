@@ -14,6 +14,7 @@
   
  
   .radio-container input {
+   
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -69,12 +70,14 @@
 	position: relative;
 	list-style: none;
 	padding: 2em 0;
+ 
 }
 
 .svg-radio input[type="radio"] {
 	display: inline-block;
 	vertical-align: middle;
 	opacity: 0;
+  
 }
 
 .svg-radio input[type="radio"],
@@ -85,11 +88,13 @@
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
+ 
 }
 
 .svg-radio input[type="radio"],
 .svg-radio label::before {
 	border-radius: 50%;
+ 
 }
 
 .svg-radio label {
