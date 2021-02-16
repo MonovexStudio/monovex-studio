@@ -3,6 +3,9 @@ import "./Header.css";
 import logo from '../../assets/mono-logo.png';
 import ToggleButton from '../ToggleButton/ToggleButton'
 import {Link} from "react-scroll";
+import {faPhone} from '@fortawesome/free-solid-svg-icons'
+import CircleIcon from "../CircleIcon/CircleIcon";
+
 
 const Header = props => (
     <header className="header">
@@ -21,8 +24,8 @@ const Header = props => (
                     <Link className="header__navigation-link">Замовити</Link>
                 </nav>
                 <div className="header__inner-contact">
-                    <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span>-999-09-99</a>
-                    <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span>-999-09-99</a>
+                    <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>
+                    <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>
                     {/*<a className="contact-email" href="#">monovex.studio@gmail.com</a>*/}
                 </div>
                 <div className="header__inner-toggle">
