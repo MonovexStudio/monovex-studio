@@ -7,7 +7,7 @@ export default class CheckBox extends Component {
         return (
             <div className="checkbox-container">
                 <li>
-    		<input type="checkbox" defaultChecked={this.props.checked}  name={this.props.checkGroup} id={"checkbox-" + this.props.id}/>
+    		<input type="checkbox" defaultChecked={this.props.checked} value={this.props.value}  name={this.props.checkGroup} id={"checkbox-" + this.props.id}/>
 			    <label for={"checkbox-" + this.props.id}>
 				<p>{this.props.text}</p>
 			    </label>

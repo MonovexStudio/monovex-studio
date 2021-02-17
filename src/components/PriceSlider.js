@@ -6,12 +6,13 @@ import { Slider, InputNumber } from "antd";
 
 export default class PriceSlider extends Component {
    
-   
-    state = {
+  constructor(props) {
+    super(props);
+    this.state = {
       min: 2200,
       max: 6000
     };
-  
+  }
     onChange = value => {
       if (value[0] < value[1]) {
         this.setState({ min: value[0], max: value[1] });
@@ -22,6 +23,7 @@ export default class PriceSlider extends Component {
       if (this.state.max > value) {
         this.setState({ min: value });
       }
+      return this.state.min;
     };
     onChangeMax = value => {
       if (this.state.min < value) {

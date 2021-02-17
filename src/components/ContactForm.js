@@ -13,8 +13,6 @@ import InViewMonitor from "react-inview-monitor";
 
 export default class ContactForm extends Component {
     
-
-
       constructor(props) {
         super(props);
     
@@ -23,70 +21,108 @@ export default class ContactForm extends Component {
             disabledApproximate: "",
             disabledDeadline: "",
             titleMessage:"",
-            checkedItems: ["checkbox-1"],
-            checkedMessage:""
+            radioboxItem: "Сайт-Візитка",
+            message:"asd",
+            checkedItems:{
+                serviceType:["Розробка сайту"],
+                siteType:"Сайт-Візитка",
+                specificAmount: "Ціну не вказано",
+                fromApproximateAmount: "Ціну не вказано",
+                toApproximateAmount: "Ціну не вказано",
+                deadline: "Дедлайн не вказаний",
+                credentials: "Не вказано",
+                workExample: "Не вказано",
+                siteTheme: "Не вказано",
+                city: "Не вказано",
+                phoneNumber: "Не вказано",
+                email: "Не вказано"
+            }
+
         };
+        this.setMessageForm = this.setMessageForm.bind(this);
+      }
+      setMessageForm = async()=>{
+        let lastMessage = "Тип послуги: " + this.state.checkedItems.serviceType +
+          "\nВид сайту: " + this.state.checkedItems.siteType +
+          "\nСума на розробку сайта: "+ this.state.checkedItems.specificAmount +
+          "\nДедлайн: "+ this.state.checkedItems.deadline +
+          "\nПІБ: "+ this.state.checkedItems.credentials +
+          "\nПриклад роботи яка подобається: "+ this.state.checkedItems.workExample +
+          "\nТематика сайту: "+ this.state.checkedItems.siteTheme +
+          "\nМісто: "+ this.state.checkedItems.city +
+          "\nНомер телефону: "+ this.state.checkedItems.phoneNumber +
+          "\ne-mail: "+ this.state.checkedItems.email;
+        await this.setState({message:lastMessage})
+        console.log(this.state.message);
+      }
+      setRadioButton(event,buttonName){
+        this.setState(prevState => ({
+            checkedItems: {
+                ...prevState.checkedItems,
+                [buttonName]: event.target.value
+            }
+        })); 
       }
       setCheckedItems(event){
-        
         const isChecked = event.target.checked;
-        let checkedItem = null;
-        this.setState({
-            titleMessage:event.target.name,
-            checkedMessage:""
-        });
+        let checkArray = this.state.checkedItems.serviceType;
         if(isChecked){
-            checkedItem=event.target.id;
-            this.state.checkedItems.push(checkedItem);
+           checkArray.push(event.target.value);
         }else if(!isChecked){
-            this.state.checkedItems.splice(this.state.checkedItems.indexOf(event.target.id),1);
+            checkArray.splice(checkArray.indexOf(event.target.value),1);
         }
-        console.log(this.state.checkedItems);
-        console.log(this.state.titleMessage);
-      }
-      checkedItemsSubmit(){
-            let checkedItem = this.state.checkedItems;
-            this.state.checkedItems.sort();
-            
-              if(checkedItem.includes("checkbox-1")){
-                  this.state.checkedMessage += " Розробка сайту";
-              }if(checkedItem.includes("checkbox-2")){
-                this.state.checkedMessage += " Обслуговування сайту";
-            } if(checkedItem.includes("checkbox-3")){
-                this.state.checkedMessage += " Доповнення вже готового сайту";
-            } if(checkedItem.includes("checkbox-4")){
-                this.state.checkedMessage += " Розробка мобільного додатку";
+        this.setState(prevState=>({
+            checkedItems: {
+                ...prevState.checkedItems,
+                serviceType: checkArray
             }
-            
-          
-          
-      }
+        }));
+        }
+       
       submitButtonClick = () =>{
-          this.checkedItemsSubmit();
         console.log(this.state.checkedMessage);
       }
     setDeadlineDate(event){
         if(event.target.value==="specificDeadline")
         {
             this.setState({disabledDeadline:""});
+           
         }
-        else if (event.target.value === "approximateDeadline"){
+        else if(event.target.value==="Терміново"||event.target.value==="Не поспішаємо"){
+            this.setRadioButton(event,"deadline")
             this.setState({disabledDeadline:"disabled"});
         }
             
       }
-
+    setInputValue(event,inputName){
+        if(event.target.name===inputName){
+        this.setState(prevState=>({
+            checkedItems:{
+            ...prevState.checkedItems,
+            [inputName]:event.target.value
+        }
+        }));
+        }
+        
+    }
     setTypeOfAmount(event){
-        console.log(typeof event.target.value);
+        
         if(event.target.value==="specific")
         {
-            console.log(event.target.value);
             this.setState({disabledSpecific:""});
             this.setState({disabledApproximate:"disabled"});
+            
         }
         else if(event.target.value==="approximate"){
+            // this.setState(prevState=>({
+            //     checkedItems:{
+            //     ...prevState.checkedItems,
+            //     specificAmount:"Ціну не вказано"
+            // }
+            // }));dont forget
             this.setState({disabledSpecific:"disabled"});
             this.setState({disabledApproximate:""});
+
         }
     }
     
@@ -106,10 +142,10 @@ export default class ContactForm extends Component {
                 <div className="box-section">
                     <div onChange={event=>this.setCheckedItems(event)} className="box-block checkbox">
                     <ul className="svg-checkbox">
-                    <CheckBox checked={true} checkGroup="serviceType" id="1" text="Розробка сайту"/>
-                    <CheckBox checkGroup="serviceType" id="2" text="Обслуговування сайту"/>
-                    <CheckBox checkGroup="serviceType" id="3" text="Доповнення вже готового сайту"/>
-                    <CheckBox checkGroup="serviceType" id="4" text="Розробка мобільного додатку"/>
+                    <CheckBox checked={true} checkGroup="serviceType" id="1" value="Розробка сайту" text="Розробка сайту"/>
+                    <CheckBox checkGroup="serviceType" id="2" value="Обслуговування сайту" text="Обслуговування сайту"/>
+                    <CheckBox checkGroup="serviceType" id="3" value="Доповнення вже готового сайту" text="Доповнення вже готового сайту"/>
+                    <CheckBox checkGroup="serviceType" id="4" value="Розробка мобільного додатку" text="Розробка мобільного додатку"/>
                     </ul>
                     </div>
                 </div>
@@ -121,13 +157,13 @@ export default class ContactForm extends Component {
                 </div>
                 
                 <div className="box-section">
-                    <div className="box-block radiobox">
+                    <div onChange={event=>this.setRadioButton(event,"siteType")} className="box-block radiobox">
                         <ul className="svg-radio">
-                    <RadioBox checked={true} radioGroup="1" id="1"  text="Сайт-Візитка"/>
-                    <RadioBox radioGroup="1" id="2" text="Landing page"/>
-                    <RadioBox radioGroup="1" id="3" text="Персональний"/>
-                    <RadioBox radioGroup="1" id="4"  text="Корпоративний"/>
-                    <RadioBox radioGroup="1" id="5" text="Каталог"/>
+                    <RadioBox checked={true} radioGroup="siteType" id="1" value="Сайт-Візитка"  text="Сайт-Візитка"/>
+                    <RadioBox radioGroup="siteType" id="2" value="Landing page" text="Landing page"/>
+                    <RadioBox radioGroup="siteType" id="3" value="Персональний" text="Персональний"/>
+                    <RadioBox radioGroup="siteType" id="4" value="Корпоративний"  text="Корпоративний"/>
+                    <RadioBox radioGroup="siteType" id="5" value="Каталог" text="Каталог"/>
                     </ul>
                     
                     
@@ -144,11 +180,11 @@ export default class ContactForm extends Component {
                         <ul className="svg-radio">
                     <RadioBox checked={true}  value="approximate" id="6"  radioGroup="2" text="Приблизно (грн)"/>
                     
-                    <PriceSlider disable={this.state.disabledApproximate} textBeforeInput = "від" textCenterInput = "до"/>
+                    <PriceSlider onChange={this.setInputValue} name="approximateAmount" disable={this.state.disabledApproximate} textBeforeInput = "від" textCenterInput = "до"/>
                     
                     <RadioBox value="specific" id="7" radioGroup="2" text="Конкретна сума"/>
                     </ul>
-                    <CustomInputField disabled={this.state.disabledSpecific} placeholder="Конкретна сума (2200)" type="number"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"specificAmount")} name="specificAmount" disabled={this.state.disabledSpecific} placeholder="Конкретна сума (2200)" type="number"/>
                    
                     </div>
                     
@@ -165,10 +201,10 @@ export default class ContactForm extends Component {
                 <div className="box-section">
                     <div onChange={event => this.setDeadlineDate(event) } className="box-block radiobox">
                     <ul className="svg-radio">
-                    <RadioBox  value="approximateDeadline" id="8" radioGroup="3" text="Терміново"/>
-                    <RadioBox checked={true} value="specificDeadline" id="9" radioGroup="3" text="Необхідно зробити до:"/>
-                    <CustomInputField disabled={this.state.disabledDeadline} placeholder="Дата дедлайну" type="text"/>
-                    <RadioBox value="approximateDeadline" id="10" radioGroup="3"  text="Не поспішаємо"/>
+                    <RadioBox  value="Терміново" id="8" radioGroup="deadline" text="Терміново"/>
+                    <RadioBox checked={true} value="specificDeadline" id="9" radioGroup="deadline" text="Необхідно зробити до:"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"deadline")} name="deadline" disabled={this.state.disabledDeadline} placeholder="Дата дедлайну" type="text"/>
+                    <RadioBox value="Не поспішаємо" id="10" radioGroup="deadline"  text="Не поспішаємо"/>
                     </ul>
                         
                     </div>
@@ -183,7 +219,7 @@ export default class ContactForm extends Component {
                 
                 <div className="box-section">
                     <div className="box-block input">
-                    <CustomInputField placeholder="Маск Илон Петрович" type="text"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"credentials")} name="credentials" placeholder="Маск Илон Петрович" type="text"/>
                     </div>
                     
                 </div>
@@ -196,7 +232,7 @@ export default class ContactForm extends Component {
                 
                 <div className="box-section">
                     <div className="box-block input">
-                    <CustomInputField  placeholder="https://www.google.com/" type="text"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"workExample")} name="workExample" placeholder="https://www.google.com/" type="text"/>
                     </div>
                     
                 </div>
@@ -210,7 +246,7 @@ export default class ContactForm extends Component {
                 
                 <div className="box-section">
                     <div className="box-block input">
-                    <CustomInputField  placeholder="Доставка смачненького" type="text"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"siteTheme")} name="siteTheme"  placeholder="Доставка смачненького" type="text"/>
                     </div>
                     
                 </div>
@@ -224,7 +260,7 @@ export default class ContactForm extends Component {
                 
                 <div className="box-section">
                     <div className="box-block input">
-                    <CustomInputField  placeholder="Львів" type="text"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"city")} name="city" placeholder="Львів" type="text"/>
                     </div>
                     
                 </div>
@@ -237,7 +273,7 @@ export default class ContactForm extends Component {
                 
                 <div className="box-section">
                     <div className="box-block input">
-                    <CustomInputField  placeholder="38 (073) 413 12 02" type="text"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"phoneNumber")} name="phoneNumber" placeholder="38 (073) 413 12 02" type="text"/>
                     </div>
                     
                 </div>
@@ -250,13 +286,13 @@ export default class ContactForm extends Component {
                 
                 <div className="box-section">
                     <div className="box-block input">
-                    <CustomInputField  placeholder="example@gmail.com" type="email"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"email")} name="email" placeholder="example@gmail.com" type="email"/>
                     </div>
                     
                 </div>
                 </div>
 
-                <Button onClick={this.submitButtonClick} text="Відправити"/>
+                <Button onClick={this.setMessageForm} text="Відправити"/>
                 {/* <svg className="svg-icon" stroke-width="0.5" restart="whenNotActive" stroke="black" stroke-dasharray='450' stroke-dashoffset='450'  viewBox="0 0 250 250">
 							<path fill="none" d="M17.125,1.375H2.875c-0.828,0-1.5,0.672-1.5,1.5v11.25c0,0.828,0.672,1.5,1.5,1.5H7.75v2.25H6.625c-0.207,0-0.375,0.168-0.375,0.375s0.168,0.375,0.375,0.375h6.75c0.207,0,0.375-0.168,0.375-0.375s-0.168-0.375-0.375-0.375H12.25v-2.25h4.875c0.828,0,1.5-0.672,1.5-1.5V2.875C18.625,2.047,17.953,1.375,17.125,1.375z M11.5,17.875h-3v-2.25h3V17.875zM17.875,14.125c0,0.414-0.336,0.75-0.75,0.75H2.875c-0.414,0-0.75-0.336-0.75-0.75v-1.5h15.75V14.125z M17.875,11.875H2.125v-9c0-0.414,0.336-0.75,0.75-0.75h14.25c0.414,0,0.75,0.336,0.75,0.75V11.875z M10,14.125c0.207,0,0.375-0.168,0.375-0.375S10.207,13.375,10,13.375s-0.375,0.168-0.375,0.375S9.793,14.125,10,14.125z"></path>
 						</svg> */}
