@@ -1,0 +1,138 @@
+.contact-form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../assets/contactFormBg.jpg");;
+    width: 100%;
+    height: 100%;
+    
+}
+.contact-section-block{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+    flex-direction: row;
+    width:80%;
+    margin-top:3%;
+    
+}
+.contact-form svg {
+  
+}
+.contact-form svg path {
+	
+}
+.svg-icon path {
+	
+animation: first_stroke 4s ease-in forwards;
+
+}
+.icon g g path {
+	
+    animation: second_stroke 4s linear forwards;
+    fill:none;
+    }
+    .picture{
+        width: 500px;
+        height: 500px;
+        background: no-repeat;
+        
+    }
+@keyframes second_stroke {
+    0% {
+    stroke-dashoffset: 100%;
+    stroke-dasharray: 0%;
+    }
+    100% {
+    stroke-dashoffset: 0%;
+    stroke-dasharray: 100%;
+    
+      }
+    } 
+    @keyframes first_stroke {
+        0% {
+        stroke-dashoffset: 450;
+        }
+        100% {
+        stroke-dashoffset: 0;
+          }
+        } 
+.price-slider-block{
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+.contact-section-subtitle{
+    width: 60%;
+    display: flex;
+}
+.box-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+     
+}
+.box-block{
+    width:100%;
+}
+.specific-amount{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Media request */
+
+@media only screen and (max-width: 992px){
+}
+@media only screen and (max-width: 768px){
+    
+    .contact-section-block{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width:100%;
+       
+       margin-top:3%;
+    }
+    .contact-section-subtitle{
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+    .box-block{
+        justify-content: center;
+        
+    }
+    .box-section{
+    
+        width: 60%;
+          
+    }
+}
+@media only screen and (max-width: 500px){
+    
+
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    
+}
+/* Ipad Pro portrait */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+    
+}
+/* Ipad Pro landscape */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
+    
+}
+
+
