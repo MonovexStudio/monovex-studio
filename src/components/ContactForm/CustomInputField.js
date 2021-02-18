@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../css/CustomInputField.css";
+import "./CustomInputField.css";
 
 export default class CustomInputField extends Component {
     

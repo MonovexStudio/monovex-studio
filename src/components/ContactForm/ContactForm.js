@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import "../css/ContactForm.css";
+import "./ContactForm.css";
 import CheckBox from './CheckBox';
-import SectionTitle from './SectionTitle'
-import SectionSubtitle from './SectionSubtitle'
+import SectionTitle from '../SectionTitle/SectionTitle'
+import SectionSubtitle from '../SectionSubtitle/SectionSubtitle'
 import RadioBox from './RadioButton';
 import PriceSlider from './PriceSlider'
 import CustomInputField from './CustomInputField'
-import Button from './Button'
+import Button from '../Button/Button'
 import axios from 'axios'
 
 

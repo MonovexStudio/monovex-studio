@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../css/RadioButton.css";
+import "./RadioButton.css";
 export default class RadioBox extends Component {
    
    
@@ -22,10 +22,11 @@ export default class RadioBox extends Component {
                 52.68,0,0,0,.81,13.74C7.07,65,12.88,73.22,20,79.62a49,49,0,0,0,14.47,9.32,41.25,41.25,0,0,0,20.67,2.45C67,89.81,
                 78.51,82.64,83.25,71.63c4.06-9.44,2.85-20.35,5.88-30.17" stroke="#0f4c75" stroke-dasharray="450" stroke-dashoffset="450"/>
 			</svg> */}
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 100 100"  xmlns="http://www.w3.org/2000/svg">
             <path d="M45 57" />
-                    
-                <circle cx="45" cy="57" r="30" stroke="#0f4c75" stroke-width="24"  stroke-dasharray="450" stroke-dashoffset="450" fill="none"/>
+            <circle cx="50%" cy="50%" r="42"  stroke="#0f4c75" stroke-width="5" />
+			  
+                <circle cx="50%" cy="50%" r="25" stroke="#0f4c75" stroke-width="20"  stroke-dasharray="450" stroke-dashoffset="450" />
 			</svg>
 		    </li>
 

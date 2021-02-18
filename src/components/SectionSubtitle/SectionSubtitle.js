@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "../css/SectionSubtitle.css";
+import "./SectionSubtitle.css";
 
 
 class SectionSubtitle extends Component {

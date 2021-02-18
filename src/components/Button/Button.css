@@ -5,7 +5,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: calc(15px + 1.1vw);
     margin-top:7%;
     margin-bottom:7%;
     background-image: linear-gradient(to right, #0f4c75 0%, #3282b8 50%, #0f4c75 100%);

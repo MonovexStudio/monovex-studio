@@ -1,4 +1,6 @@
-
+.checkbox-container{
+	padding: 5% 0;
+}
 .svg-checkbox li{
 	display: list-item;
 	position: relative;
@@ -16,8 +18,8 @@
 
 .svg-checkbox input[type="checkbox"],
 .svg-checkbox label::before {
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	position: absolute;
 	left: 0;
 	top: 35%;
@@ -30,8 +32,9 @@
 .svg-checkbox label{
 	display: inline-block;
 	position: relative;
-	font-size: 1.6em;
+	font-size: calc(15px + 1.2vw);
 	padding: 0 0 0 80px;
+
 }
 
 .svg-checkbox label::before{
@@ -51,8 +54,8 @@
 	position: absolute;
 	top: 35%;
 	left: 4px;
-	width: 28px;
-	height: 28px;
+	width: 32px;
+	height: 32px;
 	margin-top: -16px;
 	pointer-events: none;
 }

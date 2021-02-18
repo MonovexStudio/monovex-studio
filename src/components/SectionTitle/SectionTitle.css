@@ -12,9 +12,12 @@
 }
 
 .title{
-    font-size: calc(20px + 1.2vw);
+    font-size: calc(23px + 1.2vw);
     font-weight: 900;
     text-transform: uppercase;
     text-align: start;
     margin: auto 0;
+}
+h1{
+    color: white !important;
 }

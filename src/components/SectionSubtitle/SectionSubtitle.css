@@ -1,8 +1,7 @@
 .subtitle-in-section{
-    font-size: 30px;
+    font-size: calc(17px + 1.2vw);
     font-weight: 800;
     text-transform: uppercase;
-    text-align: center;
+    
     word-wrap: break-word;
-   
 }
