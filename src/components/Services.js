@@ -31,7 +31,7 @@ class Services extends Component {
                     </Fade >
                     </div>
                     <div className="base-container">
-                    <Fade right  delay={1500}>
+                    <Fade right delay={1500}>
                         <ServiceCard image={eshop}
                                      title={"Інтернет-магазин"}
                                      text={"Невеликий сайт, що зазвичай складається з однієї або декількох веб-сторінок та містить основну інформацію про організацію, приватну особу, компанію, товари чи послуги, прайс-листи, контактні дані."}/>
