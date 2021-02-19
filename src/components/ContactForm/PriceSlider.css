@@ -64,8 +64,10 @@
 }
 
 .ant-input-number {
-  width: 25% !important;
-  padding: 5px 17px !important;
+  width: 150px !important;
+  padding-top: 7px !important;
+  padding-left: 28px !important;
+  
   color: rgba(0, 0, 0, 0.95) !important;
   font-size: 20px !important;
   background-color: white !important;
@@ -91,8 +93,14 @@ display: none !important;
 }
 @media only screen and (max-width: 500px){
   .slider-main-div{
-    width:250px!important;
-    
+    width:250px!important;   
   }
+  .price-input{
+    flex-direction: column;
+  }
+  .ant-input-number{
+    width: 120px !important;
+  }
+
 
 }

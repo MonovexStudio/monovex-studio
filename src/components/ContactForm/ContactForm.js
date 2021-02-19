@@ -193,7 +193,7 @@ export default class ContactForm extends Component {
        
           
         return (
-           
+           <div className="contact-section">
                 <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                 <SectionTitle title="Бриф"/>
                 {/* ---------------------------------------------- */}
@@ -372,7 +372,7 @@ export default class ContactForm extends Component {
   </MtSvgLines>
 </InViewMonitor> */}
                 </form>
-           
+            </div>          
         )
     }
 }

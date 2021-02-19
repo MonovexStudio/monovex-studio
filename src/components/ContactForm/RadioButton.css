@@ -130,3 +130,9 @@
 .svg-radio input[type="radio"]:checked ~ svg circle {
 	stroke-dashoffset: 0;
 }
+@media only screen and (max-width: 500px){
+  .svg-radio svg{
+    top:22px;
+  }
+
+}
