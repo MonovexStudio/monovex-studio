@@ -24,9 +24,10 @@ export default class ContactForm extends Component {
             disabledDeadline: "",
             titleMessage:"",
             radioboxItem: "Сайт-Візитка",
+            serviceTypeArray:["Розробка сайту"],
             message:"asd",
             checkedItems:{
-                serviceType:["Розробка сайту"],
+                serviceType:"",
                 siteType:"Сайт-Візитка",
                 price: "Ціну не вказано",
                 deadline: "Дедлайн не вказаний",
@@ -40,25 +41,20 @@ export default class ContactForm extends Component {
 
         };
         
-        this.setMessageForm = this.setMessageForm.bind(this);
-       
+      
       }
       handleSubmit(e){
         e.preventDefault();
-        this.setMessageForm();
-        axios.post({
-          method: "POST", 
-          url:"http://localhost:8080/", 
-          data:  {
-              message: this.state.message,
-              credentials: this.state.checkedItems.credentials,
-              email: this.state.checkedItems.email,
-              phoneNumber: this.state.checkedItems.phoneNumber,
-              serviceType: this.state.checkedItems.serviceType
-          }
-        }).then((response)=>{
+        this.parseServiceType();
+        axios.post('http://localhost:8080/customer/createAndSend', this.state.checkedItems,
+        {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((response)=>{
           if (response.data.status === 'success') {
-            alert("Message Sent."); 
+            console.log(response.data); 
             this.resetForm();
           } else if (response.data.status === 'fail') {
             alert("Message failed to send.");
@@ -109,20 +105,14 @@ export default class ContactForm extends Component {
         console.log(this.state.max)
         
       };
-      setMessageForm = async()=>{
-        
-        let lastMessage = "Тип послуги: " + this.state.checkedItems.serviceType +
-          "\nВид сайту: " + this.state.checkedItems.siteType +
-          "\nСума на розробку сайта: "+ this.state.checkedItems.price +
-          "\nДедлайн: "+ this.state.checkedItems.deadline +
-          "\nПІБ: "+ this.state.checkedItems.credentials +
-          "\nПриклад роботи яка подобається: "+ this.state.checkedItems.workExample +
-          "\nТематика сайту: "+ this.state.checkedItems.siteTheme +
-          "\nМісто: "+ this.state.checkedItems.city +
-          "\nНомер телефону: "+ this.state.checkedItems.phoneNumber +
-          "\ne-mail: "+ this.state.checkedItems.email;
-        await this.setState({message:lastMessage})
-        console.log(this.state.message);
+      parseServiceType(){
+        this.setState(prevState => ({
+            checkedItems: {
+                ...prevState.checkedItems,
+                serviceType: this.state.serviceTypeArray.toString
+            }
+        })); 
+        console.log(typeof(this.state.message));
       }
       setRadioButton(event,buttonName){
         this.setState(prevState => ({
@@ -134,17 +124,15 @@ export default class ContactForm extends Component {
       }
       setCheckedItems(event){
         const isChecked = event.target.checked;
-        let checkArray = this.state.checkedItems.serviceType;
+        let checkArray = ["Розробка сайту"];
         if(isChecked){
            checkArray.push(event.target.value);
         }else if(!isChecked){
             checkArray.splice(checkArray.indexOf(event.target.value),1);
         }
+
         this.setState(prevState=>({
-            checkedItems: {
-                ...prevState.checkedItems,
                 serviceType: checkArray
-            }
         }));
         }
        
@@ -266,7 +254,7 @@ export default class ContactForm extends Component {
                     <ul className="svg-radio">
                     <RadioBox  value="Терміново" id="8" radioGroup="deadline" text="Терміново"/>
                     <RadioBox checked={true} value="specificDeadline" id="9" radioGroup="deadline" text="Необхідно зробити до:"/>
-                    <CustomInputField onChange={event=>this.setInputValue(event,"deadline")} name="deadline" disabled={this.state.disabledDeadline} placeholder="Дата дедлайну" type="text"/>
+                    <CustomInputField onChange={event=>this.setInputValue(event,"deadline")} name="deadline" disabled={this.state.disabledDeadline} placeholder="Дата дедлайну" type="date"/>
                     <RadioBox value="Не поспішаємо" id="10" radioGroup="deadline"  text="Не поспішаємо"/>
                     </ul>
                         

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/monovex-studio.iml" filepath="$PROJECT_DIR$/.idea/monovex-studio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monovex.iml" filepath="$PROJECT_DIR$/monovex.iml" />
     </modules>
   </component>
 </project>
