@@ -138,8 +138,8 @@
                         <phase>generate-resources</phase>
                         <configuration>
                             <target>
-                                <copy todir="/Users/vshug/ipz_1_shuhai/monovex/target/classes/public">
-                                    <fileset dir="/Users/vshug/ipz_1_shuhai/monovex/frontend/build"/>
+                                <copy todir="/Users/vlshu/Documents/GitHub/monovex-studio/target/classes/public">
+                                    <fileset dir="/Users/vlshu/Documents/GitHub/monovex-studio/frontend/build"/>
                                 </copy>
                             </target>
                         </configuration>
@@ -149,9 +149,6 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins>
-    <pluginManagement>
-        <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -164,9 +161,12 @@
                     </excludes>
                 </configuration>
             </plugin>
-
         </plugins>
-    </pluginManagement>
+
+
+
+
+
 
     </build>
 

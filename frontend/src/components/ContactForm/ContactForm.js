@@ -25,7 +25,6 @@ export default class ContactForm extends Component {
             titleMessage:"",
             radioboxItem: "Сайт-Візитка",
             serviceTypeArray:["Розробка сайту"],
-            message:"asd",
             checkedItems:{
                 serviceType:"",
                 siteType:"Сайт-Візитка",
@@ -45,7 +44,8 @@ export default class ContactForm extends Component {
       }
       handleSubmit(e){
         e.preventDefault();
-        this.parseServiceType();
+        // this.parseServiceType();
+          console.log(this.state.checkedItems.serviceType);
         axios.post('http://localhost:8080/customer/createAndSend', this.state.checkedItems,
         {
             headers: {
@@ -105,15 +105,7 @@ export default class ContactForm extends Component {
         console.log(this.state.max)
         
       };
-      parseServiceType(){
-        this.setState(prevState => ({
-            checkedItems: {
-                ...prevState.checkedItems,
-                serviceType: this.state.serviceTypeArray.toString
-            }
-        })); 
-        console.log(typeof(this.state.message));
-      }
+
       setRadioButton(event,buttonName){
         this.setState(prevState => ({
             checkedItems: {
@@ -124,17 +116,23 @@ export default class ContactForm extends Component {
       }
       setCheckedItems(event){
         const isChecked = event.target.checked;
-        let checkArray = ["Розробка сайту"];
+        let checkArray = this.state.serviceTypeArray;
+        let serviceTypeString = null;
         if(isChecked){
            checkArray.push(event.target.value);
+           console.log(checkArray);
         }else if(!isChecked){
             checkArray.splice(checkArray.indexOf(event.target.value),1);
+            console.log(checkArray);
         }
-
-        this.setState(prevState=>({
-                serviceType: checkArray
-        }));
-        }
+        serviceTypeString = checkArray.toString();
+          this.setState(prevState => ({
+              checkedItems: {
+                  ...prevState.checkedItems,
+                  serviceType: serviceTypeString
+              }
+          }));
+      }
        
       submitButtonClick = () =>{
         console.log(this.state.checkedMessage);

@@ -20,4 +20,5 @@ public class CustomerRequest {
     private String deadline;
     private String city;
     private String message;
+
 }

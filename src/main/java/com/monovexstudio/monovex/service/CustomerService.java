@@ -34,7 +34,8 @@ public class CustomerService {
         customer.setWorkExample(request.getWorkExample());
         try {
             emailSenderService.sendToMonovex(request);
-        } catch (UnsupportedEncodingException e) {
+            emailSenderService.sendToClient(request);
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return customer;

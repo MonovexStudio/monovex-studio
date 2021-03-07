@@ -19,23 +19,20 @@ public class CustomerResponse {
     private String price;
     private String workExample;
     private String siteTheme;
-
     private String deadline;
     private String city;
 
-    public CustomerResponse(Long id, String credentials, String email, String phoneNumber,
-                            String serviceType, String siteType, String price,
-                            String workExample, String siteTheme, String deadline, String city) {
-        this.id = id;
-        this.credentials = credentials;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.serviceType = serviceType;
-        this.siteType = siteType;
-        this.price = price;
-        this.workExample = workExample;
-        this.siteTheme = siteTheme;
-        this.deadline = deadline;
-        this.city = city;
+    public CustomerResponse(Customer customer) {
+        this.id = customer.getId();
+        this.credentials = customer.getCredentials();
+        this.email = customer.getEmail();
+        this.phoneNumber = customer.getPhoneNumber();
+        this.serviceType = customer.getServiceType();
+        this.siteType = customer.getSiteType();
+        this.price = customer.getPrice();
+        this.workExample = customer.getWorkExample();
+        this.siteTheme = customer.getSiteTheme();
+        this.deadline = customer.getDeadline();
+        this.city = customer.getCity();
     }
 }
