@@ -27,7 +27,7 @@ class CommentForm extends Component {
             .then(response => response.data)
             .then((data) => {
                 this.setState({
-                    comment: data
+                    comment: data.reverse()
                 })
 
             });
@@ -39,7 +39,7 @@ class CommentForm extends Component {
                 <div className="comment-container">
 
                     {
-                        this.state.comment&&this.state.comment.slice(0, this.state.visible).reverse().map((comment, index) => (
+                        this.state.comment&&this.state.comment.slice(0, this.state.visible).map((comment, index) => (
 
                            <Comment text={comment.text} credentials={comment.firstName+" "+comment.secondName}
                                     date={comment.date} avatar={comment.firstName.charAt(0)+comment.secondName.charAt(0)}/>
