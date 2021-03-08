@@ -18,4 +18,5 @@ public class Comment {
     private String firstName;
     private String secondName;
     private String text;
+    private String date;
 }

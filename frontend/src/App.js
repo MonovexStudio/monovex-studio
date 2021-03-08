@@ -5,6 +5,7 @@ import {HashRouter as Router, Switch} from 'react-router-dom';
 import Services from "./components/Services/Services";
 import SideDrawer from "./components/SideDraw/SideDrawer";
 import ContactForm from "./components/ContactForm/ContactForm";
+import CommentForm from "./components/CommentForm/CommentForm";
 import Backdrop from "./components/Backdrop/Backdrop";
 import {Component} from "react";
 
@@ -38,6 +39,7 @@ class App extends Component {
                 <VideoBackground/>
                 <Services/>
                 <ContactForm/>
+                <CommentForm/>
                 <Switch>
                 </Switch>
             </Router>

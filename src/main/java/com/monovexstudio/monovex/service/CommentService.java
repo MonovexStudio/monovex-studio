@@ -7,6 +7,8 @@ import com.monovexstudio.monovex.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,9 +25,12 @@ public class CommentService {
         if (comment == null){
             comment = new Comment();
         }
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        LocalDateTime currentDate = LocalDateTime.now();
         comment.setFirstName(request.getFirstName());
         comment.setSecondName(request.getSecondName());
         comment.setText(request.getText());
+        comment.setDate(dtf.format(currentDate));
         return comment;
     }
     public Comment findById(Long id){
