@@ -60,10 +60,7 @@ class CommentForm extends Component {
                                     date={comment.date} avatar={comment.firstName.charAt(0)+comment.secondName.charAt(0)}/>
 
                         )) }
-                    {this.state.visible < this.state.comment.length &&
-                    <Button text="Читати більше" onClick={this.loadMore}/>
-                    }
-                    <Button text="Написати відгук" onClick={this.renderPostForm}/>
+
                 </div>
 
 
@@ -75,6 +72,12 @@ class CommentForm extends Component {
             <div className="comment-form">
                 <SectionTitle title="Відгуки"/>
                 {this.renderComment()}
+                <div className="comment-buttons">
+                    {this.state.visible < this.state.comment.length &&
+                    <Button text="Читати більше" onClick={this.loadMore}/>
+                    }
+                    <Button text="Написати відгук" onClick={this.renderPostForm}/>
+                </div>
                 <PostCommentForm show={this.state.showModal}/>
 
             </div>

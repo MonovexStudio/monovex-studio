@@ -27,3 +27,9 @@
     animation: anim-glow 2s ease infinite;
 }
 
+.comment-buttons{
+    display: flex;
+    justify-content: space-around;
+
+    width: 50%;
+}
