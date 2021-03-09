@@ -1,6 +1,10 @@
 {
   "name": "monovex-studio",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "private": true,
   "proxy": "http://localhost:8080",
   "dependencies": {
@@ -43,6 +47,7 @@
     "eject": "react-scripts eject",
     "server": "nodemon server/index.js",
     "client": "npm start",
+    "heroku-postbuild": "ng build --prod",
     "dev": "concurrently \"npm run server\" \"npm start\""
   },
   "eslintConfig": {
