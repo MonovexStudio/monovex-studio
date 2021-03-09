@@ -46,7 +46,7 @@ export default class ContactForm extends Component {
         e.preventDefault();
         // this.parseServiceType();
           console.log(this.state.checkedItems.serviceType);
-        axios.post('http://localhost:8080/customer/createAndSend', this.state.checkedItems,
+        axios.post('https://monovex-shuhai.herokuapp.com/customer/createAndSend', this.state.checkedItems,
         {
             headers: {
                 'Content-Type': 'application/json'

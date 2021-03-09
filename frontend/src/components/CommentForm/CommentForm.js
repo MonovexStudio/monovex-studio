@@ -5,6 +5,8 @@ import './CommentForm.css'
 import axios from 'axios'
 import LinkButton from '../LinkButton/LinkButton'
 import SectionTitle from "../SectionTitle/SectionTitle";
+import CustomInputField from "../ContactForm/CustomInputField";
+import PostCommentForm from "./PostCommentForm";
 
 class CommentForm extends Component {
     constructor(props) {
@@ -13,9 +15,10 @@ class CommentForm extends Component {
         this.state = {
             comment: [],
             visible: 4,
+            showModal: false
         };
         this.loadMore = this.loadMore.bind(this);
-
+        this.renderPostForm= this.renderPostForm.bind(this);
     }
     loadMore() {
         this.setState((prev) => {
@@ -23,7 +26,7 @@ class CommentForm extends Component {
         });
     }
    async componentDidMount() {
-       await axios.get("http://localhost:8080/comment/getComment")
+       await axios.get("https://monovex-shuhai.herokuapp.com/comment/getComment")
             .then(response => response.data)
             .then((data) => {
                 this.setState({
@@ -32,6 +35,18 @@ class CommentForm extends Component {
 
             });
 
+    }
+    renderPostForm(){
+        if(this.state.showModal){
+            this.setState({
+                showModal: false
+            });
+        }
+        else {
+            this.setState({
+                showModal: true
+            });
+        }
     }
     renderComment() {
             return  (
@@ -45,7 +60,10 @@ class CommentForm extends Component {
                                     date={comment.date} avatar={comment.firstName.charAt(0)+comment.secondName.charAt(0)}/>
 
                         )) }
-
+                    {this.state.visible < this.state.comment.length &&
+                    <Button text="Читати більше" onClick={this.loadMore}/>
+                    }
+                    <Button text="Написати відгук" onClick={this.renderPostForm}/>
                 </div>
 
 
@@ -57,11 +75,8 @@ class CommentForm extends Component {
             <div className="comment-form">
                 <SectionTitle title="Відгуки"/>
                 {this.renderComment()}
-                <div className = "load-more-section">
-            {this.state.visible < this.state.comment.length &&
-            <Button text="Читати більше" onClick={this.loadMore}/>
-            }
-                </div>
+                <PostCommentForm show={this.state.showModal}/>
+
             </div>
         );
     }
