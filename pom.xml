@@ -138,8 +138,8 @@
                         <phase>generate-resources</phase>
                         <configuration>
                             <target>
-                                <copy todir="/Users/vlshu/Documents/GitHub/monovex-studio/target/classes/public">
-                                    <fileset dir="/Users/vlshu/Documents/GitHub/monovex-studio/frontend/build"/>
+                                <copy todir="${project.build.directory}/classes/public">
+                                    <fileset dir="${project.basedir}/frontend/build"/>
                                 </copy>
                             </target>
                         </configuration>
