@@ -70,7 +70,13 @@ class CommentForm extends Component {
     render() {
         return (
             <div className="comment-form">
+<<<<<<< HEAD
+                <div className="container">
                 <SectionTitle title="Відгуки"/>
+                <div className="comment-form__inner">
+=======
+                <SectionTitle title="Відгуки"/>
+>>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
                 {this.renderComment()}
                 <div className="comment-buttons">
                     {this.state.visible < this.state.comment.length &&
@@ -79,7 +85,12 @@ class CommentForm extends Component {
                     <Button text="Написати відгук" onClick={this.renderPostForm}/>
                 </div>
                 <PostCommentForm show={this.state.showModal}/>
+<<<<<<< HEAD
+                </div>
+                </div>
+=======
 
+>>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
             </div>
         );
     }

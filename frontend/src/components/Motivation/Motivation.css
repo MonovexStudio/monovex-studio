@@ -1,0 +1,76 @@
+.motivation{
+    position: relative;
+    background-image: url("../../assets/desktop-mac1.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+}
+
+.motivation__inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.motivation__inner h3{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 auto 35px auto;
+    color: #fff;
+    text-align: center;
+}
+
+.motivation__inner p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto 50px auto;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}
+
+.motivation__inner span{
+    color: #0079ff;
+}
+
+.motivation-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.motivation-arrow{
+    width: 45px;
+    position: absolute;
+    fill: #fff;
+    transform: translateX(-400%);
+    bottom: 250px;
+    margin: auto;
+}
+
+@media all and (max-width: 800px){
+    .motivation__inner p{
+        width: 70%;
+    }
+
+    .motivation-arrow{
+        transform: translateX(-350%);
+    }
+}
+
+@media all and (max-width: 600px){
+    .motivation__inner p{
+        width: 100%;
+    }
+
+    .motivation-arrow{
+        transform: translateX(-300%);
+        bottom: 225px;
+    }
+}

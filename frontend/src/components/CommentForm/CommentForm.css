@@ -1,10 +1,6 @@
 .comment-form{
     position: relative;
     background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
 }
 .comment-container{
@@ -12,9 +8,13 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 95%;
+}
 
-
-
+.comment-form__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .load-more-section{
     display: flex;
@@ -30,6 +30,14 @@
 .comment-buttons{
     display: flex;
     justify-content: space-around;
+    width: 80%;
+}
 
-    width: 50%;
+@media all and (max-width: 450px) {
+    .comment-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+    }
 }
