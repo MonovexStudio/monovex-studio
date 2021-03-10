@@ -6,12 +6,6 @@ import { Slider, InputNumber } from "antd";
 
 export default class PriceSlider extends Component {
    
-  constructor(props) {
-    super(props);
-    
-  }
-   
-   
     render() {
       
         return (

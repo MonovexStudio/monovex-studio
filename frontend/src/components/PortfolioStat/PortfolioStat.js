@@ -23,7 +23,7 @@ class PortfolioStat extends Component {
                 <img
                     src={this.props.image}
                     className="portfolio-stat__img"
-                    alt
+                    alt={"portfolio"}
                 />
                 <div className="portfolio-stat__inner">
                     <Odometer

@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import "./Services.css";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import website from "../../assets/website.png"
-import landing from "../../assets/landing.png"
-import eshop from "../../assets/eshop.png"
-import Fade from "react-reveal/Fade";
 import man from '../../assets/man.png'
 import ServiceCard from "../ServiceCard/ServiceCard";
 
@@ -12,7 +8,7 @@ import ServiceCard from "../ServiceCard/ServiceCard";
 class Services extends Component {
     render() {
         return (
-            <div className="services">
+            <div id="services" className="services">
                 <div className="container">
                     <SectionTitle title={"Наші послуги"}/>
                     <div className="services__inner">

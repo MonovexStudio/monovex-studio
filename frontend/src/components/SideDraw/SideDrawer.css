@@ -50,24 +50,11 @@
     margin-top: 15px;
 }
 
-.side-drawer__navigation-link:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, #0a3d5f 0%, #4bb0f5 50%, #0a3d5f 100%);
-    transition: linear .2s;
-}
 
 .side-drawer__navigation-link:hover{
-    color: #fff;
+    color: #0081d7;
     transition: 0.2s linear;
     text-decoration: none;
-}
-
-.side-drawer__navigation-link:hover:after {
-    width: 100%;
-    transition: linear .2s;
 }
 
 .side-drawer__contact{

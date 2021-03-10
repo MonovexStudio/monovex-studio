@@ -24,7 +24,7 @@ const settings = {
 };
 
 const Portfolio = props => (
-    <div className="portfolio">
+    <div id="portfolio" className="portfolio">
         <div className="container">
             <SectionTitle title={"Наші роботи"}/>
             <div className="portfolio__inner">

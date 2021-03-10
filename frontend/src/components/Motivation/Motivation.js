@@ -3,7 +3,7 @@ import './Motivation.css'
 import LinkButton from "../LinkButton/LinkButton";
 
 const Motivation = props => (
-    <div className="motivation">
+    <div id="motivation" className="motivation">
         <div className="container">
             <div className="motivation__inner">
                 <h3>Замовте сайт вже зараз</h3>

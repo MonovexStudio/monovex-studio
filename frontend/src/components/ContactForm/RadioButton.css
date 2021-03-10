@@ -28,8 +28,7 @@
     width: 35px;
     background-color: white;
     border-radius: 50%;
-    border: solid;
-    border-color: #0f4c75;
+    border: solid #005cbf;
   }
   
   .radio-container:hover input ~ .radio-checkmark {
@@ -37,7 +36,7 @@
   }
   
   .radio-container input:checked ~ .radio-checkmark {
-    background-color:#3282b8;
+    background-color:#005cbf;
     border: none;
   }
   

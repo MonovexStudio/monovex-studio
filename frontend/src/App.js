@@ -1,7 +1,7 @@
 import './App.css'
 import Header from "./components/Header/Header";
 import VideoBackground from "./components/VideoBackground/VideoBackground";
-import {HashRouter as Router, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import Services from "./components/Services/Services";
 import SideDrawer from "./components/SideDraw/SideDrawer";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -29,7 +29,7 @@ class App extends Component {
     }
 
     render() {
-        let sideDrawer, backdrop;
+        let backdrop;
 
         if(this.state.sideDrawerOpen){
             backdrop = <Backdrop click={this.backdropClickHandler}/>

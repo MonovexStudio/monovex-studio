@@ -17,11 +17,11 @@ const Header = props => (
                     alt="Logo"
                 />
                 <nav className="header-navigation">
-                    <Link className="header__navigation-link">Послуги</Link>
-                    <Link className="header__navigation-link">Переваги</Link>
-                    <Link className="header__navigation-link">Відгуки</Link>
-                    <Link className="header__navigation-link">Наші проекти</Link>
-                    <Link className="header__navigation-link">Замовити</Link>
+                    <Link to="services" smooth={true} className="header__navigation-link">Послуги</Link>
+                    <Link to="motivation" smooth={true} className="header__navigation-link">Переваги</Link>
+                    <Link to="reviews" smooth={true} className="header__navigation-link">Відгуки</Link>
+                    <Link to="portfolio" smooth={true} className="header__navigation-link">Наші проекти</Link>
+                    <Link to="order" smooth={true} className="header__navigation-link">Замовити</Link>
                 </nav>
                 <div className="header__inner-contact">
                     <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>

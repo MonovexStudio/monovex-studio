@@ -2,18 +2,18 @@
     width: 100%;
     padding: 18px 20px;
     margin: 8px 0 5%;
-    border: 2px solid #1b262c86;
+    border: 2px solid #005cbf;
     border-radius: 5px;
   }
   .custom-input-field:focus {
     
-    border: 2px solid #1b262c;
+    border: 2px solid #005cbf;
     outline: none;
     -webkit-box-shadow: 0 0 0 2px  #1b262c21 !important;
     box-shadow: 0 0 0 2px  #1b262c21 !important;
   }
   .custom-input-field:hover{
-    border-color: #1b262c !important;
+    border-color: #005cbf !important;
     -webkit-transition: 0.5s;
   transition: 0.5s;
   }

@@ -3,9 +3,7 @@ import Comment from "./Comment";
 import Button from '../Button/Button'
 import './CommentForm.css'
 import axios from 'axios'
-import LinkButton from '../LinkButton/LinkButton'
 import SectionTitle from "../SectionTitle/SectionTitle";
-import CustomInputField from "../ContactForm/CustomInputField";
 import PostCommentForm from "./PostCommentForm";
 
 class CommentForm extends Component {
@@ -73,11 +71,10 @@ class CommentForm extends Component {
 
     render() {
         return (
-            <div className="comment-form">
+            <div id="reviews" className="comment-form">
                 <div className="container">
                     <SectionTitle title="Відгуки"/>
                     <div className="comment-form__inner">
-                        <SectionTitle title="Відгуки"/>
                         {this.renderComment()}
                         <div className="comment-buttons">
                             {this.state.visible < this.state.comment.length &&

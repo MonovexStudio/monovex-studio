@@ -18,11 +18,11 @@ const SideDrawer = props => {
                 />
             </div>
             <nav className="side-drawer__navigation">
-                <Link className="side-drawer__navigation-link">Послуги</Link>
-                <Link className="side-drawer__navigation-link">Переваги</Link>
-                <Link className="side-drawer__navigation-link">Відгуки</Link>
-                <Link className="side-drawer__navigation-link">Наші проекти</Link>
-                <Link className="side-drawer__navigation-link">Замовити</Link>
+                <Link to="services" smooth={true} className="side-drawer__navigation-link">Послуги</Link>
+                <Link to="motivation" smooth={true} className="side-drawer__navigation-link">Переваги</Link>
+                <Link to="reviews" smooth={true} className="side-drawer__navigation-link">Відгуки</Link>
+                <Link to="portfolio" smooth={true} className="side-drawer__navigation-link">Наші проекти</Link>
+                <Link to="order" smooth={true} className="side-drawer__navigation-link">Замовити</Link>
             </nav>
             <div className="side-drawer__contact">
                 <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span>-999-09-99</a>

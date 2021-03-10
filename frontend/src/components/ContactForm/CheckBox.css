@@ -39,7 +39,7 @@
 
 .svg-checkbox label::before{
 	content: '';
-	border: 3px solid #0f4c75;
+	border: 3px solid #005cbf;
   
 	transition: opacity 0.3s;
 }
