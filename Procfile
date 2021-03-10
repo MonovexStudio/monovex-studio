@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT --uri-encoding UTF-8 -jar monovex-0.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar monovex-0.0.1-SNAPSHOT.jar
