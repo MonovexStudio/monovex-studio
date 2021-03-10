@@ -1,0 +1,76 @@
+.checkbox-container{
+	padding: 5% 0;
+}
+.svg-checkbox li{
+	display: list-item;
+	position: relative;
+	list-style: none;
+	padding: 0 0;
+	
+}
+
+.svg-checkbox input[type="checkbox"]
+{
+	display: inline-block;
+	vertical-align: middle;
+	opacity: 0;
+}
+
+.svg-checkbox input[type="checkbox"],
+.svg-checkbox label::before {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 35%;
+  transform: translateY(-50%);
+  background-color: white;
+}
+
+
+
+.svg-checkbox label{
+	display: inline-block;
+	position: relative;
+	font-size: calc(15px + 1.2vw);
+	padding: 0 0 0 80px;
+
+}
+
+.svg-checkbox label::before{
+	content: '';
+	border: 3px solid #0f4c75;
+  
+	transition: opacity 0.3s;
+}
+
+.svg-checkbox input[type="checkbox"]:checked + label::before
+{
+	opacity: 1;
+}
+
+.svg-checkbox svg
+{
+	position: absolute;
+	top: 35%;
+	left: 4px;
+	width: 32px;
+	height: 32px;
+	margin-top: -16px;
+	pointer-events: none;
+}
+
+.svg-checkbox svg path{
+	stroke-width: 15px;
+	fill: none;
+	transition: stroke-dashoffset 0.3s ease-in 0s;
+}
+
+.svg-checkbox svg path + path {
+	transition: stroke-dashoffset 0.3s ease-out 0.2s;
+}
+
+.svg-checkbox input[type="checkbox"]:checked ~ svg path{
+	stroke-dashoffset: 0;
+}
+

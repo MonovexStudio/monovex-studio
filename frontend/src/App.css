@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+*::selection{
+  background-color:  #3282b8;
+}
+h1{
+  color:white !important;
+}
+
+.body{}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+

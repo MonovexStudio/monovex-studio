@@ -1,0 +1,138 @@
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+  
+ 
+  .radio-container input {
+   
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid;
+    border-color: #0f4c75;
+  }
+  
+  .radio-container:hover input ~ .radio-checkmark {
+    background-color: #bbe1fa;
+  }
+  
+  .radio-container input:checked ~ .radio-checkmark {
+    background-color:#3282b8;
+    border: none;
+  }
+  
+  .radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radio-container input:checked ~ .radio-checkmark:after {
+    display: block;
+  }
+  
+  .radio-container .radio-checkmark:after {
+    left: 10px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+
+
+
+
+.svg-radio li {
+	display: list-item;
+	position: relative;
+	list-style: none;
+	padding: 2em 0;
+ 
+}
+
+.svg-radio input[type="radio"] {
+	display: inline-block;
+	vertical-align: middle;
+	opacity: 0;
+  
+}
+
+.svg-radio input[type="radio"],
+.svg-radio label::before {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+ 
+}
+
+.svg-radio input[type="radio"],
+.svg-radio label::before {
+	border-radius: 50%;
+ 
+}
+.svg-radio label p{
+
+}
+.svg-radio label {
+	display: inline-block;
+	position: relative;
+  font-size: calc(15px + 1.2vw);
+	padding: 0 0 0 80px;
+}
+.svg-radio label::before {
+	content: '';
+	transition: opacity 0.3s;
+}
+
+.svg-radio input[type="radio"]:checked + label::before {
+	opacity: 1;
+}
+
+.svg-radio svg {
+	position: absolute;
+	top:32px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	pointer-events: none;
+}
+
+.svg-radio svg circle {
+	fill: #fff;
+	transition: stroke-dashoffset 0.3s ease-in 0s;
+}
+.svg-radio input[type="radio"]:checked ~ svg circle {
+	stroke-dashoffset: 0;
+}
+@media only screen and (max-width: 500px){
+  .svg-radio svg{
+    top:22px;
+  }
+
+}
