@@ -18,15 +18,17 @@ class CommentForm extends Component {
             showModal: false
         };
         this.loadMore = this.loadMore.bind(this);
-        this.renderPostForm= this.renderPostForm.bind(this);
+        this.renderPostForm = this.renderPostForm.bind(this);
     }
+
     loadMore() {
         this.setState((prev) => {
             return {visible: prev.visible + 4};
         });
     }
-   async componentDidMount() {
-       await axios.get("https://monovex-shuhai.herokuapp.com/comment/getComment")
+
+    async componentDidMount() {
+        await axios.get("https://monovex-shuhai.herokuapp.com/comment/getComment")
             .then(response => response.data)
             .then((data) => {
                 this.setState({
@@ -36,32 +38,34 @@ class CommentForm extends Component {
             });
 
     }
-    renderPostForm(){
-        if(this.state.showModal){
+
+    renderPostForm() {
+        if (this.state.showModal) {
             this.setState({
                 showModal: false
             });
-        }
-        else {
+        } else {
             this.setState({
                 showModal: true
             });
         }
     }
+
     renderComment() {
-            return  (
+        return (
 
-                <div className="comment-container">
+            <div className="comment-container">
 
-                    {
-                        this.state.comment&&this.state.comment.slice(0, this.state.visible).map((comment, index) => (
+                {
+                    this.state.comment && this.state.comment.slice(0, this.state.visible).map((comment, index) => (
 
-                           <Comment text={comment.text} credentials={comment.firstName+" "+comment.secondName}
-                                    date={comment.date} avatar={comment.firstName.charAt(0)+comment.secondName.charAt(0)}/>
+                        <Comment text={comment.text} credentials={comment.firstName + " " + comment.secondName}
+                                 date={comment.date}
+                                 avatar={comment.firstName.charAt(0) + comment.secondName.charAt(0)}/>
 
-                        )) }
+                    ))}
 
-                </div>
+            </div>
 
 
         );
@@ -70,27 +74,20 @@ class CommentForm extends Component {
     render() {
         return (
             <div className="comment-form">
-<<<<<<< HEAD
                 <div className="container">
-                <SectionTitle title="Відгуки"/>
-                <div className="comment-form__inner">
-=======
-                <SectionTitle title="Відгуки"/>
->>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
-                {this.renderComment()}
-                <div className="comment-buttons">
-                    {this.state.visible < this.state.comment.length &&
-                    <Button text="Читати більше" onClick={this.loadMore}/>
-                    }
-                    <Button text="Написати відгук" onClick={this.renderPostForm}/>
+                    <SectionTitle title="Відгуки"/>
+                    <div className="comment-form__inner">
+                        <SectionTitle title="Відгуки"/>
+                        {this.renderComment()}
+                        <div className="comment-buttons">
+                            {this.state.visible < this.state.comment.length &&
+                            <Button text="Читати більше" onClick={this.loadMore}/>
+                            }
+                            <Button text="Написати відгук" onClick={this.renderPostForm}/>
+                        </div>
+                        <PostCommentForm show={this.state.showModal}/>
+                    </div>
                 </div>
-                <PostCommentForm show={this.state.showModal}/>
-<<<<<<< HEAD
-                </div>
-                </div>
-=======
-
->>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
             </div>
         );
     }
