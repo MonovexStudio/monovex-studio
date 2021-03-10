@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
 
 }
 .post-comment-container textarea{
@@ -24,4 +24,9 @@
     border-color: #1b262c !important;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+}
+.user-response{
+    color:lawngreen;
+    font-size: 30px;
+    text-align: center;
 }
