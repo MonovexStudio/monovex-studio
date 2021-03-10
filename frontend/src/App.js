@@ -8,8 +8,11 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import CommentForm from "./components/CommentForm/CommentForm";
 import Backdrop from "./components/Backdrop/Backdrop";
 import {Component} from "react";
+<<<<<<< HEAD
 import Motivation from "./components/Motivation/Motivation";
 import Portfolio from "./components/Portfolio/Portfolio";
+=======
+>>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
 
 
 class App extends Component {
@@ -40,8 +43,11 @@ class App extends Component {
                     {backdrop}
                 <VideoBackground/>
                 <Services/>
+<<<<<<< HEAD
                 <Portfolio/>
                 <Motivation/>
+=======
+>>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
                 <ContactForm/>
                 <CommentForm/>
                 <Switch>

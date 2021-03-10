@@ -32,14 +32,21 @@
     "react-input-range": "^1.3.0",
     "react-inview-monitor": "^2.3.0",
     "react-mt-svg-lines": "^0.9.1",
+<<<<<<< HEAD
     "react-odometerjs": "^2.1.1",
+=======
+>>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.1",
+<<<<<<< HEAD
     "react-slick": "^0.28.1",
     "react-slider": "^1.1.4",
     "slick-carousel": "^1.8.1",
+=======
+    "react-slider": "^1.1.4",
+>>>>>>> 0c82146584b791533c363661e77bb56cf916cee9
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
