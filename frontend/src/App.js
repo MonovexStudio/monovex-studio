@@ -41,8 +41,8 @@ class App extends Component {
                     {backdrop}
                 <VideoBackground/>
                 <Services/>
-                <Portfolio/>
                 <Motivation/>
+                <Portfolio/>
                 <ContactForm/>
                 <CommentForm/>
                 <Switch>

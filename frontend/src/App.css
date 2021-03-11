@@ -10,11 +10,19 @@ h1{
   color:white !important;
 }
 
-.body{}
+.body{
+
+}
 
 .container{
   width: 85%;
   margin: 0 auto;
+}
+
+@media all and (max-width: 1110px) {
+  .container{
+    width: 90%;
+  }
 }
 
 

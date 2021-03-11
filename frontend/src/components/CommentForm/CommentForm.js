@@ -71,7 +71,7 @@ class CommentForm extends Component {
 
     render() {
         return (
-            <div id="reviews" className="comment-form">
+            <section id="reviews" className="comment-form">
                 <div className="container">
                     <SectionTitle title="Відгуки"/>
                     <div className="comment-form__inner">
@@ -85,7 +85,7 @@ class CommentForm extends Component {
                         <PostCommentForm show={this.state.showModal}/>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

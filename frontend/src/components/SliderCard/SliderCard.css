@@ -1,5 +1,9 @@
+.slider-item{
+
+}
+
 .slider-item img{
-    width: 500px;
+    width: 600px;
     margin: auto;
 }
 
@@ -11,19 +15,42 @@
 .slider-title h3{
     font-size: 25px;
     text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: rgba(0,0,0,0.7);
 }
 
 .slider-item p{
     font-size: 20px;
     text-align: center;
+    font-family: Montserrat, sans-serif;
+
 }
 
-.slick-arrow:before{
-    color: #005cbf!important;
-}
 
 .slick-dots li.slick-active button:before {
-    color: #005cbf!important;
+    color: #0067d4 !important;
+    font-size: 28px;
+    margin: 6px 0 0 -2px;
+}
+.slick-dots li.slick-active button {
+    box-shadow: 0 4px 10px 0 rgba(0,103,212,0.8);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.slick-dots li button:before{
+    font-size: 18px;
+    margin: 3px 0 0 0;
+}
+
+.slick-dots li button:hover:before{
+    color: rgba(0,0,0,0.25)
+}
+
+.slick-dots li button:focus:before{
+    color: rgba(0,0,0,0.25)
 }
 
 .blob-blue{
@@ -59,7 +86,7 @@
     .slick-slider {
         width: 300px!important;
         margin: auto;
-        padding: 0 0px!important;
+        padding: 0!important;
     }
 
     .slider-item img{

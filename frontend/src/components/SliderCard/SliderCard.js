@@ -9,7 +9,6 @@ const SliderCard = props => (
             alt="Logo"
         />
         <div className="slider-title">
-            <div className="blob-blue"></div>
             <h3>{props.title}</h3>
         </div>
         <p>{props.text}</p>

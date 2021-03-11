@@ -20,7 +20,8 @@ const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows:false,
 };
 
 const Portfolio = props => (
@@ -29,9 +30,14 @@ const Portfolio = props => (
             <SectionTitle title={"Наші роботи"}/>
             <div className="portfolio__inner">
                 <div className="portfolio-left">
-                    <PortfolioStat image={site} value={5} span={""} text={"виконаних робіт"}/>
+                    <h4>Багато корисних функцій для вашого майбутнього веб-сайту</h4>
+                    <div className="line"></div>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius eum explicabo itaque neque quam quibusdam totam? Animi dicta distinctio dolor doloremque dolorum eius magnam quidem vel veritatis. Esse, rerum.</h5>
+                    <div className="line"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ea eos neque repudiandae sed? Dolores laudantium omnis quasi ratione reiciendis saepe, voluptates! Aspernatur culpa itaque numquam quam sint temporibus ut.</p>
+                    {/*<PortfolioStat image={site} value={5} span={""} text={"виконаних робіт"}/>
                     <PortfolioStat image={working} value={2} span={"+"} text={"роки роботи на ринку"}/>
-                    <PortfolioStat image={diagram} value={100} span={"%"} text={"задоволених клієнтів"}/>
+                    <PortfolioStat image={diagram} value={100} span={"%"} text={"задоволених клієнтів"}/>*/}
                 </div>
                 <div className="portfolio-right">
                     <Slider {...settings}>

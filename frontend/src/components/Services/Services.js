@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "./Services.css";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import man from '../../assets/man.png'
+import tablet from '../../assets/tablet-mono.png'
 import ServiceCard from "../ServiceCard/ServiceCard";
 
 
@@ -14,11 +14,11 @@ class Services extends Component {
                     <div className="services__inner">
                         <div className="services__inner-left">
                             <img
-                                src={man}
+                                src={tablet}
                                 alt="Man"/>
-                            <div className="services__inner-info">
+                            {/*<div className="services__inner-info">
                                 <h4>Ми враховуємо всі побажання клієнта та використовуємо гнучкий підхід</h4>
-                            </div>
+                            </div>*/}
                         </div>
                         <div className="services__inner-right">
                             <ServiceCard number={"1."}

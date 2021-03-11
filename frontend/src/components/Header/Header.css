@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0,0.5);
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -29,12 +29,13 @@
 
 .header__navigation-link{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     color: #fff;
     transition: 0.25s linear;
     cursor: pointer;
     text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
 }
 
 .header__navigation-link:hover{
@@ -50,6 +51,8 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
+    font-family: Montserrat, sans-serif;
+
 }
 
 .header__inner-contact a{
@@ -71,17 +74,6 @@
     }
 }
 
-@media all and (max-width: 1110px) {
-    .container{
-        width: 90%;
-    }
-}
-
-@media all and (max-width: 1000px) {
-    .container{
-        width: 95%;
-    }
-}
 
 
 @media all and (max-width: 900px){

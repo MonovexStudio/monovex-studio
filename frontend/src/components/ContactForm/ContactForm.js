@@ -179,10 +179,10 @@ export default class ContactForm extends Component {
        
           
         return (
-           <div id="order" className="contact-section">
+           <section id="order" className="contact-section">
+               <div className="container">
+                   <SectionTitle title="Бриф"/>
                 <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                <SectionTitle title="Бриф"/>
-                {/* ---------------------------------------------- */}
                 <div className="contact-section-block">
                 <div className="contact-section-subtitle">
                     <SectionSubtitle title = "Яка послуга вас цікавить?"/>
@@ -358,7 +358,8 @@ export default class ContactForm extends Component {
   </MtSvgLines>
 </InViewMonitor> */}
                 </form>
-            </div>          
+               </div>
+            </section>
         )
     }
 }

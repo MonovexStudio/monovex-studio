@@ -9,9 +9,9 @@
     background-image: linear-gradient(to right, #0f4c75 0%, #3282b8 50%, #0f4c75 100%);
     background-position: 100% 0;
     background-size: 200% 200%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     color: #fff !important;
     box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
     transition: .5s;
