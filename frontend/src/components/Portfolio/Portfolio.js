@@ -26,7 +26,7 @@ const settings = {
 const Portfolio = props => (
     <div id="portfolio" className="portfolio">
         <div className="container">
-            <SectionTitle title={"Наші роботиgjvd"}/>
+            <SectionTitle title={"Наші роботи!!!"}/>
             <div className="portfolio__inner">
                 <div className="portfolio-left">
                     <PortfolioStat image={site} value={5} span={""} text={"виконаних робіт"}/>
