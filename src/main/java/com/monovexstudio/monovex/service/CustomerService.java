@@ -33,8 +33,7 @@ public class CustomerService {
         customer.setSiteTheme(request.getSiteTheme());
         customer.setWorkExample(request.getWorkExample());
         try {
-            emailSenderService.sendToMonovex(request);
-            emailSenderService.sendToClient(request);
+            emailSenderService.sendEmail(request);
         } catch (Exception e) {
             e.printStackTrace();
         }

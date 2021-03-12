@@ -74,7 +74,11 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.collections/google-collections -->
-
+        <dependency>
+            <groupId>com.sendgrid</groupId>
+            <artifactId>sendgrid-java</artifactId>
+            <version>4.7.2</version>
+        </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
