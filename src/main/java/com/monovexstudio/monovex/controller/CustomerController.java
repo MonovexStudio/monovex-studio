@@ -14,6 +14,7 @@ import javax.validation.Valid;
 public class CustomerController {
     @Autowired
     private CustomerService customerService;
+
     @PostMapping("/createAndSend")
     public final void create(@Valid @RequestBody final CustomerRequest request) {
         customerService.create(request);
