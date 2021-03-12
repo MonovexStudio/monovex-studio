@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "./Services.css";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import tablet from '../../assets/tablet-mono.png'
+import tablet from '../../assets/tablet3.png'
 import ServiceCard from "../ServiceCard/ServiceCard";
 
 
