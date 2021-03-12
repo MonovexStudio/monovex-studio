@@ -8,7 +8,7 @@ import ServiceCard from "../ServiceCard/ServiceCard";
 class Services extends Component {
     render() {
         return (
-            <div id="services" className="services">
+            <section id="services" className="services">
                 <div className="container">
                     <SectionTitle title={"Наші послуги"}/>
                     <div className="services__inner">
@@ -60,7 +60,7 @@ class Services extends Component {
                     </div>
                 </div>
 
-            </div>
+            </section>
         );
     }
 }

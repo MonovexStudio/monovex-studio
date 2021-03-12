@@ -1,0 +1,89 @@
+.statistic{
+    position: relative;
+    background-color: rgba(255,255,255, 1);
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.statistic__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.statistic-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 90px 0;
+}
+
+.stat-projects{
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.stat-years{
+    border-bottom: 1px solid #ebebeb;
+}
+
+.stat-some{
+    border-right: 1px solid #ebebeb;
+}
+
+.stat span{
+    margin: auto;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: #aeaeae;
+}
+
+.stat h5{
+    margin: auto;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #3F3F3F;
+}
+
+@media all and (max-width: 1000px) {
+    .stat span{
+        font-size: 50px;
+    }
+
+    .stat h5{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .stat span{
+        font-size: 40px;
+    }
+
+    .stat h5{
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .statistic-row{
+        flex-direction: column;
+    }
+
+    .stat{
+        width: 100%;
+        border-bottom: 0;
+        border-right: 0;
+        padding: 35px 0;
+    }
+
+
+}

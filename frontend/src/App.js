@@ -1,6 +1,6 @@
 import './App.css'
 import Header from "./components/Header/Header";
-import VideoBackground from "./components/VideoBackground/VideoBackground";
+import VideoBackground from "./components/Main/Main";
 import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import Services from "./components/Services/Services";
 import SideDrawer from "./components/SideDraw/SideDrawer";
@@ -10,6 +10,7 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import {Component} from "react";
 import Motivation from "./components/Motivation/Motivation";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Statistic from "./components/Statistic/Statistic";
 
 
 
@@ -43,6 +44,7 @@ class App extends Component {
                 <Services/>
                 <Motivation/>
                 <Portfolio/>
+                <Statistic/>
                 <ContactForm/>
                 <CommentForm/>
                 <Switch>
