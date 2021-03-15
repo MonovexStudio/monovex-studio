@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CustomInputField from "../ContactForm/CustomInputField";
+import CustomInputField from "../BriefForm/CustomInputField";
 import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
 import Button from "../Button/Button";
 import './PostCommentForm.css'
