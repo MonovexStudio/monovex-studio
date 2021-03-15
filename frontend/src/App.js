@@ -11,6 +11,7 @@ import {Component} from "react";
 import Motivation from "./components/Motivation/Motivation";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Statistic from "./components/Statistic/Statistic";
+import DevelopmentStages from "./components/DevelopmentStages/DevelopmentStages";
 
 
 
@@ -44,7 +45,9 @@ class App extends Component {
                 <Services/>
                 <Motivation/>
                 <Portfolio/>
+                <DevelopmentStages/>
                 <Statistic/>
+
                 <ContactForm/>
                 <CommentForm/>
                 <Switch>

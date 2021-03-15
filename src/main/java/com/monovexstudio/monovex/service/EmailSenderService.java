@@ -108,11 +108,13 @@ public class EmailSenderService{
 private Mail formatUserMail(CustomerRequest customerRequest){
     Mail mail = new Mail(new Email(monovexEmail), "Заявка прийнята", new Email(customerRequest.getEmail()),
             new Content("text/html", formatClientMessage()));
+    mail.setReplyTo(new Email(monovexEmail));
     return mail;
 }
 private Mail formatAdminMail(CustomerRequest customerRequest){
         Mail mail = new Mail(new Email(monovexEmail), "--MonovexStudio-- Конгратюлейшн уйобкі", new Email(monovexEmail),
                 new Content("text/html", formatAdminMessage(customerRequest)));
+     mail.setReplyTo(new Email(monovexEmail));
         return mail;
     }
     private void setEmail(Mail mail) {

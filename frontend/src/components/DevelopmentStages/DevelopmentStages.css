@@ -1,0 +1,31 @@
+.stages-form__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.stages-form{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("../../assets/stageBg.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height:900px;
+}
+.stages-form-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 3% auto 5% auto;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+
+}

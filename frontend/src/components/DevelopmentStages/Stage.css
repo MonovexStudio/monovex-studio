@@ -1,0 +1,49 @@
+.stage-container{
+    width: 20%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stage-icon{
+    text-decoration: none;
+
+
+
+    color: white;
+    border:2px solid white;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s linear;
+}
+.stage-icon:hover{
+    height: 270px;
+    width: 270px;
+}
+.stage-title{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 3% auto 5% auto;
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid white;
+
+}
+.stage-content{
+    font-family: Montserrat, sans-serif;
+    padding: 10px;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+.stage-content p{
+    font-size: 15px;
+    font-weight: 300;
+
+}
