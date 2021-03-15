@@ -4,7 +4,7 @@ import VideoBackground from "./components/Main/Main";
 import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import Services from "./components/Services/Services";
 import SideDrawer from "./components/SideDraw/SideDrawer";
-import ContactForm from "./components/ContactForm/ContactForm";
+import ContactForm from "./components/BriefForm/ContactForm";
 import CommentForm from "./components/CommentForm/CommentForm";
 import Backdrop from "./components/Backdrop/Backdrop";
 import {Component} from "react";
