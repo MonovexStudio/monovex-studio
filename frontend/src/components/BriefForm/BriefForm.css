@@ -1,9 +1,9 @@
-.contact-section{
+.brief-section{
     position: relative;
     background-image: url("../../assets/contactFormBg.jpg");
   
 }
-.contact-form{
+.brief-form{
    
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     
     
 }
-.contact-section-block{
+.brief-section-block{
     display:flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -66,7 +66,7 @@ animation: first_stroke 4s ease-in forwards;
     flex-direction: column;
     
 }
-.contact-section-subtitle{
+.brief-section-subtitle{
     width: 60%;
     display: flex;
 }
@@ -92,7 +92,7 @@ animation: first_stroke 4s ease-in forwards;
 }
 @media only screen and (max-width: 768px){
     
-    .contact-section-block{
+    .brief-section-block{
        flex-direction: column;
        justify-content: center;
        align-items: center;
@@ -100,7 +100,7 @@ animation: first_stroke 4s ease-in forwards;
        
        margin-top:3%;
     }
-    .contact-section-subtitle{
+    .brief-section-subtitle{
         width: 80%;
         justify-content: center;
         text-align: center;

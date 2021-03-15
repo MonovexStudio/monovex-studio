@@ -4,7 +4,7 @@ import VideoBackground from "./components/Main/Main";
 import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import Services from "./components/Services/Services";
 import SideDrawer from "./components/SideDraw/SideDrawer";
-import ContactForm from "./components/BriefForm/ContactForm";
+import BriefForm from "./components/BriefForm/BriefForm";
 import CommentForm from "./components/CommentForm/CommentForm";
 import Backdrop from "./components/Backdrop/Backdrop";
 import {Component} from "react";
@@ -12,6 +12,7 @@ import Motivation from "./components/Motivation/Motivation";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Statistic from "./components/Statistic/Statistic";
 import DevelopmentStages from "./components/DevelopmentStages/DevelopmentStages";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 
 
@@ -47,8 +48,8 @@ class App extends Component {
                 <Portfolio/>
                 <DevelopmentStages/>
                 <Statistic/>
+<ContactForm/>
 
-                <ContactForm/>
                 <CommentForm/>
                 <Switch>
                 </Switch>

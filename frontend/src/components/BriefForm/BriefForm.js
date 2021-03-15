@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./ContactForm.css";
+import "./BriefForm.css";
 import CheckBox from './CheckBox';
 import SectionTitle from '../SectionTitle/SectionTitle'
 import SectionSubtitle from '../SectionSubtitle/SectionSubtitle'
@@ -11,7 +11,7 @@ import axios from 'axios'
 
 
 
-export default class ContactForm extends Component {
+export default class BriefForm extends Component {
     
       constructor(props) {
         super(props);
@@ -179,12 +179,12 @@ export default class ContactForm extends Component {
        
           
         return (
-           <section id="order" className="contact-section">
+           <section id="order" className="brief-section">
                <div className="container">
                    <SectionTitle title="Бриф"/>
-                <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <form className="brief-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Яка послуга вас цікавить?"/>
                 </div>
                 
@@ -200,8 +200,8 @@ export default class ContactForm extends Component {
                 </div>
                 </div>
                 {/* ----------------------------------------------- */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Який вид сайту вас цікавить?"/>
                 </div>
                 
@@ -220,8 +220,8 @@ export default class ContactForm extends Component {
                 </div>
                 </div>
                 {/* ----------------------------------------------- */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Яку суму ви маєте на розробку сайту?"/>
                 </div>
                 <div className="box-section">
@@ -242,8 +242,8 @@ export default class ContactForm extends Component {
                 </div>
                 
                 {/* ----------------------------------------------- */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Який бажаний термін запуску проекту?"/>
                 </div>
                 
@@ -261,8 +261,8 @@ export default class ContactForm extends Component {
                 </div>
                 </div>
                 {/* ------------------------------------------------------ */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Контактна особа (П.І.Б.)"/>
                 </div>
                 
@@ -274,8 +274,8 @@ export default class ContactForm extends Component {
                 </div>
                 </div>
                 {/* ------------------------------------------------------ */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Приклад роботи який вам подобається"/>
                 </div>
                 
@@ -288,8 +288,8 @@ export default class ContactForm extends Component {
                 </div>
                 
                 {/* ------------------------------------------------------ */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Тематика майбутнього сайту"/>
                 </div>
                 
@@ -302,8 +302,8 @@ export default class ContactForm extends Component {
                 </div>
                 {/* ------------------------------------------------------ */}
 
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Місто"/>
                 </div>
                 
@@ -315,8 +315,8 @@ export default class ContactForm extends Component {
                 </div>
                 </div>
                  {/* ------------------------------------------------------ */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Номер телефону"/>
                 </div>
                 
@@ -328,8 +328,8 @@ export default class ContactForm extends Component {
                 </div>
                 </div>
                  {/* ------------------------------------------------------ */}
-                <div className="contact-section-block">
-                <div className="contact-section-subtitle">
+                <div className="brief-section-block">
+                <div className="brief-section-subtitle">
                     <SectionSubtitle title = "Ваш e-mail"/>
                 </div>
                 

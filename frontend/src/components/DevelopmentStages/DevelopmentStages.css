@@ -21,7 +21,7 @@
     height:900px;
 }
 .stages-form-title {
-    font-size: 40px;
+    font-size: calc(20px + 1.2vw);
     font-weight: 500;
     margin: 3% auto 5% auto;
     color: #fff;
