@@ -1,76 +1,74 @@
-.checkbox-container{
-	padding: 5% 0;
-}
-.svg-checkbox li{
-	display: list-item;
-	position: relative;
-	list-style: none;
-	padding: 0 0;
-	
+.checkbox-container {
+    margin-bottom: 12px;
 }
 
-.svg-checkbox input[type="checkbox"]
-{
-	display: inline-block;
-	vertical-align: middle;
-	opacity: 0;
+.svg-checkbox li {
+    display: list-item;
+    position: relative;
+    list-style: none;
+    padding: 0;
+
+}
+
+.svg-checkbox input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
 }
 
 .svg-checkbox input[type="checkbox"],
 .svg-checkbox label::before {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	left: 0;
-	top: 35%;
-  transform: translateY(-50%);
-  background-color: white;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: white;
 }
 
 
-
-.svg-checkbox label{
-	display: inline-block;
-	position: relative;
-	font-size: calc(15px + 1.2vw);
-	padding: 0 0 0 80px;
-
+.svg-checkbox label {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 30px;
+    color: #000;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
 }
 
-.svg-checkbox label::before{
-	content: '';
-	border: 3px solid #005cbf;
-  
-	transition: opacity 0.3s;
+.svg-checkbox label::before {
+    content: '';
+    border: 3px solid #005cbf;
+    transition: opacity 0.3s;
 }
 
-.svg-checkbox input[type="checkbox"]:checked + label::before
-{
-	opacity: 1;
+.svg-checkbox input[type="checkbox"]:checked + label::before {
+    opacity: 1;
 }
 
-.svg-checkbox svg
-{
-	position: absolute;
-	top: 35%;
-	left: 4px;
-	width: 32px;
-	height: 32px;
-	margin-top: -16px;
-	pointer-events: none;
+.svg-checkbox svg {
+    position: absolute;
+    top: 55%;
+    left: 3px;
+    width: 12px;
+    height: 13px;
+    margin-top: -7px;
+    pointer-events: none;
 }
 
-.svg-checkbox svg path{
-	stroke-width: 15px;
-	fill: none;
-	transition: stroke-dashoffset 0.3s ease-in 0s;
+.svg-checkbox svg path {
+    stroke-width: 18px;
+    fill: none;
+    transition: stroke-dashoffset 0.3s ease-in 0s;
 }
 
 .svg-checkbox svg path + path {
-	transition: stroke-dashoffset 0.3s ease-out 0.2s;
+    transition: stroke-dashoffset 0.3s ease-out 0.2s;
 }
 
-.svg-checkbox input[type="checkbox"]:checked ~ svg path{
-	stroke-dashoffset: 0;
+.svg-checkbox input[type="checkbox"]:checked ~ svg path {
+    stroke-dashoffset: 0;
 }
 

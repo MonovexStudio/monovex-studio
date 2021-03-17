@@ -1,7 +1,7 @@
 .subtitle-in-section{
-    font-size: calc(17px + 1.2vw);
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 500;
     text-transform: uppercase;
-    
+    font-family: Montserrat, sans-serif;
     word-wrap: break-word;
 }

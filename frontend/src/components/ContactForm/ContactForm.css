@@ -4,12 +4,12 @@
     align-items: flex-start;
     justify-content: center;
     background: white;
-    height:900px;
     background-image: url("../../assets/contactFormBg1 (1).jpg");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 100px;
 }
 .contact-form-title {
     font-size: 40px;
@@ -54,8 +54,12 @@
     color: #fff !important;
     box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
     transition: .5s;
+    outline: none;
+    cursor: pointer;
 }
 
+.go-to-brief-button {
+}
 .go-to-brief-button:hover{
     box-shadow: 0 0 0 0 rgba(236, 143, 3, 0);
     background-position: 0 0;
@@ -74,7 +78,6 @@
 }
 .send-contact-form {
     width: 50%;
-    height: 800px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -88,7 +91,36 @@
 .input-container{
     width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    height: 500px;
+    background: rgba(0,0,0,0.7);
+}
+
+.contactus-form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+@media all and (max-width: 849px){
+    .contact-form__inner{
+        flex-direction: column;
+    }
+    .send-contact-form{
+        width: 100%;
+    }
+
+    .input-container{
+        width: 90%;
+        margin-bottom: 80px;
+    }
+
+    .go-to-brief{
+        width: 100%;
+    }
 }

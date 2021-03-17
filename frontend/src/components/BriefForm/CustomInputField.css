@@ -1,29 +1,55 @@
 .custom-input-field {
-    width: 100%;
-    padding: 18px 20px;
-    margin: 8px 0 5%;
-    border: 2px solid #005cbf;
-    border-radius: 5px;
-  }
-  .custom-input-field:focus {
-    
-    border: 2px solid #005cbf;
+    width: 280px;
+    padding: 5px;
+    margin: 4px 0 10px 0;
+    border: none;
+    border-bottom: 2px solid #8b8b8b;
+    background-color: transparent;
     outline: none;
-    -webkit-box-shadow: 0 0 0 2px  #1b262c21 !important;
-    box-shadow: 0 0 0 2px  #1b262c21 !important;
-  }
-  .custom-input-field:hover{
-    border-color: #005cbf !important;
-    -webkit-transition: 0.5s;
-  transition: 0.5s;
-  }
-  .custom-input-field::-webkit-outer-spin-button,
-  .custom-input-field::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    color: #000;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: 0.5s;
 }
+
+.custom-input-field:focus {
+    border: none;
+    border-bottom: 2px solid #005cbf;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none;
+    transition: 0.5s;
+
+}
+
+.custom-input-field:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
 
 /* Firefox */
 .custom-input-field[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.white-style{
+    width: 80%;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.white-style:focus{
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.white-style::placeholder{
+    color: #a2a2a2;
 }

@@ -15,10 +15,9 @@ import DevelopmentStages from "./components/DevelopmentStages/DevelopmentStages"
 import ContactForm from "./components/ContactForm/ContactForm";
 
 
-
 class App extends Component {
     state = {
-        sideDrawerOpen : false
+        sideDrawerOpen: false
     };
 
     drawerToggleClickHandler = () => {
@@ -34,22 +33,22 @@ class App extends Component {
     render() {
         let backdrop;
 
-        if(this.state.sideDrawerOpen){
+        if (this.state.sideDrawerOpen) {
             backdrop = <Backdrop click={this.backdropClickHandler}/>
         }
         return (
             <Router>
-                    <Header drawerClickHandler={this.drawerToggleClickHandler} toggle={this.state.sideDrawerOpen}/>
-                    <SideDrawer show={this.state.sideDrawerOpen}/>
-                    {backdrop}
+                <Header drawerClickHandler={this.drawerToggleClickHandler} toggle={this.state.sideDrawerOpen}/>
+                <SideDrawer show={this.state.sideDrawerOpen}/>
+                {backdrop}
                 <VideoBackground/>
                 <Services/>
                 <Motivation/>
                 <Portfolio/>
                 <DevelopmentStages/>
                 <Statistic/>
-<ContactForm/>
-
+                <ContactForm/>
+                {/*<BriefForm/>*/}
                 <CommentForm/>
                 <Switch>
                 </Switch>
