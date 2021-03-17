@@ -23,7 +23,7 @@ const Header = props => {
         <header className="header">
             <div className="container">
                 <div className="header__inner">
-                    <NavLink to="/">
+                    <NavLink className="brand-image" to="/">
                     <img
                         src={logo}
                         className="header__inner-logo"
