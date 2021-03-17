@@ -21,6 +21,14 @@
     height: 100%;
 }
 
+.header__inner img{
+    margin: 0 auto;
+}
+
+.brand-image{
+    height:100%;
+}
+
 .header-navigation{
     display: flex;
     justify-content: space-between;
