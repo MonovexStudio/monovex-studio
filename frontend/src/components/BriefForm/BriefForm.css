@@ -1,8 +1,9 @@
 .brief-section {
     width: 100%;
     position: relative;
-    background-color: #aeaeae;
-
+    background-image: url("../../assets/brief-image.png");
+    background-size: cover;
+    padding-bottom: 100px;
 }
 
 .brief-form {
@@ -12,13 +13,19 @@
 
 .brief-row{
     display: flex;
+    margin-bottom: 100px;
 }
 
-.brief-col {
+.brief-col{
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-right: 15px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+}
+
+.brief-col:nth-child(2){
+    margin: 0 20px;
 }
 
 .svg-icon path {
@@ -139,6 +146,19 @@ select{
 
         width: 60%;
 
+    }
+
+    .brief-row{
+        flex-direction: column;
+    }
+
+    .brief-col{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .brief-col:nth-child(2){
+        margin: 20px auto;
     }
 }
 

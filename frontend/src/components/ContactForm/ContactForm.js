@@ -5,6 +5,7 @@ import Button from "../Button/Button";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import BriefForm from "../BriefForm/BriefForm"
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 class ContactForm extends Component {
     constructor(props) {
@@ -86,7 +87,7 @@ class ContactForm extends Component {
                         </div>
                         <div className="go-to-brief">
                             <p>Вже знаєте чого бажаєте?<br/>Заповніть повну форму і ми вам зателефонуємо</p>
-                            <button className="go-to-brief-button">Заповнити</button>
+                            <Link to="brief" className="go-to-brief-button">Заповнити</Link>
                         </div>
                     </div>
                 </div>

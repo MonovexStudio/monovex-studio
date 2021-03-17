@@ -221,7 +221,6 @@ export default class BriefForm extends Component {
                                                   text="Розробка мобільного додатку"/>
                                     </ul>
                                 </div>
-
                                 <SectionSubtitle title="Який вид сайту вас цікавить?"/>
                                 <div onChange={event => this.setRadioButton(event, "siteType")}
                                      className="box-block radiobox">
@@ -245,8 +244,9 @@ export default class BriefForm extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div>
-                                <SectionSubtitle title="Яку суму ви маєте на розробку сайту?"/>
+
+                            <div className="brief-col">
+                            <SectionSubtitle title="Яку суму ви маєте на розробку сайту?"/>
                                 <div onChange={event => this.setTypeOfAmount(event)} className="price-slider-block">
                                     <ul className="svg-radio">
                                         <RadioBox checked={true} value="approximate" id="6" radioGroup="price"

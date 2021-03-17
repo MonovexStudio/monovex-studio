@@ -1,7 +1,7 @@
 import './App.css'
 import Header from "./components/Header/Header";
-import VideoBackground from "./components/Main/Main";
-import {BrowserRouter as Router, Switch} from 'react-router-dom';
+import Main from "./components/Main/Main";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Services from "./components/Services/Services";
 import SideDrawer from "./components/SideDraw/SideDrawer";
 import BriefForm from "./components/BriefForm/BriefForm";
@@ -13,6 +13,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Statistic from "./components/Statistic/Statistic";
 import DevelopmentStages from "./components/DevelopmentStages/DevelopmentStages";
 import ContactForm from "./components/ContactForm/ContactForm";
+import MainPage from "./components/MainPage/MainPage";
 
 
 class App extends Component {
@@ -41,16 +42,9 @@ class App extends Component {
                 <Header drawerClickHandler={this.drawerToggleClickHandler} toggle={this.state.sideDrawerOpen}/>
                 <SideDrawer show={this.state.sideDrawerOpen}/>
                 {backdrop}
-                <VideoBackground/>
-                <Services/>
-                <Motivation/>
-                <Portfolio/>
-                <DevelopmentStages/>
-                <Statistic/>
-                <ContactForm/>
-                {/*<BriefForm/>*/}
-                <CommentForm/>
                 <Switch>
+                    <Route exact path="/" component={MainPage}/>
+                    <Route exact path="/brief" component={BriefForm}/>
                 </Switch>
             </Router>
         );

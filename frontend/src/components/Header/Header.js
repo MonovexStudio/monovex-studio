@@ -5,6 +5,7 @@ import ToggleButton from '../ToggleButton/ToggleButton'
 import {Link} from "react-scroll";
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import CircleIcon from "../CircleIcon/CircleIcon";
+import {NavLink} from "react-router-dom";
 
 
 const Header = props => {
@@ -22,11 +23,13 @@ const Header = props => {
         <header className="header">
             <div className="container">
                 <div className="header__inner">
+                    <NavLink to="/">
                     <img
                         src={logo}
                         className="header__inner-logo"
                         alt="Logo"
                     />
+                    </NavLink>
                     <nav className="header-navigation">
                         <Link to="services" smooth={true} className="header__navigation-link">Послуги</Link>
                         <Link to="motivation" smooth={true} className="header__navigation-link">Переваги</Link>
