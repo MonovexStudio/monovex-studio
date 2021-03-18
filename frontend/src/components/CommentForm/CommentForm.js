@@ -12,7 +12,7 @@ class CommentForm extends Component {
         super(props);
         this.state = {
             comment: [],
-            visible: 4,
+            visible: 2,
             showModal: false
         };
         this.loadMore = this.loadMore.bind(this);
