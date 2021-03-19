@@ -92,6 +92,7 @@ class ContactForm extends Component {
                     </div>
                 </div>
             </section>
+
         );
     }
 }

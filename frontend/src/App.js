@@ -14,6 +14,7 @@ import Statistic from "./components/Statistic/Statistic";
 import DevelopmentStages from "./components/DevelopmentStages/DevelopmentStages";
 import ContactForm from "./components/ContactForm/ContactForm";
 import MainPage from "./components/MainPage/MainPage";
+import Preference from "./components/Preference/Preference";
 
 
 class App extends Component {
@@ -46,7 +47,9 @@ class App extends Component {
                     <Route exact path="/" component={MainPage}/>
                     <Route exact path="/brief" component={BriefForm}/>
                 </Switch>
+
             </Router>
+
         );
     }
 }

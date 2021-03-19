@@ -7,6 +7,7 @@ import DevelopmentStages from "../DevelopmentStages/DevelopmentStages";
 import Statistic from "../Statistic/Statistic";
 import ContactForm from "../ContactForm/ContactForm";
 import CommentForm from "../CommentForm/CommentForm";
+import Preference from "../Preference/Preference";
 
 class MainPage extends Component {
     render() {
@@ -19,6 +20,7 @@ class MainPage extends Component {
                 <DevelopmentStages/>
                 <Statistic/>
                 <ContactForm/>
+                <Preference/>
                 <CommentForm/>
             </div>
         );
