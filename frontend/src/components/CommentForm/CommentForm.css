@@ -1,13 +1,36 @@
 .comment-form{
     position: relative;
-    background: white;
+    background-image: url("../../assets/commentBg.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+
 }
 .comment-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 95%;
+
+    width: 90%;
+}
+.slick-prev,
+.slick-next{
+    top: 40% !important;
+}
+.slick-prev:before {
+    color: #3282b8 !important;
+    font-size: 100px !important;
+    margin-left: 0 !important;
+}
+.slick-prev {
+   left: -120px !important;
+}
+.slick-next {
+    right: -40px !important;
+}
+.slick-next:before {
+    color: #3282b8 !important;
+    font-size: 100px !important;
+    margin-left: 0 !important;
 }
 
 .comment-form__inner{
@@ -15,6 +38,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .load-more-section{
     display: flex;

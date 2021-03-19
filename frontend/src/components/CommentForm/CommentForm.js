@@ -5,6 +5,7 @@ import './CommentForm.css'
 import axios from 'axios'
 import SectionTitle from "../SectionTitle/SectionTitle";
 import PostCommentForm from "./PostCommentForm";
+import Slider from "react-slick";
 
 class CommentForm extends Component {
     constructor(props) {
@@ -13,8 +14,18 @@ class CommentForm extends Component {
         this.state = {
             comment: [],
             visible: 2,
-            showModal: false
+            showModal: false,
+            settings:{
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows:true,
+
+            }
         };
+
         this.loadMore = this.loadMore.bind(this);
         this.renderPostForm = this.renderPostForm.bind(this);
     }
@@ -53,16 +64,16 @@ class CommentForm extends Component {
         return (
 
             <div className="comment-container">
-
+                <Slider {...this.state.settings}>
                 {
-                    this.state.comment && this.state.comment.slice(0, this.state.visible).map((comment, index) => (
+                    this.state.comment && this.state.comment.map((comment, index) => (
 
                         <Comment text={comment.text} credentials={comment.firstName + " " + comment.secondName}
                                  date={comment.date}
                                  avatar={comment.firstName.charAt(0) + comment.secondName.charAt(0)}/>
 
                     ))}
-
+                </Slider>
             </div>
 
 
@@ -77,9 +88,7 @@ class CommentForm extends Component {
                     <div className="comment-form__inner">
                         {this.renderComment()}
                         <div className="comment-buttons">
-                            {this.state.visible < this.state.comment.length &&
-                            <Button text="Читати більше" onClick={this.loadMore}/>
-                            }
+
                             <Button text="Написати відгук" onClick={this.renderPostForm}/>
                         </div>
                         <PostCommentForm show={this.state.showModal}/>
