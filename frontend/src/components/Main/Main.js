@@ -4,8 +4,9 @@ import titleVideo from "../../assets/video.mp4"
 import Fade from 'react-reveal/Fade';
 import {Link} from "react-scroll";
 import background from '../../assets/pexels6.jpg'
+import { withTranslation } from 'react-i18next';
 
-export default class Home extends Component {
+class Home extends Component {
 
     render() {
 
@@ -18,10 +19,10 @@ export default class Home extends Component {
                 <Fade left big cascade>
                     <div className="text-section">
                         <h1 className="main-title">
-                            <nobr>ПРОФЕСІЙНЕ</nobr> СТВОРЕННЯ <br/>САЙТІВ
+                            <nobr>{this.props.t('main-section.1')}</nobr> {this.props.t('main-section.2')} <br/>{this.props.t('main-section.3')}
                         </h1>
-                        <div className="main-phrase">Якісний товар - найкращий спосіб реклами.</div>
-                        <Link to="" smooth={true} className="btn-link">Замовити</Link>
+                        <div className="main-phrase">{this.props.t('main-section.4')}</div>
+                        <Link to="" smooth={true} className="btn-link">{this.props.t('main-section.5')}</Link>
                     </div>
                 </Fade>
             </main>
@@ -30,3 +31,4 @@ export default class Home extends Component {
         )
     }
 }
+export default withTranslation()(Home);

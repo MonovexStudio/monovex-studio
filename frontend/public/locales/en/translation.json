@@ -6,7 +6,24 @@
     "4": "Projects",
     "5": "Order"
   },
+  "main-section": {
+    "1": "Professional",
+    "2": "create",
+    "3": "sites",
+    "4": "Quality product is the best way to advertise.",
+    "5": "Order"
+  },
+  "section-titles": {
+    "1": "Our services",
+    "2": "Our works",
+    "3": "The main thing about us in numbers",
+    "4": "Development stages",
+    "5": "Reviews"
+  },
   "preference-title": {
-    "1": "Discussion with the client"
+    "1": "Discussion with the client",
+    "2": "Planning and design",
+    "3": "Development and testing",
+    "4": "Support"
   }
 }

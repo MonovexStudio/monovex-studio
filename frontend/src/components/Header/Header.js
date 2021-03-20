@@ -43,6 +43,7 @@ const Header = props => {
                         <Link to="portfolio" smooth={true} className="header__navigation-link">{t('header-item.4')}</Link>
                         <Link to="order" smooth={true} className="header__navigation-link">{t('header-item.5')}</Link>
                     </nav>
+                    <div>
                     <button onClick={()=>handleClick('uk')}>
                         uk
                     </button>
@@ -52,6 +53,7 @@ const Header = props => {
                     <button onClick={()=>handleClick('en')}>
                         en
                     </button>
+                    </div>
                     <div className="header__inner-contact">
                         <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>
                         <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>
