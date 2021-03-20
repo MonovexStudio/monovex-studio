@@ -6,9 +6,11 @@ import {Link} from "react-scroll";
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import CircleIcon from "../CircleIcon/CircleIcon";
 import {NavLink} from "react-router-dom";
-
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 const Header = props => {
+    const { t } = useTranslation();
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         let currentScrollPos = window.pageYOffset;
@@ -18,6 +20,9 @@ const Header = props => {
             document.querySelector("header").style.top = "-72px";
         }
         prevScrollpos = currentScrollPos;
+    }
+    function handleClick(lang) {
+        i18next.changeLanguage(lang);
     }
     return(
         <header className="header">
@@ -30,13 +35,23 @@ const Header = props => {
                         alt="Logo"
                     />
                     </NavLink>
+
                     <nav className="header-navigation">
-                        <Link to="services" smooth={true} className="header__navigation-link">Послуги</Link>
-                        <Link to="motivation" smooth={true} className="header__navigation-link">Переваги</Link>
-                        <Link to="reviews" smooth={true} className="header__navigation-link">Відгуки</Link>
-                        <Link to="portfolio" smooth={true} className="header__navigation-link">Наші проекти</Link>
-                        <Link to="order" smooth={true} className="header__navigation-link">Замовити</Link>
+                        <Link to="services" smooth={true} className="header__navigation-link">{t('header-item.1')}</Link>
+                        <Link to="motivation" smooth={true} className="header__navigation-link">{t('header-item.2')}</Link>
+                        <Link to="reviews" smooth={true} className="header__navigation-link">{t('header-item.3')}</Link>
+                        <Link to="portfolio" smooth={true} className="header__navigation-link">{t('header-item.4')}</Link>
+                        <Link to="order" smooth={true} className="header__navigation-link">{t('header-item.5')}</Link>
                     </nav>
+                    <button onClick={()=>handleClick('uk')}>
+                        uk
+                    </button>
+                    <button onClick={()=>handleClick('ru')}>
+                        ru
+                    </button>
+                    <button onClick={()=>handleClick('en')}>
+                        en
+                    </button>
                     <div className="header__inner-contact">
                         <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>
                         <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>

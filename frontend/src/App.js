@@ -11,7 +11,7 @@ import {Component} from "react";
 import Motivation from "./components/Motivation/Motivation";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Statistic from "./components/Statistic/Statistic";
-import DevelopmentStages from "./components/DevelopmentStages/DevelopmentStages";
+import DevelopmentStages from "./components/DevelopmentStage/DevelopmentStages";
 import ContactForm from "./components/ContactForm/ContactForm";
 import MainPage from "./components/MainPage/MainPage";
 import Preference from "./components/Preference/Preference";

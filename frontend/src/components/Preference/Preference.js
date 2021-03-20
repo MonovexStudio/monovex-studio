@@ -2,19 +2,21 @@ import React, {Component} from 'react';
 import './Preference.css'
 import SectionTitle from "../SectionTitle/SectionTitle";
 import PreferenceItem from "./PreferenceItem";
+import { withTranslation } from 'react-i18next';
+import Stage from "../DevelopmentStage/Stage";
 class Preference extends Component {
+
     render() {
+
         return (
             <section className="preference-section">
                 <div className="container">
-                    <SectionTitle title={"Наші переваги"}/>
-                    {/*<p>Щодня ми наполегливо працюємо, щоб зробити життя наших клієнтів та їх бізнес кращим</p>*/}
-                    <div className="preference__inner">
-                        <PreferenceItem number="1" title="Lorem Title" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem deleniti excepturi illo quidem ratione. A eum libero numquam. Accusantium eius enim explicabo ipsam laboriosam quas quis recusandae suscipit temporibus!"/>
-                        <PreferenceItem number="2" title="Lorem Title" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem deleniti excepturi illo quidem ratione. A eum libero numquam. Accusantium eius enim explicabo ipsam laboriosam quas quis recusandae suscipit temporibus!"/>
-                        <PreferenceItem number="3" title="Lorem Title" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem deleniti excepturi illo quidem ratione. A eum libero numquam. Accusantium eius enim explicabo ipsam laboriosam quas quis recusandae suscipit temporibus!"/>
-                        <PreferenceItem number="4" title="Lorem Title" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem deleniti excepturi illo quidem ratione. A eum libero numquam. Accusantium eius enim explicabo ipsam laboriosam quas quis recusandae suscipit temporibus!"/>
-
+                    <SectionTitle title={"Етапи розробки"}/>
+                     <div className="preference__inner">
+                        <PreferenceItem number="1" title={this.props.t('preference-title.1')} text="На цьому етапі ми обговорюємо з вами бажання що до розробки сайту, обираємо тип сайту який підійде для реклами вашого продукту, аналізуємо ринок на наявність схожого продукту та пропонуємо варіанти унікального дизайну."/>
+                        <PreferenceItem number="2" title="Планування та дизайн" text="Красивий веб-сайт може говорити про ваш бренд миттєво, але привабливість може бути втрачена, якщо веб-сайт просто не працює належним чином. Ми ставимо досвід клієнтів в основу вашого дизайну."/>
+                        <PreferenceItem number="3" title="Розробка та тестування" text="Так само, як цегла та розчин, добре написаний код робить різницю у функціональності та зручності користування веб-сайтом. Ми маємо знання та досвід для створення доступного та добре задокументованого коду, навіть якщо це означає створення з нуля."/>
+                        <PreferenceItem number="4" title="Підтримка" text="Комплекс операцій, що включає в себе адміністрування, інформаційний супровід, переробку і вдосконалення модулів, резервне копіювання даних, налаштування шаблонів і розширень, а також при необхідності зміну або оновлення доменного імені – словом, все те, що потрібно для постійної роботи вашого сайту."/>
                     </div>
                 </div>
             </section>
@@ -22,4 +24,4 @@ class Preference extends Component {
     }
 }
 
-export default Preference;
+export default withTranslation()(Preference);
