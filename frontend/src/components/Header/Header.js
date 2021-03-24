@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Header.css";
 import logo from '../../assets/mono-logo.png';
 import ToggleButton from '../ToggleButton/ToggleButton'
@@ -12,6 +12,8 @@ import i18next from 'i18next';
 const Header = props => {
     const { t } = useTranslation();
     let prevScrollpos = window.pageYOffset;
+    const [language, setLanguage] = useState(0);
+
     window.onscroll = function() {
         let currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
@@ -21,8 +23,11 @@ const Header = props => {
         }
         prevScrollpos = currentScrollPos;
     }
-    function handleClick(lang) {
-        i18next.changeLanguage(lang);
+
+
+    function handleChange(e) {
+        setLanguage(e.target.value)
+        i18next.changeLanguage(e.target.value);
     }
     return(
         <header className="header">
@@ -43,16 +48,21 @@ const Header = props => {
                         <Link to="portfolio" smooth={true} className="header__navigation-link">{t('header-item.4')}</Link>
                         <Link to="order" smooth={true} className="header__navigation-link">{t('header-item.5')}</Link>
                     </nav>
-                    <div>
-                    <button onClick={()=>handleClick('uk')}>
-                        uk
-                    </button>
-                    <button onClick={()=>handleClick('ru')}>
-                        ru
-                    </button>
-                    <button onClick={()=>handleClick('en')}>
-                        en
-                    </button>
+                    <div className="language">
+                        <select value={language} onChange={handleChange}>
+                            <option value={'uk'}>Українська</option>
+                            <option value={'ru'}>Русский</option>
+                            <option value={'en'}>English</option>
+                        </select>
+                    {/*<button onClick={()=>handleClick('uk')}>*/}
+                    {/*    uk*/}
+                    {/*</button>*/}
+                    {/*<button onClick={()=>handleClick('ru')}>*/}
+                    {/*    ru*/}
+                    {/*</button>*/}
+                    {/*<button onClick={()=>handleClick('en')}>*/}
+                    {/*    en*/}
+                    {/*</button>*/}
                     </div>
                     <div className="header__inner-contact">
                         <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098 411 8945</a>

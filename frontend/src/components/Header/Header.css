@@ -77,6 +77,19 @@
 .header__inner-toggle{
     display: none;
 }
+
+.language{
+    margin: auto 0;
+}
+
+.language select{
+    color: #fff;
+}
+
+.language option{
+    color: #000;
+}
+
 @media all and (max-width: 1320px) {
     .header-navigation{
         width: 60%;
