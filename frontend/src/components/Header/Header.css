@@ -9,6 +9,10 @@
     transition: top 0.3s;
 }
 
+.hide {
+    top: -72px;
+}
+
 .header__inner{
     display: flex;
     flex-direction: row;
