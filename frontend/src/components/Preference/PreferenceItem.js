@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import "./PreferenceItem.css"
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
+import './PreferenceItem.css'
 class PreferenceItem extends Component {
     render() {
         return (
-            <div className="preference-item">
-                <div className="preference-number">{this.props.number}</div>
+            <div className="preference-container">
+                <img className="preference-icon" src={this.props.icon}/>
                 <div className="preference-content">
-                <SectionSubtitle title={this.props.title}/>
+                <h3 className="preference-title">{this.props.title}</h3>
                 <p>{this.props.text}</p>
                 </div>
             </div>

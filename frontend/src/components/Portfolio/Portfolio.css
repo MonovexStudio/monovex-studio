@@ -1,6 +1,6 @@
 .portfolio{
     position: relative;
-    background-color: rgba(255,255,255, 1);
+    background-image: linear-gradient(to top, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
     width: 100%;
     padding-bottom: 100px;
 }

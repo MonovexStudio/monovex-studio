@@ -1,0 +1,87 @@
+.stage-section{
+    position: relative;
+    background-image: linear-gradient(to bottom, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
+}
+.stage__inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.stages{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.stage-decoration{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stage-line{
+    width: 10%;
+    height: 5px;
+    background-color: #3282b8;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    justify-content: end;
+    transform: translateY(0) translateX(0);
+    transition: 0.5s ease-in-out;
+
+}
+
+.phone-image{
+    width: 350px;
+}
+
+.phone-image:hover{
+    transform: translateX(-5%) translateY(-5%);
+    transition: 0.5s ease-in-out;
+
+}
+
+.m1{
+    position: absolute;
+    z-index: 4;
+    right: 250px;
+    top: 100px;
+}
+
+.m2{
+    position: absolute;
+    z-index: 3;
+    right:20px;
+    top: 50px;
+}
+
+.m3{
+    position: absolute;
+    z-index: 2;
+    right:250px;
+    top: 250px;
+}
+
+.m4{
+    position: absolute;
+    z-index: 1;
+
+    right:20px;
+    top: 200px;
+}
+
+@media all and (max-width: 950px){
+    .stage-line{
+        margin-bottom: 230px;
+        width: 15%;
+    }
+}
