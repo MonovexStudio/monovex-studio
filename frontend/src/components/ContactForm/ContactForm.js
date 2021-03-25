@@ -66,7 +66,7 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <section id="reviews" className="contact-form">
+            <section id="contact" className="contact-form">
                 <div className="container">
                     <h3 className="contact-form-title">Контакти</h3>
                     <div className="contact-form__inner">

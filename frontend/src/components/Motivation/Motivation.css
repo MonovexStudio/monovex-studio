@@ -1,17 +1,25 @@
 .motivation {
     position: relative;
-    background-image: url("../../assets/desktop-mac2.png");
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 800px;
 }
 
+.motivation::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/pexels7.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(40%);
+}
+
 .motivation__inner {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -53,17 +61,13 @@
     position: absolute;
     fill: #fff;
     transform: translateX(-400%);
-    bottom: 250px;
+    bottom: -10px;
     margin: auto;
 }
 
 @media all and (max-width: 800px) {
     .motivation__inner p {
         width: 70%;
-    }
-
-    .motivation-arrow {
-        transform: translateX(-350%);
     }
 }
 
@@ -78,6 +82,5 @@
 
     .motivation-arrow {
         transform: translateX(-300%);
-        bottom: 225px;
     }
 }

@@ -12,10 +12,7 @@ class Home extends Component {
 
         return (
             <main className="main">
-                <img
-                    className="main-image"
-                    src={background}
-                />
+
                 <Fade left big cascade>
                     <div className="text-section">
                         <h1 className="main-title">
