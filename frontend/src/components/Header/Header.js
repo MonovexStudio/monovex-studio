@@ -12,22 +12,26 @@ import i18next from 'i18next';
 const Header = props => {
     const { t } = useTranslation();
     let prevScrollpos = window.pageYOffset;
-    const [language, setLanguage] = useState(0);
+    const [language, setLanguage] = useState('uk');
 
     window.onscroll = function() {
         let currentScrollPos = window.pageYOffset;
+        let header = document.querySelector("header")
         if (prevScrollpos > currentScrollPos) {
-            document.querySelector("header").style.top = "0";
+            header.style.top = "50px";
         } else {
-            document.querySelector("header").style.top = "-72px";
+            header.style.top = "-72px";
+            header.style.position = "fixed"
         }
         prevScrollpos = currentScrollPos;
     }
 
 
     function handleChange(e) {
-        setLanguage(e.target.value)
-        i18next.changeLanguage(e.target.value);
+        let lang = e.target.value
+        setLanguage(lang)
+        console.log(language)
+        i18next.changeLanguage(lang);
     }
     return(
         <header className="header">
@@ -49,7 +53,7 @@ const Header = props => {
                         <Link to="order" smooth={true} className="header__navigation-link">{t('header-item.5')}</Link>
                     </nav>
                     <div className="language">
-                        <select value={language} onChange={handleChange}>
+                        <select value={i18next.ge} onChange={handleChange}>
                             <option value={'uk'}>Українська</option>
                             <option value={'ru'}>Русский</option>
                             <option value={'en'}>English</option>
