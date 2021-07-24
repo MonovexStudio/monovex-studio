@@ -16,8 +16,9 @@
     width: 40%;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -78,6 +79,9 @@
     right:20px;
     top: 200px;
 }
+.load-more{
+ padding: 0 0 60px 0;
+}
 
 @media all and (max-width: 950px){
     .stage-line{
@@ -88,7 +92,11 @@
 }
 @media all and (max-width: 768px){
     .stage-decoration{
-       display: none;
+        display: none;
+    }
+
+    .stages{
+        width: 100%;
     }
 
 }

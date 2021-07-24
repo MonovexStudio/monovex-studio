@@ -63,13 +63,13 @@ const Header = props => {
 
                     </nav>
                     <div className="header-info">
-                        <div className="header__inner-language">
-                            <select value={i18next.ge} onChange={handleChange}>
-                                <option value={'uk'}>UA</option>
-                                <option value={'ru'}>RU</option>
-                                <option value={'en'}>EN</option>
-                            </select>
-                        </div>
+                        {/*<div className="header__inner-language">*/}
+                        {/*    <select value={i18next.ge} onChange={handleChange}>*/}
+                        {/*        <option value={'uk'}>UA</option>*/}
+                        {/*        <option value={'ru'}>RU</option>*/}
+                        {/*        <option value={'en'}>EN</option>*/}
+                        {/*    </select>*/}
+                        {/*</div>*/}
                         <div className="header__inner-contact">
                             <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098
                                 411 8945</a>

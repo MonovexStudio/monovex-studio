@@ -7,7 +7,7 @@ import Preference from "../Preference/Preference";
 import Statistic from "../Statistic/Statistic";
 import ContactForm from "../ContactForm/ContactForm";
 import CommentForm from "../CommentForm/CommentForm";
-import DevelopmentStages from "../DevelopmentStages/DevelopmentStages";
+import DevelopmentStages from "../DevelopmentStages/DevelopmentStagesv2";
 
 class MainPage extends Component {
     render() {
@@ -19,7 +19,7 @@ class MainPage extends Component {
                 <Portfolio/>
                 <Preference/>
                 <DevelopmentStages/>
-                <CommentForm/>
+                {/*<CommentForm/>*/}
                 <Statistic/>
                 <ContactForm/>
             </div>
