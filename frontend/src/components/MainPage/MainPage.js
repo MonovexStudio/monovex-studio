@@ -8,6 +8,7 @@ import Statistic from "../Statistic/Statistic";
 import ContactForm from "../ContactForm/ContactForm";
 import CommentForm from "../CommentForm/CommentForm";
 import DevelopmentStages from "../DevelopmentStages/DevelopmentStagesv2";
+import Footer from "../Footer/Footer";
 
 class MainPage extends Component {
     render() {
@@ -22,6 +23,7 @@ class MainPage extends Component {
                 {/*<CommentForm/>*/}
                 <Statistic/>
                 <ContactForm/>
+                <Footer/>
             </div>
         );
     }
