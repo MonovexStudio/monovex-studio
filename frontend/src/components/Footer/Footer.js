@@ -25,7 +25,7 @@ class Footer extends Component{
         e.preventDefault();
         // this.parseServiceType();
 
-        axios.post('http://monovex-vlad.herokuapp.com/customer/send', this.state.checkedItems,
+        axios.post('https://monovex-vlad.herokuapp.com/customer/send', this.state.checkedItems,
             {
                 headers: {
                     'Content-Type': 'application/json'
