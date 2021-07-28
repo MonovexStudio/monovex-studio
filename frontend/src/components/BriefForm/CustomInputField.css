@@ -57,7 +57,7 @@
     width: 40%;
     border-bottom: 2px solid #fff;
     color: #fff;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     font-size: 20px;
     transition: 0.5s;
 
@@ -67,7 +67,7 @@
     width: 45%;
     border-bottom: 2px solid #fff;
     color: #fff;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
 }
 
 .footer-style::placeholder{

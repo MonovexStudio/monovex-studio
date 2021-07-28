@@ -46,8 +46,10 @@
     "react-scroll": "^1.8.1",
     "react-slick": "^0.28.1",
     "react-slider": "^1.1.4",
+    "react-spring": "^9.2.4",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
+    "use-3d-effect": "^1.1.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

@@ -44,7 +44,7 @@ export default class BriefForm extends Component {
         e.preventDefault();
         // this.parseServiceType();
         console.log(this.state.checkedItems.serviceType);
-        axios.post('https://monovex-shuhai.herokuapp.com/customer/createAndSend', this.state.checkedItems,
+        axios.post('http://monovex-vlad.herokuapp.com/customer/createAndSend', this.state.checkedItems,
             {
                 headers: {
                     'Content-Type': 'application/json'

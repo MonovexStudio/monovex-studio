@@ -19,14 +19,7 @@ class ContactForm extends Component {
             titleMessage: "",
             serviceTypeArray: ["Розробка сайту"],
             checkedItems: {
-                serviceType: "Не вказано",
-                siteType: "Не вказано",
-                price: "Не вказано",
-                deadline: "Не вказаний",
                 credentials: "Не вказано",
-                workExample: "Не вказано",
-                siteTheme: "Не вказано",
-                city: "Не вказано",
                 phoneNumber: "Не вказано",
                 email: "Не вказано"
             }
@@ -36,8 +29,8 @@ class ContactForm extends Component {
     handleSubmit(e){
         e.preventDefault();
         // this.parseServiceType();
-        console.log(this.state.checkedItems.serviceType);
-        axios.post('/customer/createAndSend', this.state.checkedItems,
+
+        axios.post('http://monovex-vlad.herokuapp.com/customer/send', this.state.checkedItems,
             {
                 headers: {
                     'Content-Type': 'application/json'

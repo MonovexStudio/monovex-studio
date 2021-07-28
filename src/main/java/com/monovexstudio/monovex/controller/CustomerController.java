@@ -1,5 +1,6 @@
 package com.monovexstudio.monovex.controller;
 
+import com.monovexstudio.monovex.dto.request.ConsultRequest;
 import com.monovexstudio.monovex.dto.request.CustomerRequest;
 import com.monovexstudio.monovex.service.CustomerService;
 import com.monovexstudio.monovex.service.EmailSenderService;
@@ -18,5 +19,9 @@ public class CustomerController {
     @PostMapping("/createAndSend")
     public final void create(@Valid @RequestBody final CustomerRequest request) {
         customerService.create(request);
+    }
+    @PostMapping("/send")
+    public final void create(@Valid @RequestBody final ConsultRequest request) {
+        customerService.sendConsultInfo(request);
     }
 }

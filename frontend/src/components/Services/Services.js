@@ -4,18 +4,19 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import tablet from '../../assets/tablet3.png'
 import ServiceCard from "../ServiceCard/ServiceCard";
 
-
-class Services extends Component {
-    render() {
+const Services =()=> {
         return (
             <section id="services" className="services">
                 <div className="container">
                     <SectionTitle title={"Наші послуги"}/>
                     <div className="services__inner">
                         <div className="services__inner-left">
+
                             <img
                                 src={tablet}
-                                alt="Man"/>
+                                alt="Man"
+                            />
+
                             {/*<div className="services__inner-info">
                                 <h4>Ми враховуємо всі побажання клієнта та використовуємо гнучкий підхід</h4>
                             </div>*/}
@@ -62,7 +63,6 @@ class Services extends Component {
 
             </section>
         );
-    }
 }
 
 export default Services;

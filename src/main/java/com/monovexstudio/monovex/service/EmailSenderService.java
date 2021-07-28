@@ -1,6 +1,7 @@
 package com.monovexstudio.monovex.service;
 
 import com.monovexstudio.monovex.config.EmailSenderConfig;
+import com.monovexstudio.monovex.dto.request.ConsultRequest;
 import com.monovexstudio.monovex.dto.request.CustomerRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,14 +45,38 @@ public class EmailSenderService {
     }
     private String formatClientMessage(){
         String message = "<html><body>" +
-                "<div style=\"background-color:#0f4c75; width:100vw; border-radius:10%; height:60vh; " +
-                "display: table-cell; vertical-align:center; text-align:center; \">" +
+                "<div style=\"width:100vw; height:60vh; display: table-cell; vertical-align:center; text-align:center; \">" +
+                "<div style=\"width:100%; background-color:rgba(0,0,0,.93);\">" +
                 "<img src=\"https://s8.hostingkartinok.com/uploads/images/2021/03/958699a8cc8f5c89dc37f3b6d61e6678.png\"" +
                 "width:50%;height:50%; margin:0;/>" +
+                "</div>" +
                 "<div style=\"text-align:center;font-size:25px; margin-left:auto; margin-right:auto;  width:60%; height:50%; border-radius:50px;  background-color:white \">" +
                 "<h1>Ваша заявка успішно прийнята.</h1>" +
                 "<p>Розгляд заявки може зайняти 1-2 дні</p>"+
                 "<p>Очікуйте дзвінка для детального обговорення замовлення<p>" +
+                "</div></div></body></html>";
+        return message;
+    }
+    private String formatConsultAdminMessage(ConsultRequest request){
+        String message = "<html><body ><div><h1 >Консультація!</h1>" +
+                "<h1>ПІБ: "+request.getCredentials()+"</h1> " +
+                "<p>Номер телефону: "+request.getPhoneNumber()+"</p> "+
+                "<p>e-mail: "+request.getEmail()+"</p> " +
+                "</div></body>" +
+                "<style>.title{color:red;}</style></html>";
+        return message;
+    }
+    private String formatConsultClientMessage(){
+        String message = "<html><body>" +
+                "<div style=\"width:100vw; height:60vh; display: table-cell; vertical-align:center; text-align:center; \">" +
+                "<div style=\"width:100%; background-color:rgba(0,0,0,.93);\">" +
+                "<img src=\"https://s8.hostingkartinok.com/uploads/images/2021/03/958699a8cc8f5c89dc37f3b6d61e6678.png\"" +
+                "width:50%;height:50%; margin:0;/>" +
+                "</div>" +
+                "<div style=\"text-align:center;font-size:25px; margin-left:auto; margin-right:auto;  width:60%; height:50%; border-radius:50px;  background-color:white \">" +
+                "<h1>Ваша заявка успішно прийнята.</h1>" +
+                "<p>Ми зателефонуємо вам найближчим часом</p>"+
+                "<p>Якщо маєте питання можете задати їх у відповіді на це повідомлення</p>"+
                 "</div></div></body></html>";
         return message;
     }
@@ -72,6 +97,21 @@ public class EmailSenderService {
         }
         mailSender.send(mimeMessage);
     }
+    public void sendToClient(ConsultRequest request) throws Exception{
+
+        MimeMessage mimeMessage = mailSender.createMimeMessage();
+        MimeMessageHelper helper;
+        try {
+            helper = new MimeMessageHelper(mimeMessage, true,"UTF-8");
+            helper.setFrom(new InternetAddress(username, "Monovex", "UTF-8"));
+            helper.setTo(request.getEmail());
+            helper.setSubject("Заявка прийнята");
+            helper.setText(formatConsultClientMessage(), true);
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        mailSender.send(mimeMessage);
+    }
     public void sendToMonovex(CustomerRequest request) throws UnsupportedEncodingException {
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper helper;
@@ -82,6 +122,22 @@ public class EmailSenderService {
             helper.setTo(username);
             helper.setSubject("--MonovexStudio--");
             helper.setText(formatAdminMessage(request), true);
+
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        mailSender.send(mimeMessage);
+    }
+    public void sendToMonovex(ConsultRequest request) throws UnsupportedEncodingException {
+        MimeMessage mimeMessage = mailSender.createMimeMessage();
+        MimeMessageHelper helper;
+
+        try {
+            helper = new MimeMessageHelper(mimeMessage, true,"UTF-8");
+            helper.setFrom(new InternetAddress(username, "Monovex", "UTF-8"));
+            helper.setTo(username);
+            helper.setSubject("--MonovexStudio--");
+            helper.setText(formatConsultAdminMessage(request), true);
 
         } catch (MessagingException e) {
             e.printStackTrace();

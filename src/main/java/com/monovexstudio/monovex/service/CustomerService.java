@@ -1,5 +1,6 @@
 package com.monovexstudio.monovex.service;
 
+import com.monovexstudio.monovex.dto.request.ConsultRequest;
 import com.monovexstudio.monovex.dto.request.CustomerRequest;
 import com.monovexstudio.monovex.entity.Customer;
 import com.monovexstudio.monovex.repository.CustomerRepository;
@@ -39,5 +40,14 @@ public class CustomerService {
             e.printStackTrace();
         }
         return customer;
+    }
+    public void sendConsultInfo(ConsultRequest request){
+        try {
+            emailSenderService.sendToMonovex(request);
+            emailSenderService.sendToClient(request);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
