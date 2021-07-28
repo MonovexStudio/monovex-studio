@@ -21,8 +21,9 @@ class MainPage extends Component {
                 <Preference/>
                 <DevelopmentStages/>
                 {/*<CommentForm/>*/}
-                <Statistic/>
                 <ContactForm/>
+                <Statistic/>
+
                 <Footer/>
             </div>
         );

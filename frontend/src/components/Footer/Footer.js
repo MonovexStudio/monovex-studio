@@ -6,7 +6,10 @@ import {faFacebookF, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-
 import FooterMenu from './FooterMenu';
 import './Footer.css'
 import logo from '../../assets/mono-logo.png'
+import lamp from '../../assets/ml.png'
 import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
+import CustomInputField from "../BriefForm/CustomInputField";
+import Button from "../Button/Button";
 function Footer (props) {
     const footerMenuContent = <React.Fragment>
         <Link to="about" smooth={true} className="footer__navigation-link">Головна</Link>
@@ -28,7 +31,29 @@ function Footer (props) {
         return (
             <footer className="footer">
                 <div className="footer-top">
-asddddddddddddddddddd
+
+                    <div className="footer-send-contact-form">
+                        <p>Зв'язатись для консультації</p>
+                        <div className="footer-input-container">
+                            <form className="footer-contactus-form" method="POST">
+                                <div className="footer-input-field-container">
+                                <CustomInputField name="credentials" placeholder="Ім'я" type="text" styles="footer"/>
+                                <CustomInputField name="phoneNumber" placeholder="+380 98 411 89 45" type="text" styles="footer"/>
+                                </div>
+                                <Button text="Відправити"/>
+                            </form>
+                        </div>
+                    </div>
+                    <div className="footer-main-image">
+                    <img
+                        src={lamp}
+                        className="footer__inner-image"
+                        alt="Logo"
+                        width="200px"
+                        height="200px"
+                    />
+                    </div>
+
                 </div>
                 <div className="footer-main">
                     <NavLink className="footer-brand-image" to="/">
