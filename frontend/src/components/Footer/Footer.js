@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {NavLink} from "react-router-dom";
+
 import {Link} from "react-scroll/modules";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebookF, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
@@ -11,16 +12,23 @@ import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
 import CustomInputField from "../BriefForm/CustomInputField";
 import Button from "../Button/Button";
 import axios from "axios";
+import {Notification, NotificationGroup} from "@progress/kendo-react-notification";
+import { Slide } from "@progress/kendo-react-animation";
+
 class Footer extends Component{
     constructor(props) {
         super(props);
         this.state = {
+            success: false,
+            error: false,
             checkedItems: {
                 credentials: "Не вказано",
                 phoneNumber: "Не вказано"
             }
         };
+
     }
+    onToggle = (flag) => this.setState({ [flag]: !this.state[flag] });
     handleSubmit(e){
         e.preventDefault();
         // this.parseServiceType();
@@ -30,15 +38,13 @@ class Footer extends Component{
                 headers: {
                     'Content-Type': 'application/json'
                 }
+            }).then(()=> {
+            this.onToggle("success");
+        })
+            .catch(()=>{
+                    this.onToggle("error");
             })
-            .then((response)=>{
-                if (response.data.status === 'success') {
-                    console.log(response.data);
-                    this.resetForm();
-                } else if (response.data.status === 'fail') {
-                    alert("Message failed to send.");
-                }
-            })
+
     }
 
     setInputValue(event,inputName){
@@ -52,6 +58,7 @@ class Footer extends Component{
         }
     }
 render() {
+    const { success, error} = this.state;
     const footerMenuContent = <React.Fragment>
         <Link to="about" smooth={true} className="footer__navigation-link">Головна</Link>
         <Link to="group" smooth={true} className="footer__navigation-link">Послуги</Link>
@@ -82,7 +89,10 @@ render() {
                                 <CustomInputField onChange={event => this.setInputValue(event, "phoneNumber")} name="phoneNumber" placeholder="+380 98 411 89 45" type="text"
                                                   styles="footer"/>
                             </div>
-                            <button className="btn-send-consult">Відправити</button>
+                            <button className="btn-send-consult">
+                                Відправити
+                            </button>
+
                         </form>
                     </div>
                 </div>
@@ -116,6 +126,37 @@ render() {
                 <FooterMenu className="footer-menu" content={footerMenuContact}/>
                 <FooterMenu className="footer-menu" content={footerMenuSocial} title="Соц. мережі"/>
             </div>
+            <NotificationGroup
+                style={{
+                    right: 20,
+                    bottom: 20,
+                    alignItems: "flex-start",
+                    flexWrap: "wrap-reverse",
+                }}
+            >
+                <Slide direction={success ? "up" : "down"}>
+                    {success && (
+                        <Notification
+                            type={{ style: "success", icon: true }}
+                            closable={true}
+                            onClose={() => this.setState({ success: false })}
+                        >
+                            <span className="success-message">Вашу заявку надіслано</span>
+                        </Notification>
+                    )}
+                </Slide>
+                <Slide direction={error ? "up" : "down"}>
+                    {error && (
+                        <Notification
+                            type={{ style: "error", icon: true }}
+                            closable={true}
+                            onClose={() => this.setState({ error: false })}
+                        >
+                            <span>Помилка! Повторіть спробу через декілька хвилин</span>
+                        </Notification>
+                    )}
+                </Slide>
+            </NotificationGroup>
         </footer>
     );
 }

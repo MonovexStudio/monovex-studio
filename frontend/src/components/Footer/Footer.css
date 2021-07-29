@@ -153,6 +153,28 @@
     box-shadow: 0 0 0 0 rgba(236, 143, 3, 0.67);
     background-color: rgba(255, 255, 255, 0.8);
 }
+.k-notification-group{
+    z-index: 5 !important;
+}
+.k-notification-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+.k-widget{
+    height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.k-icon{
+    font-size: 30px;
+}
+
 @keyframes blink {
     0% {
         filter:brightness(200%);
@@ -184,6 +206,9 @@
     }
     .footer-title{
         display: none;
+    }
+    .footer__inner-logo{
+        animation: blink normal 2s infinite ease-in-out;
     }
 }
 

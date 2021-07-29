@@ -6,11 +6,15 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import BriefForm from "../BriefForm/BriefForm"
 import axios from "axios";
 import {Link} from "react-router-dom";
+import {Notification, NotificationGroup} from "@progress/kendo-react-notification";
+import {Slide} from "@progress/kendo-react-animation";
 
 class ContactForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            success: false,
+            error: false,
             min: 2200,
             max: 6000,
             disabledSpecific: "disabled",
@@ -22,10 +26,11 @@ class ContactForm extends Component {
                 credentials: "Не вказано",
                 phoneNumber: "Не вказано",
                 email: "Не вказано"
-            }
+            },
+
         };
     }
-
+    onToggle = (flag) => this.setState({ [flag]: !this.state[flag] });
     handleSubmit(e){
         e.preventDefault();
         // this.parseServiceType();
@@ -36,14 +41,11 @@ class ContactForm extends Component {
                     'Content-Type': 'application/json'
                 }
             })
-            .then((response)=>{
-                if (response.data.status === 'success') {
-                    console.log(response.data);
-                    this.resetForm();
-                } else if (response.data.status === 'fail') {
-                    alert("Message failed to send.");
-                }
-            })
+            .then(()=> {
+                this.onToggle("success");
+            }).catch(()=>{
+            this.onToggle("error");
+        })
     }
 
     setInputValue(event,inputName){
@@ -58,6 +60,7 @@ class ContactForm extends Component {
     }
 
     render() {
+        const { success, error} = this.state;
         return (
             <section id="contact" className="contact-form">
                 <div className="container">
@@ -84,6 +87,37 @@ class ContactForm extends Component {
                         </div>
                     </div>
                 </div>
+                <NotificationGroup
+                    style={{
+                        right: 20,
+                        bottom: 20,
+                        alignItems: "flex-start",
+                        flexWrap: "wrap-reverse",
+                    }}
+                >
+                    <Slide direction={success ? "up" : "down"}>
+                        {success && (
+                            <Notification
+                                type={{ style: "success", icon: true }}
+                                closable={true}
+                                onClose={() => this.setState({ success: false })}
+                            >
+                                <span className="success-message">Вашу заявку надіслано</span>
+                            </Notification>
+                        )}
+                    </Slide>
+                    <Slide direction={error ? "up" : "down"}>
+                        {error && (
+                            <Notification
+                                type={{ style: "error", icon: true }}
+                                closable={true}
+                                onClose={() => this.setState({ error: false })}
+                            >
+                                <span>Помилка! Повторіть спробу через декілька хвилин</span>
+                            </Notification>
+                        )}
+                    </Slide>
+                </NotificationGroup>
             </section>
 
         );

@@ -24,6 +24,7 @@
     width: 155px;
     height: 100%;
     margin: auto 0;
+    animation: blink normal 2s infinite ease-in-out;
 }
 
 .header__inner img{
@@ -98,7 +99,17 @@
 .header__inner-language option{
     color: #000;
 }
-
+@keyframes blink {
+    0% {
+        filter:brightness(200%);
+    }
+    50% {
+        filter:brightness(100%);
+    }
+    100% {
+        filter:brightness(200%);
+    }
+}
 
 @media all and (max-width: 1320px) {
     .header-navigation{
