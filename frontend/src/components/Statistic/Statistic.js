@@ -18,8 +18,8 @@ const Statistic = props => (
                     </div></div>
                 <div className="statistic-row">
                     <div className="stat stat-some">
-                        <span>37</span>
-                        <h5>Якоїсь статистики</h5>
+                        <span>5000+</span>
+                        <h5>Користувачів в день, на сайті одного з наших клієнтів</h5>
                     </div>
                     <div className="stat stat-clients">
                         <span>100%</span>

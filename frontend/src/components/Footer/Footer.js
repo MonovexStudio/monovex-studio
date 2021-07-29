@@ -118,9 +118,8 @@ render() {
                         height="60px"
                     />
                     <h2 className="footer-title">Професійне створення сайтів</h2>
-                    <p className="footer-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at culpa
-                        cupiditate doloribus eos excepturi facere, ipsum laboriosam laborum maiores nesciunt, placeat,
-                        quaerat repellat rerum sapiente sed vitae? Magni, quae?lorem</p>
+                    <p className="footer-title">Ми пропонуємо ефективні комплексні рішення - від концепції, стратегії та
+                        проектування до розробки, впровадження та підтримки. Допомагаємо компаніям досягнути успіху та поставлених цілей.</p>
                 </NavLink>
                 <FooterMenu className="footer-menu" content={footerMenuContent}/>
                 <FooterMenu className="footer-menu" content={footerMenuContact}/>
