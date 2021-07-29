@@ -32,7 +32,7 @@ class App extends Component {
         return (
             <Router>
                 <Header drawerClickHandler={this.drawerToggleClickHandler} toggle={this.state.sideDrawerOpen}/>
-                <SideDrawer show={this.state.sideDrawerOpen}/>
+                <SideDrawer click={this.backdropClickHandler} show={this.state.sideDrawerOpen}/>
                 {backdrop}
                 <Switch>
                     <Route exact path="/" component={MainPage}/>

@@ -73,8 +73,8 @@ const Header = props => {
                         <div className="header__inner-contact">
                             <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098
                                 411 8945</a>
-                            <a className="contact-phone" href="tel:0999990999"><CircleIcon icon={faPhone}/> &nbsp; 098
-                                411 8945</a>
+                            <a className="contact-phone" href="tel:0665875033"><CircleIcon icon={faPhone}/> &nbsp; 066
+                                587 5033</a>
                             {/*<a className="contact-email" href="#">monovex.studio@gmail.com</a>*/}
                         </div>
                     </div>
