@@ -19,7 +19,7 @@ class Home extends Component {
                             <nobr>{this.props.t('main-section.1')}</nobr> {this.props.t('main-section.2')} <br/>{this.props.t('main-section.3')}
                         </h1>
                         <div className="main-phrase">{this.props.t('main-section.4')}</div>
-                        <Link to="" smooth={true} className="btn-link">{this.props.t('main-section.5')}</Link>
+                        <Link to="contact" smooth={true} className="btn-link">{this.props.t('main-section.5')}</Link>
                     </div>
                 </Fade>
             </main>

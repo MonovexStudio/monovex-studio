@@ -16,7 +16,7 @@ const ServiceCard = props => (
                 <p>{props.description}</p>
             </div>
             <div className="services-card-footer1">
-                <LinkButton text={"Замовити"}/>
+                <LinkButton link="contact" text={"Замовити"}/>
             </div>
         </div>
     </div>

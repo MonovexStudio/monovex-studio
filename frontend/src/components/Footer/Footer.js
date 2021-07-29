@@ -60,12 +60,12 @@ class Footer extends Component{
 render() {
     const { success, error} = this.state;
     const footerMenuContent = <React.Fragment>
-        <Link to="about" smooth={true} className="footer__navigation-link">Головна</Link>
-        <Link to="group" smooth={true} className="footer__navigation-link">Послуги</Link>
-        <Link to="contact" smooth={true} className="footer__navigation-link">Роботи</Link>
+        <NavLink to="/" smooth={true} className="footer__navigation-link">Головна</NavLink>
+        <Link to="services" smooth={true} className="footer__navigation-link">Послуги</Link>
+        <Link to="portfolio" smooth={true} className="footer__navigation-link">Роботи</Link>
     </React.Fragment>;
     const footerMenuContact = <React.Fragment>
-        <Link to="contact" smooth={true} className="footer__navigation-link">Бриф</Link>
+        <NavLink to="/brief" smooth={true} className="footer__navigation-link">Бриф</NavLink>
         <Link to="contact" smooth={true} className="footer__navigation-link">Замовити</Link>
     </React.Fragment>;
     const footerMenuSocial = <React.Fragment>
