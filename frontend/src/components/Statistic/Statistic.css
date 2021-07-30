@@ -78,7 +78,10 @@
     .statistic-row{
         flex-direction: column;
     }
+    .statistic{
 
+        padding-bottom: 0;
+    }
     .stat{
         width: 100%;
         border-bottom: 0;

@@ -191,19 +191,19 @@ export default class BriefForm extends Component {
                             <div className="brief-col">
                                 <SectionSubtitle title="Контактна особа (П.І.Б.)"/>
                                 <CustomInputField onChange={event => this.setInputValue(event, "credentials")}
-                                                  name="credentials" placeholder="Маск Илон Петрович" type="text"/>
+                                                  name="credentials" placeholder="Шевченко Тарас Григорович" type="text"/>
                                 <SectionSubtitle title="Приклад роботи який вам подобається"/>
                                 <CustomInputField onChange={event => this.setInputValue(event, "workExample")}
                                                   name="workExample" placeholder="https://www.google.com/" type="text"/>
                                 <SectionSubtitle title="Тематика майбутнього сайту"/>
                                 <CustomInputField onChange={event => this.setInputValue(event, "siteTheme")}
-                                                  name="siteTheme" placeholder="Доставка смачненького" type="text"/>
+                                                  name="siteTheme" placeholder="Доставка їжі" type="text"/>
                                 <SectionSubtitle title="Місто"/>
                                 <CustomInputField onChange={event => this.setInputValue(event, "city")} name="city"
-                                                  placeholder="Львів" type="text"/>
+                                                  placeholder="Рівне" type="text"/>
                                 <SectionSubtitle title="Номер телефону"/>
                                 <CustomInputField onChange={event => this.setInputValue(event, "phoneNumber")}
-                                                  name="phoneNumber" placeholder="38 (073) 413 12 02" type="text"/>
+                                                  name="phoneNumber" placeholder="+380 хх ххх-хх-хх" type="text"/>
                                 <SectionSubtitle title="Ваш e-mail"/>
                                 <CustomInputField onChange={event => this.setInputValue(event, "email")} name="email"
                                                   placeholder="example@gmail.com" type="email"/>

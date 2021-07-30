@@ -146,6 +146,7 @@
 
     .services__inner {
         flex-direction: column;
+
     }
 
     .services__inner-left {
@@ -170,6 +171,7 @@
 @media only screen and (max-width: 767px) {
     .services {
         border-top-right-radius: 200px;
+
     }
 
     .services__inner-info {

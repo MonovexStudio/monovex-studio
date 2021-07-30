@@ -28,8 +28,8 @@ const SideDrawer = props => {
                 <Link onClick={props.click} to="contact" smooth={true} className="side-drawer__navigation-link">Замовити</Link>
             </nav>
             <div className="side-drawer__contact">
-                <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span>-66-587-50-33</a>
-                <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span>-98-411-89-45</a>
+                <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span> 66 587-50-33</a>
+                <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span> 98 411-89-45</a>
             </div>
         </div>
     )

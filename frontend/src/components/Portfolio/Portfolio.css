@@ -53,7 +53,25 @@
     .portfolio__inner{
         flex-direction: column;
     }
+    .portfolio-left h4{
+        font-family: Montserrat, sans-serif;
+        font-size: 25px;
+        font-weight: 100;
+        color: #000;
+    }
+    .portfolio-left h5{
+        font-family: Montserrat, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: #000;
+    }
 
+    .portfolio-left p{
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: rgba(0,0,0,0.8);
+    }
     .portfolio-left{
         width: 100%;
         margin: 0 auto 50px auto;

@@ -20,9 +20,14 @@
     -webkit-box-shadow: none !important;
     box-shadow: none;
     transition: 0.5s;
+    
 
 }
 
+.custom-input-field::placeholder {
+  color: #343434;
+
+}
 .custom-input-field:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
