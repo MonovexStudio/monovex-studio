@@ -21,6 +21,7 @@ class Footer extends Component{
         this.state = {
             success: false,
             error: false,
+            loading: false,
             checkedItems: {
                 credentials: "Не вказано",
                 phoneNumber: "Не вказано"
@@ -30,6 +31,7 @@ class Footer extends Component{
     }
     onToggle = (flag) => this.setState({ [flag]: !this.state[flag] });
     handleSubmit(e){
+        this.setState({loading:true});
         e.preventDefault();
         // this.parseServiceType();
 
@@ -40,13 +42,17 @@ class Footer extends Component{
                 }
             }).then(()=> {
             this.onToggle("success");
+            this.setState({loading:false});
         })
             .catch(()=>{
                     this.onToggle("error");
+                this.setState({loading:false});
             })
 
     }
+    setLoading(){
 
+    }
     setInputValue(event,inputName){
         if(event.target.name===inputName){
             this.setState(prevState=>({
@@ -58,7 +64,9 @@ class Footer extends Component{
         }
     }
 render() {
-    const { success, error} = this.state;
+    let btnClasses = 'btn-send-consult'
+
+    const { success, error, loading} = this.state;
     const footerMenuContent = <React.Fragment>
         <NavLink to="/" smooth={true} className="footer__navigation-link">Головна</NavLink>
         <Link to="services" smooth={true} className="footer__navigation-link">Послуги</Link>
@@ -89,7 +97,7 @@ render() {
                                 <CustomInputField onChange={event => this.setInputValue(event, "phoneNumber")} name="phoneNumber" placeholder="+380 98 411 89 45" type="text"
                                                   styles="footer"/>
                             </div>
-                            <button className="btn-send-consult">
+                            <button disabled={this.state.loading} className={btnClasses}>
                                 Відправити
                             </button>
 
@@ -152,6 +160,17 @@ render() {
                             onClose={() => this.setState({ error: false })}
                         >
                             <span>Помилка! Повторіть спробу через декілька хвилин</span>
+                        </Notification>
+                    )}
+                </Slide>
+                <Slide direction={loading ? "up" : "down"}>
+                    {loading && (
+                        <Notification
+                            type={{ style: "info", icon: true }}
+                            closable={true}
+                            onClose={() => this.setState({ loading: false })}
+                        >
+                            <span>Надсилання інформації</span>
                         </Notification>
                     )}
                 </Slide>

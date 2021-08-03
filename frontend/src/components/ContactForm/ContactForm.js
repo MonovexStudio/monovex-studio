@@ -15,6 +15,7 @@ class ContactForm extends Component {
         this.state = {
             success: false,
             error: false,
+            loading: false,
             min: 2200,
             max: 6000,
             disabledSpecific: "disabled",
@@ -34,7 +35,7 @@ class ContactForm extends Component {
     handleSubmit(e){
         e.preventDefault();
         // this.parseServiceType();
-
+        this.setState({loading:true});
         axios.post('https://monovex-production.herokuapp.com/customer/send', this.state.checkedItems,
             {
                 headers: {
@@ -43,8 +44,10 @@ class ContactForm extends Component {
             })
             .then(()=> {
                 this.onToggle("success");
+                this.setState({loading:false});
             }).catch(()=>{
             this.onToggle("error");
+            this.setState({loading:false});
         })
     }
 
@@ -60,7 +63,7 @@ class ContactForm extends Component {
     }
 
     render() {
-        const { success, error} = this.state;
+        const { success, error, loading} = this.state;
         return (
             <section id="contact" className="contact-form">
                 <div className="container">
@@ -77,7 +80,7 @@ class ContactForm extends Component {
                                                   name="phoneNumber" placeholder="+380 98 411 89 45" type="text" styles={true}/>
                                 <CustomInputField onChange={event => this.setInputValue(event, "email")} name="email"
                                                   placeholder="example@gmail.com" type="email" styles={true}/>
-                                <Button text="Відправити"/>
+                                <Button disabled={this.state.loading} text="Відправити"/>
                                 </form>
                             </div>
                         </div>
@@ -114,6 +117,17 @@ class ContactForm extends Component {
                                 onClose={() => this.setState({ error: false })}
                             >
                                 <span>Помилка! Повторіть спробу через декілька хвилин</span>
+                            </Notification>
+                        )}
+                    </Slide>
+                    <Slide direction={loading ? "up" : "down"}>
+                        {loading && (
+                            <Notification
+                                type={{ style: "info", icon: true }}
+                                closable={true}
+                                onClose={() => this.setState({ loading: false })}
+                            >
+                                <span>Надсилання інформації</span>
                             </Notification>
                         )}
                     </Slide>

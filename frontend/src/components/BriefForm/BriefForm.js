@@ -20,6 +20,7 @@ export default class BriefForm extends Component {
         this.state = {
             success: false,
             error: false,
+            loading: false,
             min: 2200,
             max: 6000,
             disabledSpecific: "disabled",
@@ -47,6 +48,7 @@ export default class BriefForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
         // this.parseServiceType();
+        this.setState({loading:true});
         console.log(this.state.checkedItems.serviceType);
         axios.post('https://monovex-production.herokuapp.com/customer/createAndSend', this.state.checkedItems,
             {
@@ -56,8 +58,10 @@ export default class BriefForm extends Component {
             })
             .then(()=> {
                 this.onToggle("success");
+                this.setState({loading:false});
             }).catch(()=>{
             this.onToggle("error");
+            this.setState({loading:false});
         })
     }
 
@@ -180,7 +184,7 @@ export default class BriefForm extends Component {
 
 
     render() {
-        const { success, error} = this.state;
+        const { success, error, loading} = this.state;
         const {radioBoxItem} = this.state;
         return (
             <section id="order" className="brief-section">
@@ -283,7 +287,7 @@ export default class BriefForm extends Component {
                             </div>
                         </div>
 
-                        <Button type="submit" text="Відправити"/>
+                        <Button disabled={this.state.loading} type="submit" text="Відправити"/>
                     </form>
                 </div>
                 <NotificationGroup
@@ -313,6 +317,17 @@ export default class BriefForm extends Component {
                                 onClose={() => this.setState({ error: false })}
                             >
                                 <span>Помилка! Повторіть спробу через декілька хвилин</span>
+                            </Notification>
+                        )}
+                    </Slide>
+                    <Slide direction={loading ? "up" : "down"}>
+                        {loading && (
+                            <Notification
+                                type={{ style: "info", icon: true }}
+                                closable={true}
+                                onClose={() => this.setState({ loading: false })}
+                            >
+                                <span>Надсилання інформації</span>
                             </Notification>
                         )}
                     </Slide>
