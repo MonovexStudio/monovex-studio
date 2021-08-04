@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import {Link} from "react-scroll/modules";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFacebookF, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookF, faTelegramPlane, faFoursquare} from "@fortawesome/free-brands-svg-icons";
 import FooterMenu from './FooterMenu';
 import './Footer.css'
 import logo from '../../assets/mono-logo.png'
@@ -79,9 +79,9 @@ render() {
     const footerMenuSocial = <React.Fragment>
         <h3 className="footer-email">monovex.studio@gmail.com</h3>
         <div className="social-menu">
-            <a target="_blank" href="http://instagram.com"> <FontAwesomeIcon size="3x" icon={faInstagram} /></a>
-            <a target="_blank" href="http://facebook.com"> <FontAwesomeIcon size="3x" icon={faFacebookF} /></a>
-            <a target="_blank" href="http://youtube.com"> <FontAwesomeIcon size="3x" icon={faYoutube} /></a>
+            <a target="_blank" href="https://t.me/monovex"> <FontAwesomeIcon size="3x" icon={faTelegramPlane} /></a>
+            <a target="_blank" href="https://www.facebook.com/monovex"> <FontAwesomeIcon size="3x" icon={faFacebookF} /></a>
+            <a target="_blank" href="https://freelance.ua/user/monovexstudio/portfolio/"> <FontAwesomeIcon size="3x" icon={faFoursquare} /></a>
         </div>
     </React.Fragment>;
     return (
