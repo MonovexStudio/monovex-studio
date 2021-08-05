@@ -69,6 +69,10 @@
     .motivation__inner p {
         width: 70%;
     }
+    .motivation {
+        height: 550px;
+    }
+
 }
 
 @media all and (max-width: 600px) {

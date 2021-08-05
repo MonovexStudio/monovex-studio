@@ -32,6 +32,11 @@
     .title{
         font-size: calc(25px + 1.2vw);
 
+        padding: 0px 0 50px 0;
+    }
+    .title{
+        font-size: calc(25px + 1.2vw);
+        padding: 70px 0 0px 0;
         text-align: center;
 
     }
