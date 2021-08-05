@@ -12,7 +12,7 @@ export default class CustomInputField extends Component {
             classes += ' footer-style'
         }
         return (
-            <input className={classes} onChange={this.props.onChange} name={this.props.name} disabled = {this.props.disabled} placeholder={this.props.placeholder} type={this.props.type} />
+            <input className={classes} onChange={this.props.onChange} name={this.props.name} onFocus={this.props.onfocus} disabled = {this.props.disabled} placeholder={this.props.placeholder} type={this.props.type} />
         )
     }
 }
