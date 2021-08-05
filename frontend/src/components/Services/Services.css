@@ -1,0 +1,239 @@
+.services {
+    position: relative;
+    /* background-image: url("../../assets/white-abs1.png");
+     background-size: cover;*/
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    border-top-right-radius: 500px;
+    padding: 0 0 100px 0;
+}
+
+.services__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__inner-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services__inner-left img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services__inner-right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.services__inner-info {
+    background-color: #F5F5F5;
+    width: 80%;
+    height: 130px;
+    display: flex;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.8);
+    box-sizing: content-box !important;
+}
+
+.services__inner-info h4 {
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+}
+
+
+.services-card {
+    width: 100%;
+    border: 2px solid #bbe1fa;
+    border-radius: 10px;
+    margin: 0 !important;
+
+}
+
+.services-card-img {
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    color: white;
+}
+
+.services-card-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
+
+.services-card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.services-card-title h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin: auto 0;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.blob-blue {
+    background-image: linear-gradient(to right, #0f4c75 0%, #3282b8 50%, #0f4c75 100%);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: auto 5px auto 0;
+
+    box-shadow: 0 0 0 3px rgba(50, 130, 184, 0.5);
+    transform: scale(1);
+    animation: pulse-orange 4s infinite;
+}
+
+.services-card-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-card-price b {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.services-card-price span {
+    color: rgba(17, 109, 203, 0.9);
+    font-size: 25px;
+    text-shadow: 0 0 14px rgba(30, 132, 242, 0.9);
+}
+
+@keyframes pulse-orange {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(50, 130, 184, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(255, 140, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 140, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .services {
+        border-top-right-radius: 300px;
+    }
+
+    .services__inner {
+        flex-direction: column;
+
+    }
+
+    .services__inner-left {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .services__inner-left img {
+        width: 45%;
+        min-width: 350px;
+    }
+
+
+    .services__inner-right {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .services {
+        border-top-right-radius: 200px;
+
+    }
+
+    .services__inner-info {
+        margin: 0 auto;
+    }
+    .services__inner-left img {
+
+        min-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .services {
+        border-top-right-radius: 100px;
+    }
+    .services__inner-left img {
+        width: 20%;
+        min-width: 300px;
+    }
+}
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .services__inner-left {
+        display: none;
+    }
+}
+/* Ipad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .services__inner-left {
+        display: none;
+    }
+
+    .services__inner-right {
+       flex-direction: row;
+
+        width: 100%;
+    }
+}
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+    .services__inner-right {
+        flex-direction: row;
+
+        width: 100%;
+    }
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .services__inner-left {
+        display: none;
+    }
+    .services__inner {
+        width: 100%;
+
+    }
+    .services__inner-right {
+        flex-direction: row;
+
+        width: 100%;
+    }
+}

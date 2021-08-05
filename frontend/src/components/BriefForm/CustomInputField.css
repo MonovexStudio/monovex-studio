@@ -1,0 +1,80 @@
+.custom-input-field {
+    width: 280px;
+    padding: 5px;
+    margin: 4px 0 10px 0;
+    border: none;
+    border-bottom: 2px solid #8b8b8b;
+    background-color: transparent;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.custom-input-field:focus {
+    border: none;
+    border-bottom: 2px solid #005cbf;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none;
+    transition: 0.5s;
+    
+
+}
+
+.custom-input-field::placeholder {
+  color: #343434;
+
+}
+.custom-input-field:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* Firefox */
+.custom-input-field[type=number] {
+    -moz-appearance: textfield;
+}
+
+.white-style{
+    width: 80%;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.white-style:focus{
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.white-style::placeholder{
+    color: #a2a2a2;
+}
+.footer-style{
+    width: 40%;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    margin: 0 auto 40px;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+
+.footer-style:focus{
+    width: 45%;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    margin: 0 auto 40px;
+}
+
+.footer-style::placeholder{
+    color: #a2a2a2;
+}

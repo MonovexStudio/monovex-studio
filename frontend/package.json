@@ -1,0 +1,86 @@
+{
+  "name": "monovex-studio",
+  "version": "0.1.0",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
+  "private": true,
+  "proxy": "http://localhost:8080",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@progress/kendo-licensing": "^1.2.0",
+    "@progress/kendo-react-animation": "^4.8.0",
+    "@progress/kendo-react-notification": "^4.8.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.2",
+    "antd": "^4.11.2",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "concurrently": "^6.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "i18n": "^0.13.2",
+    "i18next": "^19.9.2",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.1.1",
+    "i18next-xhr-backend": "^3.2.2",
+    "nodemailer": "^6.4.18",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.1",
+    "react-animations": "^1.0.0",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^17.0.1",
+    "react-i18next": "^11.8.10",
+    "react-input-range": "^1.3.0",
+    "react-inview-monitor": "^2.3.0",
+    "react-mt-svg-lines": "^0.9.1",
+    "react-odometerjs": "^2.1.1",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-scroll": "^1.8.1",
+    "react-slick": "^0.28.1",
+    "react-slider": "^1.1.4",
+    "react-spring": "^9.2.4",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.2.1",
+    "use-3d-effect": "^1.1.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "nodemon server/index.js",
+    "client": "npm start",
+    "heroku-postbuild": "ng build --prod",
+    "dev": "concurrently \"npm run server\" \"npm start\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

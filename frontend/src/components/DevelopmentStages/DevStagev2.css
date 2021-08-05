@@ -1,0 +1,87 @@
+.stage-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 650px;
+    margin-bottom: 7%;
+    height: 110px;
+}
+
+.stage-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.stage-content h4{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.stage-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid #3282b8;
+    color: #3282b8;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto 0px auto;
+    background-color: #fff;
+}
+.stage-item:hover .stage-number{
+    border: white;
+    color: white;
+    background-color:  #3282b8;
+    transition: 0.5s;
+}
+@media all and (max-width: 768px){
+    .stage-item{
+        width: 100%;
+
+    }
+    .stage-content h4{
+
+        font-size: calc(12px + 1.2vw);
+
+    }
+}
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .stage-item {
+
+        width: 80%;
+
+    }
+}
+/* Ipad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .stage-item {
+
+        width: 80%;
+
+    }
+}
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+    .stage-item {
+
+        width: 80%;
+
+    }
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .stage-item {
+
+        width: 80%;
+
+    }
+}

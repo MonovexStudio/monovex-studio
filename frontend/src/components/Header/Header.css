@@ -1,0 +1,135 @@
+.header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.hide {
+    top: -72px;
+}
+
+.header__inner{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.header__inner-logo{
+    width: 155px;
+    height: 100%;
+    margin: auto 0;
+    animation: blink normal 2s infinite ease-in-out;
+}
+
+.header__inner img{
+    margin: 0 auto;
+}
+
+.brand-image{
+    height:100%;
+}
+
+.header-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto 0;
+}
+
+.header__navigation-link{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    transition: 0.25s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+}
+
+.header__navigation-link:hover{
+    color: #0081d7;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+
+
+.header__inner-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    font-family: Montserrat, sans-serif;
+
+}
+
+.header__inner-contact a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__inner-contact span{
+    color: rgba(30,132,242,0.9);
+}
+
+.header__inner-toggle{
+    display: none;
+}
+
+.header-info{
+    display: flex;
+}
+
+.header__inner-language{
+    margin: auto 10px auto 0;
+}
+
+.header__inner-language select{
+    color: #fff;
+}
+
+.header__inner-language option{
+    color: #000;
+}
+@keyframes blink {
+    0% {
+        filter:brightness(200%);
+    }
+    50% {
+        filter:brightness(100%);
+    }
+    100% {
+        filter:brightness(200%);
+    }
+}
+
+@media all and (max-width: 1320px) {
+    .header-navigation{
+        width: 60%;
+    }
+}
+
+
+
+@media all and (max-width: 900px){
+    .header-navigation{
+        display: none !important;
+    }
+
+    .header-info{
+        display: none;
+    }
+
+    .header__inner-toggle{
+        display: flex;
+        margin: auto 0;
+    }
+}

@@ -1,0 +1,38 @@
+.title-container {
+    display: flex;
+    padding: 100px 0 50px 0;
+}
+
+.title-line{
+    width: 10%;
+    min-width: 70px;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin: auto 20px auto 0;
+}
+
+.title{
+    font-size: calc(20px + 1.2vw);
+    text-transform: uppercase;
+    text-align: start;
+    margin: auto 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #3F3F3F;
+}
+
+@media only screen and (max-width: 767px) {
+   .title-line{
+       display:none;
+   }
+    .title-container {
+       justify-content: center;
+        padding: 50px 0 50px 0;
+    }
+    .title{
+        font-size: calc(25px + 1.2vw);
+
+        text-align: center;
+
+    }
+}

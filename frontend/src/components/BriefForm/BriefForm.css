@@ -1,0 +1,184 @@
+.brief-section {
+    width: 100%;
+    position: relative;
+    background-image: url("../../assets/brief-image.png");
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.brief-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.brief-row{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.brief-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+}
+
+.brief-col:nth-child(2){
+    margin: 0 20px;
+}
+
+.svg-icon path {
+
+    animation: first_stroke 4s ease-in forwards;
+
+}
+
+.icon g g path {
+
+    animation: second_stroke 4s linear forwards;
+    fill: none;
+}
+
+.picture {
+    width: 500px;
+    height: 500px;
+    background: no-repeat;
+
+}
+
+@keyframes second_stroke {
+    0% {
+        stroke-dashoffset: 100%;
+        stroke-dasharray: 0%;
+    }
+    100% {
+        stroke-dashoffset: 0%;
+        stroke-dasharray: 100%;
+
+    }
+}
+
+@keyframes first_stroke {
+    0% {
+        stroke-dashoffset: 450;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.price-slider-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.brief-section-subtitle {
+    width: 60%;
+    display: flex;
+}
+
+.box-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+
+}
+
+.box-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.specific-amount {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.radiobox{
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/* Media request */
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+
+    .brief-section-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        margin-top: 3%;
+    }
+
+    .brief-section-subtitle {
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box-block {
+        justify-content: center;
+
+    }
+
+    .box-section {
+
+        width: 60%;
+
+    }
+
+    .brief-row{
+        flex-direction: column;
+    }
+
+    .brief-col{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .brief-col:nth-child(2){
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
+}
+
+
