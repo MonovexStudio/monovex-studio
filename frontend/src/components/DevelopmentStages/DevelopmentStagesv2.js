@@ -4,8 +4,8 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import DevStage from "./DevStagev2";
 import Button from '../Button/Button'
 import {withTranslation} from 'react-i18next';
-import m1 from "../../assets/m1.jpg";
-import m2 from "../../assets/m2.jpg";
+import m1 from "../../assets/m1.png";
+import m2 from "../../assets/m2.png";
 class DevelopmentStagesv2 extends Component {
     constructor(props) {
         super(props);
