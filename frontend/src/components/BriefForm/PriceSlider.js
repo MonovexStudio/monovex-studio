@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './PriceSlider.css'
-
 import "antd/dist/antd.css";
 import { Slider, InputNumber } from "antd";
 

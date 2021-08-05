@@ -2,7 +2,7 @@ import React from 'react';
 import './Statistic.css';
 import SectionTitle from "../SectionTitle/SectionTitle";
 
-const Statistic = props => (
+const Statistic = () => (
     <section className="statistic">
         <div className="container">
             <SectionTitle title="Головне про нас в цифрах"/>

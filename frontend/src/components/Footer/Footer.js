@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {NavLink} from "react-router-dom";
-
 import {Link} from "react-scroll/modules";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebookF, faTelegramPlane, faFoursquare} from "@fortawesome/free-brands-svg-icons";
@@ -8,9 +7,7 @@ import FooterMenu from './FooterMenu';
 import './Footer.css'
 import logo from '../../assets/mono-logo.png'
 import lamp from '../../assets/ml.png'
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
 import CustomInputField from "../BriefForm/CustomInputField";
-import Button from "../Button/Button";
 import axios from "axios";
 import {Notification, NotificationGroup} from "@progress/kendo-react-notification";
 import { Slide } from "@progress/kendo-react-animation";

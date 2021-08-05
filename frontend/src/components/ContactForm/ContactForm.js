@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import './ContactForm.css'
 import CustomInputField from "../BriefForm/CustomInputField";
 import Button from "../Button/Button";
-import SectionTitle from "../SectionTitle/SectionTitle";
-import BriefForm from "../BriefForm/BriefForm"
 import axios from "axios";
 import {Link} from "react-router-dom";
 import {Notification, NotificationGroup} from "@progress/kendo-react-notification";

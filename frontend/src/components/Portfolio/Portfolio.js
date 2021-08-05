@@ -4,16 +4,13 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import shaverma from "../../assets/shaverma.png";
-import petsfield from "../../assets/petsfield.png";
-import psyholog from "../../assets/psyholog.png";
-import remkuzovchasti from "../../assets/remkuzovchasti.png";
-import dimascoin from "../../assets/dimascoin.png";
+import shaverma from "../../assets/shaverma.jpg";
+import petsfield from "../../assets/petsfield.jpg";
+import psyholog from "../../assets/psyholog.jpg";
+import remkuzovchasti from "../../assets/remkuzovchasti.jpg";
+import dimascoin from "../../assets/dimascoin.jpg";
 import SliderCard from "../SliderCard/SliderCard.js";
-import PortfolioStat from "../PortfolioStat/PortfolioStat";
-import site from '../../assets/landing-page.svg';
-import diagram from '../../assets/diagram.svg';
-import working from '../../assets/working.svg';
+
 
 const settings = {
     dots: true,
@@ -35,9 +32,7 @@ const Portfolio = props => (
                     <h5>Надаємо комплексні послуги для вашого бізнесу в інтернеті: розробка сайту, реєстрація адреси, хостинг, реклама в гуглі, сторінки та реклама в соцмережах (facebook, instagram).</h5>
                     <div className="line"></div>
                     <p>Ми обговорюємо всі важливі питання і фіксуємо їх в технічному завданні та договорі до старту робіт.</p>
-                    {/*<PortfolioStat image={site} value={5} span={""} text={"виконаних робіт"}/>
-                    <PortfolioStat image={working} value={2} span={"+"} text={"роки роботи на ринку"}/>
-                    <PortfolioStat image={diagram} value={100} span={"%"} text={"задоволених клієнтів"}/>*/}
+
                 </div>
                 <div className="portfolio-right">
                     <Slider {...settings}>
