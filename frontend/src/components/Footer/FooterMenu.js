@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './FooterMenu.css'
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
+
 function FooterMenu(props) {
     const footerMenuTitleStyle = {
         color:'white',

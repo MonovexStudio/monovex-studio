@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import "./Main.css";
-import titleVideo from "../../assets/video.mp4"
 import Fade from 'react-reveal/Fade';
 import {Link} from "react-scroll";
-import background from '../../assets/pexels6.jpg'
 import { withTranslation } from 'react-i18next';
 
 class Home extends Component {

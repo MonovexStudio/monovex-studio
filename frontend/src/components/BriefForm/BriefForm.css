@@ -1,7 +1,7 @@
 .brief-section {
     width: 100%;
     position: relative;
-    background-image: url("../../assets/brief-image.png");
+    background-image: url("../../assets/brief-img.jpg");
     background-size: cover;
     padding-bottom: 100px;
 }

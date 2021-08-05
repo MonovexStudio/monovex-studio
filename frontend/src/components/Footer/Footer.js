@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
-
 import {Link} from "react-scroll/modules";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFacebookF, faTelegramPlane, faFoursquare} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faFacebookF, faFoursquare, faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import FooterMenu from './FooterMenu';
 import './Footer.css'
 import logo from '../../assets/mono-logo.png'
 import lamp from '../../assets/ml.png'
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
 import CustomInputField from "../BriefForm/CustomInputField";
-import Button from "../Button/Button";
 import axios from "axios";
 import {Notification, NotificationGroup} from "@progress/kendo-react-notification";
-import { Slide } from "@progress/kendo-react-animation";
+import {Slide} from "@progress/kendo-react-animation";
 
-class Footer extends Component{
+class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,9 +26,11 @@ class Footer extends Component{
         };
 
     }
-    onToggle = (flag) => this.setState({ [flag]: !this.state[flag] });
-    handleSubmit(e){
-        this.setState({loading:true});
+
+    onToggle = (flag) => this.setState({[flag]: !this.state[flag]});
+
+    handleSubmit(e) {
+        this.setState({loading: true});
         e.preventDefault();
         // this.parseServiceType();
 
@@ -40,33 +39,32 @@ class Footer extends Component{
                 headers: {
                     'Content-Type': 'application/json'
                 }
-            }).then(()=> {
+            }).then(() => {
             this.onToggle("success");
-            this.setState({loading:false});
+            this.setState({loading: false});
         })
-            .catch(()=>{
+            .catch(() => {
                 this.onToggle("error");
-                this.setState({loading:false});
+                this.setState({loading: false});
             })
 
     }
-    setLoading(){
 
-    }
-    setInputValue(event,inputName){
-        if(event.target.name===inputName){
-            this.setState(prevState=>({
-                checkedItems:{
+    setInputValue(event, inputName) {
+        if (event.target.name === inputName) {
+            this.setState(prevState => ({
+                checkedItems: {
                     ...prevState.checkedItems,
-                    [inputName]:event.target.value
+                    [inputName]: event.target.value
                 }
             }));
         }
     }
+
     render() {
         let btnClasses = 'btn-send-consult'
 
-        const { success, error, loading} = this.state;
+        const {success, error, loading} = this.state;
         const footerMenuContent = <React.Fragment>
             <NavLink to="/" smooth={true} className="footer__navigation-link">Головна</NavLink>
             <Link to="services" smooth={true} className="footer__navigation-link">Послуги</Link>
@@ -79,9 +77,11 @@ class Footer extends Component{
         const footerMenuSocial = <React.Fragment>
             <h3 className="footer-email">monovex.studio@gmail.com</h3>
             <div className="social-menu">
-                <a target="_blank" href="https://t.me/monovex"> <FontAwesomeIcon size="3x" icon={faTelegramPlane} /></a>
-                <a target="_blank" href="https://www.facebook.com/monovex"> <FontAwesomeIcon size="3x" icon={faFacebookF} /></a>
-                <a target="_blank" href="https://freelance.ua/user/monovexstudio/portfolio/"> <FontAwesomeIcon size="3x" icon={faFoursquare} /></a>
+                <a target="_blank" href="https://t.me/monovex"> <FontAwesomeIcon size="3x" icon={faTelegramPlane}/></a>
+                <a target="_blank" href="https://www.facebook.com/monovex"> <FontAwesomeIcon size="3x"
+                                                                                             icon={faFacebookF}/></a>
+                <a target="_blank" href="https://freelance.ua/user/monovexstudio/portfolio/"> <FontAwesomeIcon size="3x"
+                                                                                                               icon={faFoursquare}/></a>
             </div>
         </React.Fragment>;
         return (
@@ -91,10 +91,14 @@ class Footer extends Component{
                     <div className="footer-send-contact-form">
                         <p>Зв'язатись для консультації</p>
                         <div className="footer-input-container">
-                            <form className="footer-contactus-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                            <form className="footer-contactus-form" onSubmit={this.handleSubmit.bind(this)}
+                                  method="POST">
                                 <div className="footer-input-field-container">
-                                    <CustomInputField onChange={event => this.setInputValue(event, "credentials")} name="credentials" placeholder="Ім'я" type="text" styles="footer"/>
-                                    <CustomInputField onChange={event => this.setInputValue(event, "phoneNumber")} name="phoneNumber" placeholder="+380 98 411 89 45" type="text"
+                                    <CustomInputField onChange={event => this.setInputValue(event, "credentials")}
+                                                      name="credentials" placeholder="Ім'я" type="text"
+                                                      styles="footer"/>
+                                    <CustomInputField onChange={event => this.setInputValue(event, "phoneNumber")}
+                                                      name="phoneNumber" placeholder="+380 98 411 89 45" type="text"
                                                       styles="footer"/>
                                 </div>
                                 <button disabled={this.state.loading} className={btnClasses}>
@@ -126,8 +130,10 @@ class Footer extends Component{
                             height="60px"
                         />
                         <h2 className="footer-title">Професійне створення сайтів</h2>
-                        <p className="footer-title">Ми пропонуємо ефективні комплексні рішення - від концепції, стратегії та
-                            проектування до розробки, впровадження та підтримки. Допомагаємо компаніям досягнути успіху та поставлених цілей.</p>
+                        <p className="footer-title">Ми пропонуємо ефективні комплексні рішення - від концепції,
+                            стратегії та
+                            проектування до розробки, впровадження та підтримки. Допомагаємо компаніям досягнути успіху
+                            та поставлених цілей.</p>
                     </NavLink>
                     <FooterMenu className="footer-menu" content={footerMenuContent}/>
                     <FooterMenu className="footer-menu" content={footerMenuContact}/>
@@ -144,9 +150,9 @@ class Footer extends Component{
                     <Slide direction={success ? "up" : "down"}>
                         {success && (
                             <Notification
-                                type={{ style: "success", icon: true }}
+                                type={{style: "success", icon: true}}
                                 closable={true}
-                                onClose={() => this.setState({ success: false })}
+                                onClose={() => this.setState({success: false})}
                             >
                                 <span className="success-message">Вашу заявку надіслано</span>
                             </Notification>
@@ -155,9 +161,9 @@ class Footer extends Component{
                     <Slide direction={error ? "up" : "down"}>
                         {error && (
                             <Notification
-                                type={{ style: "error", icon: true }}
+                                type={{style: "error", icon: true}}
                                 closable={true}
-                                onClose={() => this.setState({ error: false })}
+                                onClose={() => this.setState({error: false})}
                             >
                                 <span>Помилка! Повторіть спробу через декілька хвилин</span>
                             </Notification>
@@ -166,9 +172,9 @@ class Footer extends Component{
                     <Slide direction={loading ? "up" : "down"}>
                         {loading && (
                             <Notification
-                                type={{ style: "info", icon: true }}
+                                type={{style: "info", icon: true}}
                                 closable={true}
-                                onClose={() => this.setState({ loading: false })}
+                                onClose={() => this.setState({loading: false})}
                             >
                                 <span>Надсилання інформації</span>
                             </Notification>

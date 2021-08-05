@@ -191,7 +191,6 @@ export default class BriefForm extends Component {
         return (
             <section id="order" className="brief-section">
                 <div className="container">
-                    <SectionTitle title="Бриф"/>
                     <SectionTitle style={{color:'white'}} title="Бриф"/>
                     <form className="brief-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <div className="brief-row">
@@ -289,8 +288,6 @@ export default class BriefForm extends Component {
                                 </div>
                             </div>
                         </div>
-
-                        <Button type="submit" text="Відправити"/>
                         <Button disabled={this.state.loading} type="submit" text="Відправити"/>
                     </form>
                 </div>
