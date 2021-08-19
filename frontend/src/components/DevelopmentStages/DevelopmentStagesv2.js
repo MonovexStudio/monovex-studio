@@ -12,22 +12,25 @@ class DevelopmentStagesv2 extends Component {
 
         this.state = {
             stages: [
-                {number:1, title:this.props.t('stage-title.1')},
-                {number:2, title:this.props.t('stage-title.2')},
-                {number:3, title:this.props.t('stage-title.3')},
-                {number:4, title:this.props.t('stage-title.4')},
-                {number:5, title:this.props.t('stage-title.5')},
-                {number:6, title:"Запуск нового сайту"}
+                {number:1, title:this.props.t('stage-titles.1')},
+                {number:2, title:this.props.t('stage-titles.2')},
+                {number:3, title:this.props.t('stage-titles.3')},
+                {number:4, title:this.props.t('stage-titles.4')},
+                {number:5, title:this.props.t('stage-titles.5')},
+                {number:6, title:this.props.t('stage-titles.6')}
             ],
             visible: 3
         };
         this.loadMore = this.loadMore.bind(this);
+
     }
     loadMore() {
         this.setState((prev) => {
             return {visible: prev.visible + 4};
         });
     }
+
+
     renderDevStages(){
         return(
             <div className="stages">
@@ -42,8 +45,7 @@ class DevelopmentStagesv2 extends Component {
                     }
                 </div>
                 </div>
-        )
-
+        );
     }
 
     render() {
@@ -51,7 +53,7 @@ class DevelopmentStagesv2 extends Component {
         return (
             <section className="stage-section">
                 <div className="container">
-                    <SectionTitle title={this.props.t('section-titles.4')}/>
+                    <SectionTitle title={this.props.t('stage-titles.0')}/>
                     <div className="stage__inner">
                         {this.renderDevStages()}
                         <div className="stage-decoration">

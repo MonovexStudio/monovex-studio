@@ -20,10 +20,54 @@
     "4": "Development stages",
     "5": "Reviews"
   },
-  "stage-title": {
+  "service-card-titles": {
+    "0": "Services",
+    "2": "Promotional",
+    "3": "Business card",
+    "4": "E-commerce"
+  },
+  "service-card-description": {
+    "1": "Landing page - a web page whose main purpose is to collect contact information from the target audience. Used to enhance the effectiveness of advertising, increase the audience. The landing page usually contains information about a product or service.",
+    "2": "A promo site is an Internet resource, the main purpose of which is to promote a certain product, service, event or brand and persuade the buyer to choose it.",
+    "3": "Business card site - a small site, as a rule, consists of one web page and contains basic information about an organization, an individual, a company, goods or services, price lists, contact information. Business card sites are often used by companies that do not want to spend significant funds on creating a separate site.",
+    "4": "A site that sells goods via the Internet. Allows users online, in their browser or through a mobile application, to form a purchase order, select a method of payment and delivery of the order, pay for the order."
+  },
+  "motivation": {
+    "0": "Order the site now",
+    "1": "While you are thinking, others are already creating their own business with "
+  },
+  "portfolio": {
+    "0": "Our works",
+    "1": "Many useful features for your future site",
+    "2": "We provide comprehensive services for your business on the Internet: website development, address registration, hosting, Google advertising, pages and advertising in social networks (facebook, instagram).",
+    "3": "We discuss all important issues and fix them in the terms of reference and the contract before the start of work."
+  },
+  "portfolio-card": {
+    "1": "Internet-shop of the restaurant Shaverma Bro",
+    "2": "Coins for Fifa at the lowest prices only on DimasCoin",
+    "3": "Services of a professional psychologist Maria Shugai",
+    "4": "Coins for Fifa at the lowest prices only on DimasCoin",
+    "5": "Buy car parts at Rem Kuzov Chasti"
+  },
+  "preference-titles": {
     "1": "Discussion with the client",
     "2": "Planning and design",
-    "3": "Development and testing",
-    "4": "Support"
+    "3": "Development and Testing",
+    "4": "Finished product"
+  },
+  "preference-description": {
+    "1": "At this stage, we discuss with you the desire to develop a site, choose the type of site that is suitable for advertising your product, analyze the market for a similar product and offer options for a unique design.",
+    "2": "A beautiful site can talk about your brand instantly, but attractiveness can be lost if the site just doesn't work as it should. We put customer experience at the heart of your design.",
+    "3": "Like brick and mortar, well-written code makes a difference in the functionality and usability of a website. We have the knowledge and experience to create accessible and well-documented code, even if it means creating from scratch.",
+    "4": "Well, we did everything you need, on time and with quality. Now it's time to celebrate :)"
+  },
+  "stage-titles": {
+    "0": "Development stages",
+    "1": "Discussion with the client, solving key tasks",
+    "2": "Development of design and preparation of terms of reference",
+    "3": "Creating all pages of the site and adaptive layout",
+    "4": "Programming additional functions and installation on CMS",
+    "5": "Filling, testing and hosting",
+    "6": "Launch a new site"
   }
 }

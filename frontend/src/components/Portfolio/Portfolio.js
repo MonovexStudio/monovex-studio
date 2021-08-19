@@ -10,7 +10,7 @@ import psyholog from "../../assets/psyholog.jpg";
 import remkuzovchasti from "../../assets/remkuzovchasti.jpg";
 import dimascoin from "../../assets/dimascoin.jpg";
 import SliderCard from "../SliderCard/SliderCard.js";
-
+import { withTranslation } from 'react-i18next';
 
 const settings = {
     dots: true,
@@ -24,23 +24,23 @@ const settings = {
 const Portfolio = props => (
     <div id="portfolio" className="portfolio">
         <div className="container">
-            <SectionTitle title={"Наші роботи"}/>
+            <SectionTitle title={props.t('portfolio.0')}/>
             <div className="portfolio__inner">
                 <div className="portfolio-left">
-                    <h4>Багато корисних функцій для вашого майбутнього веб-сайту</h4>
+                    <h4>{props.t('portfolio.1')}</h4>
                     <div className="line"></div>
-                    <h5>Надаємо комплексні послуги для вашого бізнесу в інтернеті: розробка сайту, реєстрація адреси, хостинг, реклама в гуглі, сторінки та реклама в соцмережах (facebook, instagram).</h5>
+                    <h5>{props.t('portfolio.2')}</h5>
                     <div className="line"></div>
-                    <p>Ми обговорюємо всі важливі питання і фіксуємо їх в технічному завданні та договорі до старту робіт.</p>
+                    <p>{props.t('portfolio.3')}</p>
 
                 </div>
                 <div className="portfolio-right">
                     <Slider {...settings}>
-                        <SliderCard image={shaverma} title={"Shaverma Bro"} text={"Інтернет-магазин ресторану Шаверма Бро"}/>
-                        <SliderCard image={petsfield} title={"Petsfield"} text={"Монети для Fifa за найнижчими цінам лише на DimasCoin"}/>
-                        <SliderCard image={psyholog} title={"Психолог Марія"} text={"Послуги професійного психолога Марії Шугай"}/>
-                        <SliderCard image={dimascoin} title={"Dimas Coin"} text={"Монети для Fifa за найнижчими цінам лише на DimasCoin"}/>
-                        <SliderCard image={remkuzovchasti} title={"Rem Kuzov Chasti"} text={"Купуйте автомобільні деталі на Rem Kuzov Chasti"}/>
+                        <SliderCard image={shaverma} title={"Shaverma Bro"} text={props.t('portfolio-card.1')}/>
+                        <SliderCard image={petsfield} title={"Petsfield"} text={props.t('portfolio-card.2')}/>
+                        <SliderCard image={psyholog} title={"Психолог Марія"} text={props.t('portfolio-card.3')}/>
+                        <SliderCard image={dimascoin} title={"Dimas Coin"} text={props.t('portfolio-card.4')}/>
+                        <SliderCard image={remkuzovchasti} title={"Rem Kuzov Chasti"} text={props.t('portfolio-card.5')}/>
                     </Slider>
                 </div>
             </div>
@@ -48,4 +48,4 @@ const Portfolio = props => (
     </div>
 )
 
-export default Portfolio;
+export default withTranslation()(Portfolio);
