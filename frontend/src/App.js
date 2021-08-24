@@ -6,6 +6,7 @@ import BriefForm from "./components/BriefForm/BriefForm";
 import Backdrop from "./components/Backdrop/Backdrop";
 import {Component} from "react";
 import MainPage from "./components/MainPage/MainPage";
+import Blog from "./components/Blog/Blog";
 
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={MainPage}/>
                     <Route exact path="/brief" component={BriefForm}/>
+                    <Blog exact path="/blog" component={Blog}/>
                 </Switch>
 
             </Router>

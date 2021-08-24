@@ -10,5 +10,9 @@ public class HtmlPageController {
     public String brief() {
         return "index.html";
     }
+    @RequestMapping("/blog")
+    public String blog() {
+        return "index.html";
+    }
 
 }
