@@ -32,6 +32,7 @@ class DevelopmentStagesv2 extends Component {
 
 
     renderDevStages(){
+        console.log(this.state.stages);
         return(
             <div className="stages">
                 {

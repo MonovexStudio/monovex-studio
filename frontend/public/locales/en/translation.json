@@ -69,5 +69,14 @@
     "4": "Programming additional functions and installation on CMS",
     "5": "Filling, testing and hosting",
     "6": "Launch a new site"
+  },
+  "contact": {
+    "0": "Contacts",
+    "1": "Contact for consultation",
+    "2": "Last name and first name",
+    "3": "Do you already know what you want?",
+    "4": "Fill out the full form and we will call you",
+    "5": "Fill in",
+    "6": "Submit"
   }
 }
