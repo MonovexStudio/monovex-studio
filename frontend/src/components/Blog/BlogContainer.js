@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import testImage from "../../assets/stage1icon.jpg";
 import './BlogContainer.css'
 import Button from "../Button/Button";
-
+import axios from "axios";
 class BlogContainer extends Component {
+
     render() {
         let sideBg;
         let blogPhoto = 'blog-photo';
@@ -23,10 +24,8 @@ class BlogContainer extends Component {
                 <div className={sideBg}>
                 </div>
                 <div className={blogCard}>
-                    <h1>Мотивация участия и функции блогов</h1>
-                    <p> Следует учитывать, что чтение блогов и авторство — два разных по содержанию
-                        процесса. Люди, пользующиеся коммуникативными возможностями блогов вне контекста ведения собственного
-                    </p>
+                    <h1>{this.props.post.title}</h1>
+                    <p>{this.props.post.description}</p>
                     <Button text="Дізнатись більше"/>
                 </div>
                 <div className={blogPhoto}>
