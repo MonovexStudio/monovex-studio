@@ -28,6 +28,7 @@ class Blog extends Component {
     renderPost(){
         return(
             <>
+                <div className="blog-posts">
                 {
                     this.state.posts&&this.state.posts.map(function(post, index){
                      if(index%2) return <BlogContainer styles="left-side" post={post}/>;
@@ -35,7 +36,8 @@ class Blog extends Component {
                     }
                     )}
 
-            </>
+            </div>
+                </>
         );
     }
     render() {
