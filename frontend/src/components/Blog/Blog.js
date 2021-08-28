@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import './Blog.css'
-import testImage from '../../assets/stage1icon.jpg'
-import SectionTitle from "../SectionTitle/SectionTitle";
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
 import logo from '../../assets/mono-logo.png'
 import BlogContainer from "./BlogContainer";
 import axios from "axios";
+
 
 class Blog extends Component {
     constructor(props) {
@@ -52,6 +50,7 @@ class Blog extends Component {
                 </div>
                 {this.renderPost()}
             </div>
+
             </section>
         );
     }
