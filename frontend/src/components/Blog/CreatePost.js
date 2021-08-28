@@ -67,7 +67,7 @@ class CreatePost extends Component{
         e.preventDefault();
         this.setState({loading:true});
         console.log(this.state);
-        axios.post('http://localhost:8080/post/addPost', this.state.postRequest,
+        axios.post('https://monovex-production.herokuapp.com/post/addPost', this.state.postRequest,
             {
                 headers: {
                     'Content-Type': 'application/json'

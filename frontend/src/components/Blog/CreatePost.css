@@ -5,6 +5,9 @@
     width: 80%;
 
 }
+.post-input *{
+    margin-bottom: 2%;
+}
 .post-text-input{
     display: flex;
     flex-direction: column;
@@ -19,6 +22,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    height: 100%;
+    margin-top: 100px;
 }

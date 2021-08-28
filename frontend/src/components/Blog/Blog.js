@@ -18,7 +18,7 @@ class Blog extends Component {
     }
 
     findPost() {
-        axios.get("http://localhost:8080/post/getAllPosts")
+        axios.get("https://monovex-production.herokuapp.com/post/getAllPosts")
             .then(response => response.data)
             .then((data) => {
                 this.setState({posts: data});
