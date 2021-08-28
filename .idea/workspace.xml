@@ -2,17 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b29d8859-03e3-4e9f-bc99-1b5c269d1d70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/dimascoin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/petsfield.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/psyholog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/remkuzovchasti.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/shaverma.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/tablet3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/monovexstudio/monovex/controller/HtmlPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/brief-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/731af322ac9aeed67567aa32d66f70af.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Slide.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/brief-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/comment-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/contactBg(nPh).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/contactFormBg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/contactFormBg1 (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/contactFormBg1 (1).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/desktop-mac2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/diagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/dimascoin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/eshop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/landing-page.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/landing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/m1.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/m1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/m2.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/m2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/petsfield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/pexels2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/pexels3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/pexels4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/pexels5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/pexels6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/pexels6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/pexels7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/pexels7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/psyholog-site-mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/psyholog-site.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/psyholog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/remkuzovchasti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/shaverma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/stage1icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/stage1icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/stage2icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/stage2icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/stage3icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/stage3icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/stage4icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/stage4icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/stageBg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/stageBg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/svg-pic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/tablet-mono.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/tablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/tablet1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/tablet3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/website.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/white-abs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/white-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/working.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BriefForm/CheckBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BriefForm/CheckBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BriefForm/CustomInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BriefForm/CustomInputField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BriefForm/PriceSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BriefForm/PriceSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BriefForm/RadioButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BriefForm/RadioButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CommentForm/Comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CommentForm/Comment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CommentForm/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CommentForm/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CommentForm/CommentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CommentForm/CommentForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CommentForm/CommentForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CommentForm/CommentForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CommentForm/PostCommentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CommentForm/PostCommentForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CommentForm/PostCommentForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CommentForm/PostCommentForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ContactUs/ContactUs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ContactUs/ContactUs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/DevelopmentStages/DevStage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/DevelopmentStages/DevStage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/DevelopmentStages/DevelopmentStages.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/DevelopmentStages/DevelopmentStages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/SectionTitle/SectionTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SectionTitle/SectionTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MainPage/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Motivation/Motivation.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Motivation/Motivation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Portfolio/Portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Portfolio/Portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Portfolio/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Portfolio/Portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Preference/Preference.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Preference/Preference.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Preference/PreferenceItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Preference/PreferenceItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ServiceCard/ServiceCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ServiceCard/ServiceCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Services/Services.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Services/Services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Services/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/SliderCard/SliderCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SliderCard/SliderCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Statistic/Statistic.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Statistic/Statistic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/testComponents/ServiceCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/testComponents/ServiceCardFooter.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,42 +117,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="289" column="30" selection-start-line="289" selection-start-column="30" selection-end-line="289" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2485">
-              <caret line="140" column="27" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="1444">
               <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -86,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="121">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -98,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+            <state relative-caret-position="114">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -110,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/SectionTitle/SectionTitle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="133">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -120,10 +162,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/CustomInputField.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/CheckBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/.eslintcache">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -131,7 +194,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="76">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
@@ -151,7 +214,6 @@
         <option value="$PROJECT_DIR$/frontend/src/components/Button/Button.js" />
         <option value="$PROJECT_DIR$/frontend/public/index.html" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.css" />
         <option value="$PROJECT_DIR$/frontend/src/components/Main/Main.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/SectionTitle/SectionTitle.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.js" />
@@ -159,6 +221,7 @@
         <option value="$PROJECT_DIR$/frontend/src/components/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/Footer/Footer.css" />
+        <option value="$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.css" />
       </list>
     </option>
   </component>
@@ -174,6 +237,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,43 +271,10 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="BriefForm" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MonovexStudio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonovexStudio" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ContactForm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonovexStudio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonovexStudio" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ContactUs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonovexStudio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonovexStudio" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonovexStudio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonovexStudio" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -256,8 +287,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RemKuzovChasti" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -304,18 +338,21 @@
       <workItem from="1627653944209" duration="1337000" />
       <workItem from="1628073079128" duration="1996000" />
       <workItem from="1628075994137" duration="19000" />
-      <workItem from="1628156431800" duration="2425000" />
+      <workItem from="1628156431800" duration="3134000" />
+      <workItem from="1630187072118" duration="105000" />
+      <workItem from="1630187205077" duration="77000" />
+      <workItem from="1630187960722" duration="697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5777000" />
+    <option name="totallyTimeSpent" value="7365000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="36" width="1550" height="835" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26174498" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -325,19 +362,19 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32859176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.41501418" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.41394025" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32859176" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32859176" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -371,13 +408,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/brief-image.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/brief-image.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.eslintcache">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/.gitignore">
@@ -426,16 +458,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactUs/ContactUs.css" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactUs/ContactUs.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/contactFormBg1 (1).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5339">
+          <caret line="292" column="30" selection-start-line="292" selection-start-column="30" selection-end-line="292" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2489">
+          <caret line="138" column="27" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/Main/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="76">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/CustomInputField.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/CheckBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/brief-image.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/.eslintcache">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/SectionTitle/SectionTitle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="133">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -445,79 +554,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/BriefForm/BriefForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="289" column="30" selection-start-line="289" selection-start-column="30" selection-end-line="289" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2485">
-          <caret line="140" column="27" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactUs/ContactUs.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactUs/ContactUs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/contactFormBg1 (1).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ContactForm/ContactForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/FooterMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Footer/Footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

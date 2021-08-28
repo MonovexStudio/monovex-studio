@@ -19,12 +19,6 @@ export default class CheckBox extends Component {
            </div>
             
 
-        // {/* // <label class="checkbox-container">
-        // //     <p>{this.props.text}</p>
-        // //     <input type="checkbox"/>
-        // //     <span class="checkmark"></span>
-        // // </label> */}
-          
         )
     }
 }

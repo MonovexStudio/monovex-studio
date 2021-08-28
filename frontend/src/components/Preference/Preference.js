@@ -5,7 +5,7 @@ import stage1icon from '../../assets/stage1icon.jpg'
 import stage2icon from '../../assets/stage2icon.jpg'
 import stage3icon from '../../assets/stage3icon.jpg'
 import stage4icon from '../../assets/stage4icon.jpg'
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
+
 class Preference extends Component {
     render() {
         return (

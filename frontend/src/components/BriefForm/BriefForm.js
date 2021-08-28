@@ -280,8 +280,11 @@ export default class BriefForm extends Component {
                                         <RadioBox checked={true} value="specificDeadline" id="9"
                                                   radioGroup="deadline" text="Необхідно зробити до:"/>
                                         <CustomInputField onChange={event => this.setInputValue(event, "deadline")}
-                                                          name="deadline" disabled={this.state.disabledDeadline}
-                                                          placeholder="Дата дедлайну" type="date"/>
+                                                          name="deadline" onfocus={(e)=> {
+                                                e.currentTarget.type = "date";
+                                                e.currentTarget.focus();
+                                            }
+                                        } disabled={this.state.disabledDeadline} placeholder="Дата дедлайну" type="text"/>
                                         <RadioBox value="Не поспішаємо" id="10" radioGroup="deadline"
                                                   text="Не поспішаємо"/>
                                     </ul>

@@ -6,7 +6,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import Preference from "../Preference/Preference";
 import Statistic from "../Statistic/Statistic";
 import ContactForm from "../ContactForm/ContactForm";
-import CommentForm from "../CommentForm/CommentForm";
+
 import DevelopmentStages from "../DevelopmentStages/DevelopmentStagesv2";
 import Footer from "../Footer/Footer";
 
@@ -20,7 +20,7 @@ class MainPage extends Component {
                 <Portfolio/>
                 <Preference/>
                 <DevelopmentStages/>
-                {/*<CommentForm/>*/}
+
                 <ContactForm/>
                 <Statistic/>
 

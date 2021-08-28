@@ -2,7 +2,7 @@ import React from 'react';
 import './Motivation.css'
 import LinkButton from "../LinkButton/LinkButton";
 
-const Motivation = props => (
+const Motivation = () => (
     <section id="motivation" className="motivation">
         <div className="container">
             <div className="motivation__inner">

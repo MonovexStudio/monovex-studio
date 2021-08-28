@@ -71,13 +71,6 @@
 }
 
 
-/*.go-to-brief-button:hover{*/
-/*    box-shadow: 0 0 0 0 rgba(236, 143, 3, 0);*/
-/*    background-position: 0 0;*/
-/*    text-decoration: none !important;*/
-/*    color: #fff;*/
-/*    background-color: rgba(0, 0, 0, 0.75);*/
-/*}*/
 .go-to-brief-button:hover{
     box-shadow: 0 0 0 0 rgba(236, 143, 3, 0);
     background-position: 0 0;
