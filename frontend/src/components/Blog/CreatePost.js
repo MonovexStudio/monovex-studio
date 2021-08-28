@@ -1,10 +1,10 @@
 import React , {Component} from 'react';
 import { uploadFile } from 'react-s3';
-import CustomInputField from "../BriefForm/CustomInputField";
 import axios from 'axios'
 import {Notification, NotificationGroup} from "@progress/kendo-react-notification";
 import {Slide} from "@progress/kendo-react-animation";
 import './CreatePost.css'
+import {Helmet} from "react-helmet";
 
 const S3_BUCKET ='monovex';
 const REGION ='us-east-2';
@@ -85,6 +85,9 @@ class CreatePost extends Component{
         const { success, error, loading} = this.state;
         return(
         <form className="create-post-section" onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <Helmet>
+                <meta name="robots" content="noindex,nofollow"/>
+            </Helmet>
             <div className="post-input">
             <div className="post-text-input">
             <input onChange={event => this.setInputValue(event, "title")}

@@ -14,5 +14,8 @@ public class HtmlPageController {
     public String blog() {
         return "index.html";
     }
-
+    @RequestMapping("/createPost")
+    public String createPost() {
+        return "index.html";
+    }
 }
