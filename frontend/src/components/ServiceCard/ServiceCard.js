@@ -1,6 +1,7 @@
 import React from 'react';
 import './ServiceCard.css'
 import LinkButton from "../LinkButton/LinkButton";
+import { withTranslation } from 'react-i18next';
 
 const ServiceCard = props => (
     <div className="service-card1">
@@ -16,9 +17,9 @@ const ServiceCard = props => (
                 <p>{props.description}</p>
             </div>
             <div className="services-card-footer1">
-                <LinkButton link="contact" text={"Замовити"}/>
+                <LinkButton link="contact" text={props.t('header-item.5')}/>
             </div>
         </div>
     </div>
 )
-export default ServiceCard;
+export default  withTranslation()(ServiceCard);

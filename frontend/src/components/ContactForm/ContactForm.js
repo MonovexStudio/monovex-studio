@@ -6,6 +6,7 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 import {Notification, NotificationGroup} from "@progress/kendo-react-notification";
 import {Slide} from "@progress/kendo-react-animation";
+import { withTranslation } from 'react-i18next';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -65,26 +66,26 @@ class ContactForm extends Component {
         return (
             <section id="contact" className="contact-form">
                 <div className="container">
-                    <h3 className="contact-form-title">Контакти</h3>
+                    <h3 className="contact-form-title">{this.props.t('contact.0')}</h3>
                     <div className="contact-form__inner">
                         <div className="send-contact-form">
-                            <p>Зв'язатись для консультації</p>
+                            <p>{this.props.t('contact.1')}</p>
                             <div className="input-container">
                                 <form className="contactus-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
 
-                                    <CustomInputField onChange={event => this.setInputValue(event, "credentials")}
-                                                      name="credentials" placeholder="Прізвище та ім'я" type="text" styles={true}/>
-                                    <CustomInputField onChange={event => this.setInputValue(event, "phoneNumber")}
-                                                      name="phoneNumber" placeholder="+380 98 411 89 45" type="text" styles={true}/>
-                                    <CustomInputField onChange={event => this.setInputValue(event, "email")} name="email"
-                                                      placeholder="example@gmail.com" type="email" styles={true}/>
-                                    <Button disabled={this.state.loading} text="Відправити"/>
+                                <CustomInputField onChange={event => this.setInputValue(event, "credentials")}
+                                                  name="credentials" placeholder={this.props.t('contact.2')} type="text" styles={true}/>
+                                <CustomInputField onChange={event => this.setInputValue(event, "phoneNumber")}
+                                                  name="phoneNumber" placeholder="+380 98 411 89 45" type="text" styles={true}/>
+                                <CustomInputField onChange={event => this.setInputValue(event, "email")} name="email"
+                                                  placeholder="example@gmail.com" type="email" styles={true}/>
+                                <Button disabled={this.state.loading} text={this.props.t('contact.6')}/>
                                 </form>
                             </div>
                         </div>
                         <div className="go-to-brief">
-                            <p>Вже знаєте чого бажаєте?<br/>Заповніть повну форму і ми вам зателефонуємо</p>
-                            <Link to="brief" className="go-to-brief-button">Заповнити</Link>
+                            <p>{this.props.t('contact.3')}<br/>{this.props.t('contact.4')}</p>
+                            <Link to="brief" className="go-to-brief-button">{this.props.t('contact.5')}</Link>
                         </div>
                     </div>
                 </div>
@@ -136,4 +137,4 @@ class ContactForm extends Component {
     }
 }
 
-export default ContactForm;
+export default withTranslation()(ContactForm);
