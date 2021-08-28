@@ -10,4 +10,5 @@ public class PostRequest {
     private String title;
     private String description;
     private String fullText;
+    private String image;
 }

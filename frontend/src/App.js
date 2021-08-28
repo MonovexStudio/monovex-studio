@@ -7,6 +7,7 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import {Component} from "react";
 import MainPage from "./components/MainPage/MainPage";
 import Blog from "./components/Blog/Blog";
+import CreatePost from "./components/Blog/CreatePost";
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
                     <Route exact path="/" component={MainPage}/>
                     <Route exact path="/brief" component={BriefForm}/>
                     <Blog exact path="/blog" component={Blog}/>
+                    <CreatePost exact path="/createPost" component={CreatePost}/>
                 </Switch>
 
             </Router>

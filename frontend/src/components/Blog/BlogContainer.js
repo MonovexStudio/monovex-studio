@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import testImage from "../../assets/stage1icon.jpg";
 import './BlogContainer.css'
 import Button from "../Button/Button";
-import axios from "axios";
+
 class BlogContainer extends Component {
 
     render() {
@@ -26,11 +26,11 @@ class BlogContainer extends Component {
                 <div className={blogCard}>
                     <h1>{this.props.post.title}</h1>
                     <p>{this.props.post.description}</p>
-                    <Button text="Дізнатись більше"/>
+                    <Button onClick={()=>{}} text="Дізнатись більше"/>
                 </div>
                 <div className={blogPhoto}>
                     <img
-                        src={testImage}
+                        src={this.props.post.image}
                         width="100%"
                         height="100%"
                     />

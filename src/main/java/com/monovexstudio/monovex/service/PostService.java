@@ -25,6 +25,7 @@ public class PostService {
         post.setTitle(request.getTitle());
         post.setDescription(request.getDescription());
         post.setFullText(request.getFullText());
+        post.setImage(request.getImage());
         postRepository.save(post);
         return post;
     }
