@@ -7,6 +7,7 @@ import './CreatePost.css'
 import {Helmet} from "react-helmet";
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import JoditEditor from "jodit-react";
 
 const S3_BUCKET ='monovex';
 const REGION ='us-east-2';
@@ -52,6 +53,7 @@ class CreatePost extends Component{
         }));
 
     };
+
     setInputValue(event, inputName) {
         if (event.target.name === inputName) {
             this.setState(prevState => ({
@@ -62,6 +64,13 @@ class CreatePost extends Component{
             }));
         }
     }
+    updateFullText = (value) => {
+        this.setState(prevState => ({
+            postRequest: {
+                ...prevState.postRequest,
+                fullText: value
+            }}));
+    };
      handleUpload = async (file) => {
         uploadFile(file, config)
             .then(data => console.log(data))
@@ -85,6 +94,11 @@ class CreatePost extends Component{
             this.setState({loading:false});
         })
     }
+    config = {
+        readonly: false
+    };
+    jodit;
+    setRef = jodit => this.jodit = jodit;
     render() {
         const { success, error, loading} = this.state;
         return(
@@ -102,27 +116,12 @@ class CreatePost extends Component{
                               name="description" placeholder="Опис" rows="4" />
             {/*<textarea onChange={event => this.setInputValue(event, "fullText")}*/}
             {/*                  name="fullText" placeholder="Повний текст" type="text" rows="20"/>*/}
-                <CKEditor
-                    editor={ ClassicEditor }
-                    data=""
-                    onReady={ editor => {
-                        // You can store the "editor" and use when it is needed.
-                        console.log( 'Editor is ready to use!', editor );
-                    } }
-                    onChange={ ( event, editor ) => {
-                        this.setState(prevState => ({
-                            postRequest: {
-                                ...prevState.postRequest,
-                                fullText: editor.getData()
-                            }}));
-
-                    } }
-                    onBlur={ ( event, editor ) => {
-                        console.log( 'Blur.', editor );
-                    } }
-                    onFocus={ ( event, editor ) => {
-                        console.log( 'Focus.', editor );
-                    } }
+      
+                <JoditEditor
+                    editorRef={this.setRef}
+                    value={this.state.postRequest.fullText}
+                    config={this.config}
+                    onChange={this.updateFullText}
                 />
             </div>
             <div className="post-image-upload">
