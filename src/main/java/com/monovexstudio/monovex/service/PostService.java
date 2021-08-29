@@ -7,6 +7,9 @@ import com.monovexstudio.monovex.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,12 +25,16 @@ public class PostService {
         if (post == null){
             post = new Post();
         }
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        Date date = new Date(System.currentTimeMillis());
         post.setTitle(request.getTitle());
         post.setDescription(request.getDescription());
         post.setFullText(request.getFullText());
         post.setImage(request.getImage());
         post.setTheme(request.getTheme());
-        post.setDate(request.getDate());
+        post.setDate(dateFormat.format(date));
+        System.out.println(post.getDate());
+        System.out.println(post.getTheme());
         postRepository.save(post);
         return post;
     }

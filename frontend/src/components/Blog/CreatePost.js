@@ -31,6 +31,8 @@ class CreatePost extends Component{
             postRequest: {
                 title: '',
                 description: '',
+                date:'',
+                theme:'',
                 fullText: '',
                 image: ''
             },
@@ -94,13 +96,15 @@ class CreatePost extends Component{
             <div className="post-text-input">
             <input onChange={event => this.setInputValue(event, "title")}
                               name="title" placeholder="Заголовок" type="text"/>
+            <input onChange={event => this.setInputValue(event, "theme")}
+                       name="theme" placeholder="Тематика" type="text"/>
             <textarea onChange={event => this.setInputValue(event, "description")}
                               name="description" placeholder="Опис" rows="4" />
             {/*<textarea onChange={event => this.setInputValue(event, "fullText")}*/}
             {/*                  name="fullText" placeholder="Повний текст" type="text" rows="20"/>*/}
                 <CKEditor
                     editor={ ClassicEditor }
-                    data="asd"
+                    data=""
                     onReady={ editor => {
                         // You can store the "editor" and use when it is needed.
                         console.log( 'Editor is ready to use!', editor );
