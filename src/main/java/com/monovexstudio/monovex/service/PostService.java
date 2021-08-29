@@ -26,11 +26,16 @@ public class PostService {
         post.setDescription(request.getDescription());
         post.setFullText(request.getFullText());
         post.setImage(request.getImage());
+        post.setTheme(request.getTheme());
+        post.setDate(request.getDate());
         postRepository.save(post);
         return post;
     }
     private Post findById(Long id){
         return postRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Post with id:"+id+"is not exists"));
+    }
+    public PostResponse findOne(Long id){
+        return new PostResponse(findById(id));
     }
     public void update(Long id,PostRequest request){
         postRepository.save(postRequestToPost(findById(id),request));

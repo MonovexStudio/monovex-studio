@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import testImage from "../../assets/stage1icon.jpg";
 import './BlogContainer.css'
 import Button from "../Button/Button";
+import {Link} from "react-router-dom";
 
 class BlogContainer extends Component {
 
@@ -26,7 +27,7 @@ class BlogContainer extends Component {
                 <div className={blogCard}>
                     <h1>{this.props.post.title}</h1>
                     <p>{this.props.post.description}</p>
-                    <Button onClick={()=>{}} text="Дізнатись більше"/>
+                    <Link to={`/post/${this.props.post.id}`}>Дізнатись більше</Link>
                 </div>
                 <div className={blogPhoto}>
                     <img
