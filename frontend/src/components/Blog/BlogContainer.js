@@ -26,7 +26,7 @@ class BlogContainer extends Component {
                 </div>
                 <div className={blogCard}>
                     <h1>{this.props.post.title}</h1>
-                    <p>{this.props.post.description}</p>
+                    <section dangerouslySetInnerHTML={{ __html: this.props.post.description }}/>
                     <Link to={`/post/${this.props.post.id}`}>Дізнатись більше</Link>
                 </div>
                 <div className={blogPhoto}>

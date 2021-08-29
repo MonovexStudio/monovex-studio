@@ -5,6 +5,8 @@ import {Notification, NotificationGroup} from "@progress/kendo-react-notificatio
 import {Slide} from "@progress/kendo-react-animation";
 import './CreatePost.css'
 import {Helmet} from "react-helmet";
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 const S3_BUCKET ='monovex';
 const REGION ='us-east-2';
@@ -94,8 +96,30 @@ class CreatePost extends Component{
                               name="title" placeholder="Заголовок" type="text"/>
             <textarea onChange={event => this.setInputValue(event, "description")}
                               name="description" placeholder="Опис" rows="4" />
-            <textarea onChange={event => this.setInputValue(event, "fullText")}
-                              name="fullText" placeholder="Повний текст" type="text" rows="20"/>
+            {/*<textarea onChange={event => this.setInputValue(event, "fullText")}*/}
+            {/*                  name="fullText" placeholder="Повний текст" type="text" rows="20"/>*/}
+                <CKEditor
+                    editor={ ClassicEditor }
+                    data="asd"
+                    onReady={ editor => {
+                        // You can store the "editor" and use when it is needed.
+                        console.log( 'Editor is ready to use!', editor );
+                    } }
+                    onChange={ ( event, editor ) => {
+                        this.setState(prevState => ({
+                            postRequest: {
+                                ...prevState.postRequest,
+                                fullText: editor.getData()
+                            }}));
+
+                    } }
+                    onBlur={ ( event, editor ) => {
+                        console.log( 'Blur.', editor );
+                    } }
+                    onFocus={ ( event, editor ) => {
+                        console.log( 'Focus.', editor );
+                    } }
+                />
             </div>
             <div className="post-image-upload">
             <input type="file" onChange={this.handleFileInput}/>
