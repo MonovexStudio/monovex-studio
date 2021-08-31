@@ -16,6 +16,8 @@ public class Post {
     private String title;
     private String description;
     private String image;
+    private String theme;
+    private String date;
     @Lob
     private String fullText;
 }

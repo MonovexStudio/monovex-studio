@@ -1,10 +1,13 @@
 import React , {Component} from 'react';
 import { uploadFile } from 'react-s3';
-import CustomInputField from "../BriefForm/CustomInputField";
 import axios from 'axios'
 import {Notification, NotificationGroup} from "@progress/kendo-react-notification";
 import {Slide} from "@progress/kendo-react-animation";
 import './CreatePost.css'
+import {Helmet} from "react-helmet";
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import JoditEditor from "jodit-react";
 
 const S3_BUCKET ='monovex';
 const REGION ='us-east-2';
@@ -29,6 +32,8 @@ class CreatePost extends Component{
             postRequest: {
                 title: '',
                 description: '',
+                date:'',
+                theme:'',
                 fullText: '',
                 image: ''
             },
@@ -48,6 +53,7 @@ class CreatePost extends Component{
         }));
 
     };
+
     setInputValue(event, inputName) {
         if (event.target.name === inputName) {
             this.setState(prevState => ({
@@ -58,6 +64,13 @@ class CreatePost extends Component{
             }));
         }
     }
+    updateFullText = (value) => {
+        this.setState(prevState => ({
+            postRequest: {
+                ...prevState.postRequest,
+                fullText: value
+            }}));
+    };
      handleUpload = async (file) => {
         uploadFile(file, config)
             .then(data => console.log(data))
@@ -67,7 +80,7 @@ class CreatePost extends Component{
         e.preventDefault();
         this.setState({loading:true});
         console.log(this.state);
-        axios.post('http://localhost:8080/post/addPost', this.state.postRequest,
+        axios.post('https://monovex-production.herokuapp.com/post/addPost', this.state.postRequest,
             {
                 headers: {
                     'Content-Type': 'application/json'
@@ -81,18 +94,35 @@ class CreatePost extends Component{
             this.setState({loading:false});
         })
     }
+    config = {
+        readonly: false
+    };
+    jodit;
+    setRef = jodit => this.jodit = jodit;
     render() {
         const { success, error, loading} = this.state;
         return(
         <form className="create-post-section" onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <Helmet>
+                <meta name="robots" content="noindex,nofollow"/>
+            </Helmet>
             <div className="post-input">
             <div className="post-text-input">
             <input onChange={event => this.setInputValue(event, "title")}
                               name="title" placeholder="Заголовок" type="text"/>
+            <input onChange={event => this.setInputValue(event, "theme")}
+                       name="theme" placeholder="Тематика" type="text"/>
             <textarea onChange={event => this.setInputValue(event, "description")}
                               name="description" placeholder="Опис" rows="4" />
-            <textarea onChange={event => this.setInputValue(event, "fullText")}
-                              name="fullText" placeholder="Повний текст" type="text" rows="20"/>
+            {/*<textarea onChange={event => this.setInputValue(event, "fullText")}*/}
+            {/*                  name="fullText" placeholder="Повний текст" type="text" rows="20"/>*/}
+      
+                <JoditEditor
+                    editorRef={this.setRef}
+                    value={this.state.postRequest.fullText}
+                    config={this.config}
+                    onChange={this.updateFullText}
+                />
             </div>
             <div className="post-image-upload">
             <input type="file" onChange={this.handleFileInput}/>

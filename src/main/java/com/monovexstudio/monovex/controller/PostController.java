@@ -32,4 +32,8 @@ public class PostController {
     }
     @DeleteMapping("/deletePost")
     public void delete(Long id) { postService.delete(id); }
+    @GetMapping("/{id}")
+    public PostResponse findOne(@PathVariable Long id) {
+        return postService.findOne(id);
+    }
 }

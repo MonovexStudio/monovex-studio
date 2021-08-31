@@ -22,7 +22,7 @@ class Blog extends Component {
     }
 
     findPost() {
-        axios.get("http://localhost:8080/post/getAllPosts")
+        axios.get("https://monovex-production.herokuapp.com/post/getAllPosts")
             .then(response => response.data)
             .then((data) => {
                 this.setState({posts: data});
@@ -33,6 +33,7 @@ class Blog extends Component {
     renderPost() {
         return (
             <>
+                <div className="blog-posts">
                 {
                     this.state.posts && this.state.posts.map(function (post, index) {
                             if (index % 2) return <BlogContainer styles="left-side" post={post}/>;
@@ -40,7 +41,8 @@ class Blog extends Component {
                         }
                     )}
 
-            </>
+            </div>
+                </>
         );
     }
 

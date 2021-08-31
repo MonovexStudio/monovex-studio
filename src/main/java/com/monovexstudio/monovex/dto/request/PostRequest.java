@@ -11,4 +11,6 @@ public class PostRequest {
     private String description;
     private String fullText;
     private String image;
+    private String theme;
+    private String date;
 }

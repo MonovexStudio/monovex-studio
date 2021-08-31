@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b29d8859-03e3-4e9f-bc99-1b5c269d1d70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/blogground.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Blog/Blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Blog/Blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Blog/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Blog/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Blog/BlogCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Blog/BlogCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Blog/BlogCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Blog/BlogCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Blog/BlogContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Blog/BlogContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Blog/CreatePost.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Blog/CreatePost.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Preference/PreferenceItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Preference/PreferenceItem.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -194,6 +182,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,7 +286,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,16 +359,17 @@
       <workItem from="1630187205077" duration="77000" />
       <workItem from="1630187960722" duration="13617000" />
       <workItem from="1630319208246" duration="700000" />
+      <workItem from="1630410835607" duration="588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20985000" />
+    <option name="totallyTimeSpent" value="21573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="36" width="1550" height="835" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2637584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26778522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

@@ -1,13 +1,11 @@
 import React from 'react';
-import './BlogCard.css';
 
-export const BlogCard = () => {
-    return(
-        <div className="blog-card">
-            <img
-
-            />
-
+const BlogCard = () => {
+    return (
+        <div>
+            HUI
         </div>
-    )
-}
+    );
+};
+
+export default BlogCard;
