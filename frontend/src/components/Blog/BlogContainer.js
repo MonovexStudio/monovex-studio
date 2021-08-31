@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import testImage from "../../assets/stage1icon.jpg";
 import './BlogContainer.css'
 import Button from "../Button/Button";
 
@@ -31,6 +30,7 @@ class BlogContainer extends Component {
                 <div className={blogPhoto}>
                     <img
                         src={this.props.post.image}
+                        alt={this.props.post.title}
                         width="100%"
                         height="100%"
                     />
