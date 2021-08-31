@@ -56,12 +56,28 @@
 }
 
 .blog-header-right{
-    width: 39%;
+    width: 50%;
+    height: 432px;
     margin: auto 0;
 }
 
+.blog-header-right-text{
+    width: 37%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.65);
 
+}
+.blog-header-right-text h1{
+    font-size: 44px;
+    line-height: 52px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+
+}
 .blog-title-container{
     display: flex;
     justify-content: space-around;

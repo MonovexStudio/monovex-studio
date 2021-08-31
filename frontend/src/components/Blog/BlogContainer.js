@@ -6,24 +6,10 @@ import {Link} from "react-router-dom";
 class BlogContainer extends Component {
 
     render() {
-        let sideBg;
-        let blogPhoto = 'blog-photo';
-        let blogCard = 'blog-card';
-        if(this.props.styles==='left-side'){
-            sideBg = 'left-side-bg';
-            blogPhoto += ' left-blog-photo';
-            blogCard += ' left-blog-card'
-        }
-        if(this.props.styles==="right-side"){
-            sideBg = 'right-side-bg';
-            blogPhoto += ' right-blog-photo';
-            blogCard += ' right-blog-card';
-        }
+
         return (
             <div className="blog-container">
-                <div className={sideBg}>
-                </div>
-                <div className={blogCard}>
+                <div className="blog-card-container">
                     <h1>{this.props.post.title}</h1>
                     <section dangerouslySetInnerHTML={{ __html: this.props.post.description }}/>
                     <Link to={`/post/${this.props.post.id}`}>Дізнатись більше</Link>

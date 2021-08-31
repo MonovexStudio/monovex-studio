@@ -1,5 +1,10 @@
 .blog-card{
-    width: 222px;
+    width: 80%;
     height: 336px;
     background-color: #ffffff;
+    margin: 20px;
+    color: black !important;
+}
+.blog-card-container h1{
+    color: black !important;
 }

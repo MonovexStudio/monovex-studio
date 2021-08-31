@@ -5,7 +5,7 @@ import BlogContainer from "./BlogContainer";
 import axios from "axios";
 import {Link} from "react-scroll";
 import Slider from "react-slick";
-import {BlogCard} from "./BlogCard";
+import BlogCard from "./BlogCard";
 
 
 class Blog extends Component {
@@ -32,17 +32,10 @@ class Blog extends Component {
 
     renderPost() {
         return (
-            <>
-                <div className="blog-posts">
-                {
-                    this.state.posts && this.state.posts.map(function (post, index) {
-                            if (index % 2) return <BlogContainer styles="left-side" post={post}/>;
-                            else return <BlogContainer styles="right-side" post={post}/>;
+                    this.state.posts && this.state.posts.map((post, index) => {
+                            return <BlogCard post={post}/>
                         }
-                    )}
-
-            </div>
-                </>
+                    )
         );
     }
 
@@ -51,14 +44,16 @@ class Blog extends Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
+
             appendDots: dots => (
                 <div>
                     <ul style={{ margin: "0px" }}> {dots} </ul>
                 </div>
             ),
             customPaging: i => (
+                
                 <div
                     style={{
                         width: "30px",
@@ -83,25 +78,12 @@ class Blog extends Component {
                                 <Link to="blog" smooth={true} className="blog-button">Читати</Link>
                             </div>
                             <div className="blog-header-right">
+                                <div className="blog-header-right-text">
+                                    <h1>Нові Статті</h1>
+
+                                </div>
                                 <Slider {...settings}>
-                                    <div>
-                                        <BlogCard/>
-                                    </div>
-                                    <div>
-                                        <BlogCard/>
-                                    </div>
-                                    <div>
-                                        <BlogCard/>
-                                    </div>
-                                    <div>
-                                        <h3>1</h3>
-                                    </div>
-                                    <div>
-                                        <h3>2</h3>
-                                    </div>
-                                    <div>
-                                        <h3>3</h3>
-                                    </div>
+                                    {this.renderPost()}
                                 </Slider>
                             </div>
                         </div>
