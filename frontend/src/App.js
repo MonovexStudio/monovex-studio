@@ -9,6 +9,7 @@ import MainPage from "./components/MainPage/MainPage";
 import Blog from "./components/Blog/Blog";
 import CreatePost from "./components/Blog/CreatePost";
 import BlogCard from './components/Blog/BlogCard';
+import BlogContainer from "./components/Blog/BlogContainer";
 
 class App extends Component {
     state = {
@@ -41,7 +42,7 @@ class App extends Component {
                     <Route exact path="/brief" component={BriefForm}/>
                     <Route exact path="/blog" component={Blog}/>
                     <Route exact path="/createPost" component={CreatePost}/>
-                    <Route exact path="/post/:id" render={(props) => <BlogCard {...props}/>}/>
+                    <Route exact path="/post/:id" render={(props) => <BlogContainer {...props}/>}/>
                 </Switch>
 
             </Router>

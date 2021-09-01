@@ -1,0 +1,34 @@
+.blog-container{
+
+}
+.blog__inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+.blog-container-titles{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+
+}
+.blog-container-img{
+    height: 600px;
+    width: 100%;
+}
+.blog-container-titles h1{
+    color: #000 !important;
+    text-align: center;
+    font-size: 50px !important;
+}
+.blog-container-text{
+    width: 80%;
+
+}
+.blog-container-text-description{
+    padding: 50px 0 0px 0;
+    font-size: 20px;
+}
