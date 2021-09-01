@@ -16,7 +16,7 @@ const BlogCard = (props) => {
             <div className="blog-card-container">
                 <h1>{props.post.title}</h1>
                 <p>{props.post.description}</p>
-                <div>
+                <div className="blog-card-additional-info">
                     <p>{props.post.theme}</p>
                     <p>{props.post.date}</p>
                 </div>

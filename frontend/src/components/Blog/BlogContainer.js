@@ -14,7 +14,7 @@ class BlogContainer extends Component {
                     <section dangerouslySetInnerHTML={{ __html: this.props.post.description }}/>
                     <Link to={`/post/${this.props.post.id}`}>Дізнатись більше</Link>
                 </div>
-                <div className={blogPhoto}>
+                <div className="">
                     <img
                         src={this.props.post.image}
                         alt={this.props.post.title}

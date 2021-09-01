@@ -38,32 +38,21 @@ class Blog extends Component {
                     )
         );
     }
-
+    renderNewPost() {
+        return (
+            this.state.posts && this.state.posts.splice(0,9).map((post, index) => {
+                    return <BlogCard post={post}/>
+                }
+            )
+        );
+    }
     render() {
         const settings = {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-
-            appendDots: dots => (
-                <div>
-                    <ul style={{ margin: "0px" }}> {dots} </ul>
-                </div>
-            ),
-            customPaging: i => (
-                
-                <div
-                    style={{
-                        width: "30px",
-                        color: "blue",
-                        border: "1px blue solid",
-                        marginTop: "30px"
-                    }}
-                >
-                </div>
-            )
+            slidesToShow: 2,
+            slidesToScroll: 2,
         };
         return (
             <section className="blog-section">
@@ -83,7 +72,7 @@ class Blog extends Component {
 
                                 </div>
                                 <Slider {...settings}>
-                                    {this.renderPost()}
+                                    {this.renderNewPost()}
                                 </Slider>
                             </div>
                         </div>

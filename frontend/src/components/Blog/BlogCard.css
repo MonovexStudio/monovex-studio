@@ -1,10 +1,28 @@
 .blog-card{
-    width: 80%;
-    height: 336px;
+    width: 90%;
+    height: 400px;
     background-color: #ffffff;
     margin: 20px;
     color: black !important;
 }
+.blog-card-photo{
+    height: 119px;
+}
 .blog-card-container h1{
     color: black !important;
+}
+.blog-card-container{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+.blog-card-container *{
+    padding: 0 10px 0 10px;
+}
+.blog-card-additional-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
